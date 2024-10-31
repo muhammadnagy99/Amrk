@@ -9,7 +9,11 @@ export default function MainHero() {
         <div className="flex flex-row w-special md:w-[95%] justify-between h-[840px]" aria-labelledby="Hero-Sectoin">
 =======
         <div className="flex flex-row w-full justify-between h-[920px]">  
+<<<<<<< HEAD
 >>>>>>> 0158917 (Update main-hero.tsx)
+=======
+
+>>>>>>> 61f8adf (Update main-hero.tsx)
             <div className="flex flex-col justify-center align-baseline text-primText">
 
                 <h1 className="mb-[16px]">

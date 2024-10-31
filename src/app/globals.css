@@ -39,7 +39,7 @@ body {
 }
 
 .w-special{
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .w-special-nav{

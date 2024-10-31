@@ -66,7 +66,11 @@ export default function MainHero() {
                     height={798}
                     alt="Amrk Restaurant Systems"
                     placeholder="blur"
+<<<<<<< HEAD
                     priority={true}
+=======
+                    priority
+>>>>>>> 98f0107 (changes)
                 />
             </div>
         </div>

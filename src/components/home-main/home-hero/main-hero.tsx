@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from '@/public/hero-full-art-1.png';
+import heroImage from '@/public/hero-full-art-1.webp';
 import PrimaryBtn from "../../buttons/primary-button";
 import SecondaryBtn from "../../buttons/secondary-button";
 
@@ -58,6 +58,7 @@ export default function MainHero() {
                     width={690}
                     height={798}
                     alt="Amrk Restaurant Systems"
+                    placeholder="blur"
                     priority
                 />
             </div>

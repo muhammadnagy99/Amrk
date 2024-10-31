@@ -58,6 +58,7 @@ export default function MainHero() {
                     width={690}
                     height={798}
                     alt="Amrk Restaurant Systems"
+                    placeholder="blur"
                     priority
                 />
             </div>

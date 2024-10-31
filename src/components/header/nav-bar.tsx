@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavBar() {
     return(
         <div className="flex justify-center w-7/12">
-            <nav className="flex w-4/6 justify-between">
+            <nav className="flex w-special-nav justify-between">
                 <Link href={``} className="flex items-center mx-2 gap-[8px]">
                     حلول أمرك   
                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@ export default function NavBar() {
                 </Link>
 
                 <Link href={``} className="flex items-center mx-2">
-                    قطاعات تختص بخدمتها
+                    قطاعات نخدمها
                 </Link>
 
                 <Link href={``} className="flex items-center mx-2 gap-[8px]">

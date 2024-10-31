@@ -3,13 +3,13 @@ import SecondaryBtn from "../buttons/secondary-button";
 
 export default function BtnGroup() {
     return(
-        <div className="flex items-center justify-between w-4/12">
+        <div className="flex items-center justify-end w-btn-group">
 
-            <div className="w-[37.5%]">
+            <div className="w-[29.5%] ml-[24px]">
                 <SecondaryBtn text={`أمرك أونلاين`} />
             </div>
 
-            <div className="w-[44.5%]">
+            <div className="w-[36.5%] ml-[24px]">
                 <PrimaryBtn text={`احجز موعد للتجربة`} />
             </div>
 
@@ -22,9 +22,3 @@ export default function BtnGroup() {
         </div>
     );
 }
-
-37.5
-
-44.5
-
-4

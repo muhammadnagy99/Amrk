@@ -37,3 +37,19 @@ body {
 .copy-right-padding{
   padding: 39px 0 32px 0;
 }
+
+.w-special{
+  width: 1200px;
+}
+
+.w-special-nav{
+  width: 460px;  
+}
+
+.w-btn-group{
+  width: 478px;
+}
+
+.w-logo{
+  width: 110px;
+}

@@ -5,8 +5,7 @@ import SecondaryBtn from "../../buttons/secondary-button";
 
 export default function MainHero() {
     return(
-        <div className="flex flex-row w-full justify-between h-[920px]">
-            
+        <div className="flex flex-row w-full justify-between h-[920px]">  
             <div className="flex flex-col justify-center align-baseline text-primText">
 
                 <h1 className="text-[40px] font-bold mb-[16px]">

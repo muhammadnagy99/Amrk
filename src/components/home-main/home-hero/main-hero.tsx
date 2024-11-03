@@ -5,16 +5,15 @@ import SecondaryBtn from "../../buttons/secondary-button";
 
 export default function MainHero() {
     return(
-        <div className="flex flex-row w-full justify-between h-[920px]">  
-
+        <div className="flex flex-row w-special md:w-[95%] justify-between h-[840px]">
             <div className="flex flex-col justify-center align-baseline text-primText">
 
-                <h1 className="text-[40px] font-bold mb-[16px]">
+                <h1 className="mb-[16px]">
                     تكنولوجيا متقدمة
                     <br/>
                     لتبسيط عمليات مطعمك
                 </h1>
-                <p className="text-[20px] font-light mb-[64px]">
+                <p className="mb-[64px]">
                      نظام
                     <strong className="font-medium">
                     &nbsp; 
@@ -54,12 +53,12 @@ export default function MainHero() {
             
             <div>
                 <Image
-                    src={heroImage.src}
+                    src={heroImage}
                     width={690}
                     height={798}
                     alt="Amrk Restaurant Systems"
                     placeholder="blur"
-                    priority
+                    priority={true}
                 />
             </div>
         </div>

@@ -6,7 +6,7 @@ import CopyRight from "./copy-right";
 export default function MainFooter() {
     return(
       <footer className="flex items-center justify-center w-full bg-FooterBg">
-        <div className="flex flex-col items-center w-10/12">
+        <div className="flex flex-col items-center w-[95%] xl:w-10/12">
             <SiteLinks />
             <Line />
             <SocialMedia />

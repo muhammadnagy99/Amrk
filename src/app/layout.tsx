@@ -10,39 +10,9 @@ const rubik = localFont({
       style: "normal",
     },
     {
-      path: "./fonts/Rubik/Rubik-Italic.ttf",
-      weight: "400",
-      style: "italic",
-    },
-    {
       path: "./fonts/Rubik/Rubik-Bold.ttf",
       weight: "700",
       style: "normal",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-BoldItalic.ttf",
-      weight: "700",
-      style: "italic",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-ExtraBold.ttf",
-      weight: "800",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-ExtraBoldItalic.ttf",
-      weight: "800",
-      style: "italic",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-Black.ttf",
-      weight: "900",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-BlackItalic.ttf",
-      weight: "900",
-      style: "italic",
     },
     {
       path: "./fonts/Rubik/Rubik-Light.ttf",
@@ -50,29 +20,14 @@ const rubik = localFont({
       style: "normal",
     },
     {
-      path: "./fonts/Rubik/Rubik-LightItalic.ttf",
-      weight: "300",
-      style: "italic",
-    },
-    {
       path: "./fonts/Rubik/Rubik-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "./fonts/Rubik/Rubik-MediumItalic.ttf",
-      weight: "500",
-      style: "italic",
-    },
-    {
       path: "./fonts/Rubik/Rubik-SemiBold.ttf",
       weight: "600",
       style: "normal",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-SemiBoldItalic.ttf",
-      weight: "600",
-      style: "italic",
     },
   ],
   variable: "--font-rubik",

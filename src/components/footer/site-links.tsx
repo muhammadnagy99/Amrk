@@ -81,7 +81,7 @@ export default function SiteLinks() {
         <div className="grid grid-cols-6 gap-[24px] site-links-padding">
             {navLinks.map((nav, index) => (
                 <nav key={index} aria-labelledby={`footer footer-links-${index}`} className="flex flex-col gap-[12px]">
-                    <h2 className="text-SecTextV1">{nav.title}</h2>
+                    <h2 className="text-SecTextV1 text-base">{nav.title}</h2>
                     <ul className="flex flex-col gap-[12px]">
                         {nav.items.map((item, i) => (
                             <li key={i} className="text-SecTextV2 text-[14px] font-light">
@@ -92,7 +92,7 @@ export default function SiteLinks() {
 
                     {nav.additionalSection && (
                         <div className="pt-[76px]">
-                            <h2 className="text-SecTextV1">{nav.additionalSection.title}</h2>
+                            <h2 className="text-SecTextV1 text-base">{nav.additionalSection.title}</h2>
                             <ul className="flex flex-col gap-[12px]">
                                 {nav.additionalSection.items.map((item, i) => (
                                     <li key={i} className="text-SecTextV2 text-[14px] font-light">

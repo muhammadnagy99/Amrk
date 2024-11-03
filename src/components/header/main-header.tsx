@@ -4,8 +4,8 @@ import BtnGroup from "./btn-group";
 
 export default function MainHeader() {
     return(
-        <header className="flex items-center justify-center h-[104px] w-full header-shadow">
-            <div className="flex items-center justify-end w-10/12">
+        <header className="flex items-center justify-center h-[104px] w-full header-shadow sticky inset-0 bg-white z-10">
+            <div className="w-[95%] flex items-center justify-end xl:w-10/12">
                 <Logo />
                 <NavBar />
                 <BtnGroup />

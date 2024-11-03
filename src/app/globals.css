@@ -10,6 +10,25 @@ body {
   font-family: var(--font-rubik);
 }
 
+h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.p-secondary{
+  font-size: 16px;
+}
+
 .header-shadow{
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
 }
@@ -52,4 +71,26 @@ body {
 
 .w-logo{
   width: 110px;
+}
+
+.nav-button-checked{
+  padding: 20px 16px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #fefbd9;
+}
+
+.nav-article{
+  padding: 32px 32px 76px;
+}
+
+.m-special{
+  margin: 8px 8px 4px 0;
+}
+
+.section-bar{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.screen-card{
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
 }

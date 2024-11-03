@@ -54,7 +54,7 @@ export default function HomeSectionII() {
                     <div className="flex flex-row absolute z-1 h-full justify-around w-full">
                         
                         <div className="flex h-full items-end pb-[42px]">
-                            <section className="screen-card rounded-3xl w-[440] h-[255] bg-white">
+                            <section className="screen-card rounded-3xl w-[440px] h-[255px] bg-white">
                                 <article className="flex flex-col p-[24px] gap-[16px]">
                                     <h2 className="text-primText">
                                         مطاعم ومقاهي    

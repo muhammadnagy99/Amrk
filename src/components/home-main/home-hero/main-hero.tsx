@@ -6,6 +6,7 @@ import SecondaryBtn from "../../buttons/secondary-button";
 export default function MainHero() {
     return(
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className="flex flex-row w-special md:w-[95%] justify-between h-[840px]" aria-labelledby="Hero-Sectoin">
 =======
         <div className="flex flex-row w-full justify-between h-[920px]">  
@@ -14,6 +15,9 @@ export default function MainHero() {
 =======
 
 >>>>>>> 61f8adf (Update main-hero.tsx)
+=======
+        <div className="flex flex-row w-special md:w-[95%] justify-between h-[840px]">
+>>>>>>> 3ee2b89 (Home Page V1)
             <div className="flex flex-col justify-center align-baseline text-primText">
 
                 <h1 className="mb-[16px]">
@@ -67,10 +71,14 @@ export default function MainHero() {
                     alt="Amrk Restaurant Systems"
                     placeholder="blur"
 <<<<<<< HEAD
+<<<<<<< HEAD
                     priority={true}
 =======
                     priority
 >>>>>>> 98f0107 (changes)
+=======
+                    priority={true}
+>>>>>>> 3ee2b89 (Home Page V1)
                 />
             </div>
         </div>

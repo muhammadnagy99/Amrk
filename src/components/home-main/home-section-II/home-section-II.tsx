@@ -4,7 +4,11 @@ import BG from '@/public/bg/BG.png'
 
 export default function HomeSectionII() {
     return(
+<<<<<<< HEAD
         <div className="flex flex-col md:w-[95%] w-special h-[880px] justify-center items-center gap-[56px]" aria-labelledby="Amrk-Served-Sectors">
+=======
+        <div className="flex flex-col md:w-[95%] w-special h-[880px] justify-center items-center gap-[56px]">
+>>>>>>> 3ee2b89 (Home Page V1)
              <div className="flex flex-col w-full justify-center items-center text-primText gap-[24px]">
                 <h1>
                     قطاعات نختص بخدمتها

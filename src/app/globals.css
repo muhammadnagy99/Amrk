@@ -45,6 +45,10 @@ p{
   border: solid 2px #23314c;
 }
 
+.secondary-btn-border-2{
+  border: solid 2px #b0438a;
+}
+
 .social-media-padding{
     padding: 40px 0;
 }
@@ -93,4 +97,8 @@ p{
 
 .screen-card{
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+.background-1{
+  background-color: #FEFBD980;
 }

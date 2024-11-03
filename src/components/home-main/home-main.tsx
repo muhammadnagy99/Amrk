@@ -1,6 +1,7 @@
 import MainHero from "./home-hero/main-hero";
 import HomeSectionI from "./home-section-I/home-section-I";
 import HomeSectionII from "./home-section-II/home-section-II";
+import HomeSectionIII from "./home-section-III/home-section-III";
 
 export default function HomeMain() {
     return(
@@ -8,6 +9,7 @@ export default function HomeMain() {
             <MainHero />
             <HomeSectionI />
             <HomeSectionII />
+            <HomeSectionIII />
         </main>
     );
 }

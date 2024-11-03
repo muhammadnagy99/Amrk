@@ -3,7 +3,7 @@ import Art1 from '@/public/info-graph/Art-1.png'
 
 export default function HomeSectionI() {
     return(
-        <div className="flex flex-col w-full h-[880px] justify-center items-center gap-[80px] bg-primText">
+        <div className="flex flex-col w-full h-[880px] justify-center items-center gap-[80px] bg-primText" aria-labelledby="Amrk-Solutions-Section">
             
             <div className="flex flex-col justify-center items-center text-SecTextV2 gap-[24px]">
                 <h1>

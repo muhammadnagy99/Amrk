@@ -5,7 +5,7 @@ import SecondaryBtn from "../../buttons/secondary-button";
 
 export default function MainHero() {
     return(
-        <div className="flex flex-row w-special md:w-[95%] justify-between h-[840px]">
+        <div className="flex flex-row w-special md:w-[95%] justify-between h-[840px]" aria-labelledby="Hero-Sectoin">
             <div className="flex flex-col justify-center align-baseline text-primText">
 
                 <h1 className="mb-[16px]">

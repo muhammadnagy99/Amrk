@@ -1,5 +1,5 @@
 import SiteLinks from "./site-links";
-import Line from "./line";
+import Line from "../assets/line";
 import SocialMedia from "./social-media";
 import CopyRight from "./copy-right";
 

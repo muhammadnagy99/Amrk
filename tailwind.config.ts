@@ -17,6 +17,7 @@ const config: Config = {
         primText: "#23314c",
         SecTextV1: "#fefbd9",
         SecTextV2: "#fff",
+        InputColor: "#fbfbfb"
       },
     },
   },

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
     return(
-        <div className="flex justify-center w-7/12">
+        <div className="flex justify-center w-7/12" aria-labelledby="Amrk-NavBar">
             <nav className="flex w-special-nav justify-between">
                 <Link href={``} className="flex items-center mx-2 gap-[8px]">
                     حلول أمرك   

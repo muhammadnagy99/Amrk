@@ -5,9 +5,7 @@ import HomeMain from "@/src/components/home-main/home-main";
 export default function Home() {
   return (
     <>
-      <MainHeader />
       <HomeMain />
-      <MainFooter />
     </>
   );
 }

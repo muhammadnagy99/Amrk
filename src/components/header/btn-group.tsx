@@ -5,13 +5,13 @@ export default function BtnGroup() {
     return(
         <div className="flex items-center justify-end w-btn-group md:w-[40%]">
 
-            <div className="w-[29.5%] ml-[24px]">
+            <a href="/" className="w-[29.5%] ml-[24px]">
                 <SecondaryBtn text={`أمرك أونلاين`} />
-            </div>
+            </a>
 
-            <div className="w-[36.5%] ml-[24px]">
+            <a href="/demo-schedule" className="w-[36.5%] ml-[24px]">
                 <PrimaryBtn text={`احجز موعد للتجربة`} />
-            </div>
+            </a>
 
             <div className="w-[5%]">
                 <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">

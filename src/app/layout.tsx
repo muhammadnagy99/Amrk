@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import MainHeader from "@/src/components/header/main-header";
+import MainFooter from "@/src/components/footer/Main-footer";
 import "./globals.css";
+
 
 const rubik = localFont({
   src: [
@@ -48,7 +51,9 @@ export default function RootLayout({
       <body
         className={`flex flex-col justify-center ${rubik.variable} antialiased bg-white`}
       >
+        <MainHeader />
         {children}
+        <MainFooter />
       </body> 
     </html>
   );

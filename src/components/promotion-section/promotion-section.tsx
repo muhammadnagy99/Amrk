@@ -20,9 +20,9 @@ export default function PromoSection() {
                     وابدأ إدارة أسهل
                 </h1>
 
-                <button className="flex items-center justify-center w-[243px] h-[72px] rounded-[12px] text-xl text-PrimBtn font-semibold secondary-btn-border-2">
+                <a href="/demo-schedule" className="flex items-center justify-center w-[243px] h-[72px] rounded-[12px] text-xl text-PrimBtn font-semibold secondary-btn-border-2">
                     ابدأ باستخدام أمرك
-                </button>
+                </a>
             </div>
             
         </div>

@@ -12,7 +12,7 @@
     "google-libphonenumber": "^3.2.38",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "devDependencies": {
     "@types/google-libphonenumber": "^7.4.30",

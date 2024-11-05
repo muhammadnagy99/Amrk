@@ -124,3 +124,11 @@ p{
   box-shadow: 0 0 10px 3px rgba(110, 99, 165, 0.2);
   border: solid 1px #6e63a5;
 }
+
+.post-info{
+  border-left: 1px solid #23314c80;
+}
+
+.post-card{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}

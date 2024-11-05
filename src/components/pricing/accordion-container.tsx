@@ -1,6 +1,6 @@
 import React from "react";
 import AccordionElement from "./accordion-element";
-import AccordionRow from "./accordion-row"; // Assuming you have an AccordionRow component
+import AccordionRow from "./accordion-row";
 
 export default function AccordionContainer() {
     const accordionData = [

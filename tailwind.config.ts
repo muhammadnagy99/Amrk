@@ -21,7 +21,8 @@ const config: Config = {
         BorderHighlight: "#6e63a5",
         header: "#eaeaea",
         border1:"#23314c33",
-        primeHeader: "#f8f8f8"
+        primeHeader: "#f8f8f8",
+        textInfo: "#23314c80"
       },
     },
   },

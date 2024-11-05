@@ -76,7 +76,9 @@ export default function HomeSectionIII() {
         <div className="flex flex-col md:w-[95%] w-special justify-center items-center gap-[80px]" aria-labelledby="Amrk-solution-and-advantages">
             <header className="flex flex-row w-full justify-center">
                 <h1 className="w-1/2 text-5xl md:text-4xl font-medium leading-normal text-primText">
-                    حل شامل لإدارة وتبسيط جميع جوانب مطعمك.
+                    حل شامل لإدارة وتبسيط 
+                    <br />
+                    جميع جوانب مطعمك.
                 </h1>
 
                 <p className="flex font-normal items-baseline w-1/2 text-primText">

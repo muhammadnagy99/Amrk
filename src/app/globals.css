@@ -115,3 +115,12 @@ p{
 .submit-btn{
   padding: 15px 52px 16px 51px;
 }
+
+.package-card{
+  border: solid 1px rgba(35, 49, 76, 0.2);
+}
+
+.package-card-highlight{
+  box-shadow: 0 0 10px 3px rgba(110, 99, 165, 0.2);
+  border: solid 1px #6e63a5;
+}

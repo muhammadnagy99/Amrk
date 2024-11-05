@@ -50,7 +50,7 @@ export default function SiteLinks() {
             ]
         },
         {
-            title: "قطاعات نختص بخدمتها",
+            title: "قطاعات نخدمتها",
             items: [
                 "مطاعم ومقاهي",
                 "مطابخ سحابية",
@@ -81,7 +81,7 @@ export default function SiteLinks() {
         <div className="grid grid-cols-6 gap-[24px] site-links-padding">
             {navLinks.map((nav, index) => (
                 <nav key={index} aria-labelledby={`footer footer-links-${index}`} className="flex flex-col gap-[12px]">
-                    <h2 className="text-SecTextV1 text-base">{nav.title}</h2>
+                    <h2 className="text-SecTextV1 text-base hover:text-PrimBtn">{nav.title}</h2>
                     <ul className="flex flex-col gap-[12px]">
                         {nav.items.map((item, i) => (
                             <li key={i} className="text-SecTextV2 text-[14px] font-light">
@@ -91,8 +91,8 @@ export default function SiteLinks() {
                     </ul>
 
                     {nav.additionalSection && (
-                        <div className="pt-[76px]">
-                            <h2 className="text-SecTextV1 text-base">{nav.additionalSection.title}</h2>
+                        <nav className="flex flex-col gap-[12px] pt-[64px]">
+                            <h2 className="text-SecTextV1 text-base hover:text-PrimBtn">{nav.additionalSection.title}</h2>
                             <ul className="flex flex-col gap-[12px]">
                                 {nav.additionalSection.items.map((item, i) => (
                                     <li key={i} className="text-SecTextV2 text-[14px] font-light">
@@ -100,7 +100,7 @@ export default function SiteLinks() {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </nav>
                     )}
                 </nav>
             ))}

@@ -17,7 +17,11 @@ const config: Config = {
         primText: "#23314c",
         SecTextV1: "#fefbd9",
         SecTextV2: "#fff",
-        InputColor: "#fbfbfb"
+        InputColor: "#fbfbfb",
+        BorderHighlight: "#6e63a5",
+        header: "#eaeaea",
+        border1:"#23314c33",
+        primeHeader: "#f8f8f8"
       },
     },
   },

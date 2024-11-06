@@ -1,5 +1,6 @@
 import GCloud from '@/public/certifications/field-lists/google-cloud.png';
 import Firebase from '@/public/certifications/field-lists/firebase.png';
+import NextJs from '@/public/certifications/field-lists/nextjs.png'
 import Angular from '@/public/certifications/field-lists/angular.png';
 import Flutter from '@/public/certifications/field-lists/flutter.png';
 import FieldList from './field-list';
@@ -20,6 +21,7 @@ const fieldLists = [
         legendText: 'البرمجة',
         images: [
             { src: Flutter, alt: 'Flutter', width: 138, height: 40 },
+            { src: NextJs, alt: 'NextJs', width: 138, height: 40 },
             { src: Angular, alt: 'Angular', width: 128, height: 40 }
         ]
     }

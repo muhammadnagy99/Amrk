@@ -22,7 +22,8 @@ const config: Config = {
         header: "#eaeaea",
         border1:"#23314c33",
         primeHeader: "#f8f8f8",
-        textInfo: "#23314c80"
+        textInfo: "#23314c80",
+        filedList: "#6e63a5"
       },
     },
   },

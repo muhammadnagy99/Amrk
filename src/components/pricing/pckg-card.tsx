@@ -30,15 +30,15 @@ const PackageCard: React.FC<PackageCardProps> = ({
         <h2 className="text-base text-primText text-center">{title}</h2>
         <p className="text-sm text-primText text-center font-light">{description}</p>
       </div>
-      <div>
+      <div className="w-full">
         <button
-          className={`w-full h-[48px] p-3 text-[14px] font-medium rounded-lg ${
+          className={`flex w-full rounded-lg ${
             buttonVariant === 'primary'
               ? 'bg-PrimBtn text-white'
               : 'border-2 border-solid border-PrimBtn text-PrimBtn'
           }`}
         >
-          <a href="/demo-schedule">
+          <a href="/demo-schedule" className="flex items-center justify-center w-full h-[48px] text-[14px] font-medium">
           {buttonText}
           </a>
         </button>

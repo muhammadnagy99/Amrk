@@ -1,42 +1,20 @@
-import { StaticImageData } from 'next/image';
+"use client";
+
 import BlogGrid from "@/src/components/blog/blog-grid";
 import BlogHero from "@/src/components/blog/blog-hero";
 import BlogHeading from "@/src/components/blog/heading";
+import heroImage from '@/public/blog/thumbnails/hero.png';
 import blogsData from "@/src/data/blogs.json";
-import HeroImage from '@/public/blog/hero.png';
-import P1Image from '@/public/blog/thumbnails/p1.png';
-import P2Image from '@/public/blog/thumbnails/p2.png';
-import P3Image from '@/public/blog/thumbnails/p3.png';
-import P4Image from '@/public/blog/thumbnails/p4.png';
-import P5Image from '@/public/blog/thumbnails/p5.png';
-import P6Image from '@/public/blog/thumbnails/p6.png';
-
-interface BlogPost {
-    id: number;
-    imageSrc: StaticImageData;
-    heading: string;
-    paragraph: string;
-    content: string;
-}
 
 export default function BlogPage() {
-    const imagesMap: { [key: number]: StaticImageData } = {
-        2: P1Image,
-        3: P2Image,
-        4: P3Image,
-        5: P4Image,
-        6: P5Image,
-        7: P6Image,
-    };
-
     const heroPost = {
         ...blogsData[0],
-        imageSrc: HeroImage
+        imageSrc: heroImage
     };
 
-    const postCardsData: BlogPost[] = blogsData.slice(1).map(post => ({
+    const postCardsData = blogsData.slice(1).map((post, index) => ({
         ...post,
-        imageSrc: imagesMap[post.id]
+        imageSrc: require(`@/public/blog/thumbnails/p${index + 1}.png`) 
     }));
 
     return (
@@ -46,7 +24,8 @@ export default function BlogPage() {
                 <BlogHero 
                     imageSrc={heroPost.imageSrc} 
                     heading={heroPost.heading} 
-                    paragraph={heroPost.paragraph} 
+                    paragraph={heroPost.paragraph}
+                    searchKey={heroPost.searchKey} 
                 />
                 <BlogGrid postCardsData={postCardsData} />
             </div>

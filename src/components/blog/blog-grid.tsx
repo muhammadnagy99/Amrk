@@ -8,6 +8,7 @@ interface BlogGridProps {
         heading: string;
         paragraph: string;
         content: string;
+        searchKey: string;
     }[];
 }
 
@@ -20,6 +21,7 @@ export default function BlogGrid({ postCardsData }: BlogGridProps) {
                     imageSrc={post.imageSrc}
                     heading={post.heading}
                     paragraph={post.paragraph}
+                    searchKey={post.searchKey}
                 />
             ))}
         </div>

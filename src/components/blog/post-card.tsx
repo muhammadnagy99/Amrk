@@ -5,11 +5,12 @@ interface PostCardProps {
     imageSrc: StaticImageData;
     heading: string;
     paragraph: string;
+    searchKey: string
 }
 
-export default function PostCard({ imageSrc, heading, paragraph }: PostCardProps) {
+export default function PostCard({ imageSrc, heading, paragraph, searchKey }: PostCardProps) {
     return (
-        <div className="flex flex-col gap-[24px] h-[480px] post-card rounded-[16px]">
+        <a href={`/blog/${searchKey}`} className="flex flex-col gap-[24px] h-[480px] post-card rounded-[16px]">
             <Image
                 src={imageSrc}
                 width={384}
@@ -29,6 +30,6 @@ export default function PostCard({ imageSrc, heading, paragraph }: PostCardProps
                 </div>
                 <PostProps />
             </div>
-        </div>
+        </a>
     );
 }

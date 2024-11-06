@@ -5,9 +5,10 @@ interface BlogHeroProps {
     imageSrc: StaticImageData;
     heading: string;
     paragraph: string;
+    searchKey: string
 }
 
-export default function BlogHero({ imageSrc, heading, paragraph }: BlogHeroProps) {
+export default function BlogHero({ imageSrc, heading, paragraph, searchKey }: BlogHeroProps) {
     return (
         <div className="flex flex-row w-full h-[478px] gap-32">
             <Image
@@ -26,7 +27,7 @@ export default function BlogHero({ imageSrc, heading, paragraph }: BlogHeroProps
                     <p className="text-primText text-xl font-normal">
                         {paragraph}
                     </p>
-                    <div className="flex flex-row items-center content-center text-PrimBtn z-10 gap-2 h-6">
+                    <a href={`/blog/${searchKey}`} className="flex flex-row items-center content-center text-PrimBtn z-10 gap-2 h-6">
                         <span className="h-full text-base font-medium">
                             قراءة المقال كاملاً
                         </span>
@@ -45,7 +46,7 @@ export default function BlogHero({ imageSrc, heading, paragraph }: BlogHeroProps
                                 />
                             </svg>
                         </span>
-                    </div>
+                    </a>
                 </div>
                 <PostProps />
             </div>

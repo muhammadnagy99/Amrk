@@ -13,7 +13,7 @@ async function getRandomPostsWithImages(posts: typeof blogsData, count: number) 
     const postsWithImages = await Promise.all(
         selectedPosts.map(async (post) => ({
             ...post,
-            imageSrc: (await import(`@/public/blog/thumbnails/p${post.id - 1}.png`)).default
+            imageSrc: (await import(`@/public/blog/thumbnails/bp${post.id - 1}.png`)).default
         }))
     );
 

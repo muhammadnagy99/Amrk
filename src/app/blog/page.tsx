@@ -14,7 +14,7 @@ export default function BlogPage() {
 
     const postCardsData = blogsData.slice(1).map((post, index) => ({
         ...post,
-        imageSrc: require(`@/public/blog/thumbnails/p${index + 1}.png`) 
+        imageSrc: require(`@/public/blog/thumbnails/bp${index + 1}.png`) 
     }));
 
     return (

@@ -136,3 +136,7 @@ p{
 .custom-list-item::marker {
   color: #b0438a;
 }
+
+.p-special{
+  padding: 60px 40px;
+}

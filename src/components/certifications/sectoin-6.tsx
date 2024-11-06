@@ -41,13 +41,13 @@ export default function SectionVI() {
 
             <div className="w-full flex flex-col gap-9">
                 <div className="flex flex-row w-full justify-between">
-                    <div className="w-[55%] flex justify-center items-center">
+                    <div className="w-[49%] flex justify-center items-center">
                         <FieldList
                             legendText={fieldLists[0].legendText}
                             images={fieldLists[0].images}
                         />
                     </div>
-                    <div className="w-[43%] flex justify-center items-center">
+                    <div className="w-[49%] flex justify-center items-center">
                         <FieldList
                             legendText={fieldLists[1].legendText}
                             images={fieldLists[1].images}

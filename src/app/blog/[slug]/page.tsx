@@ -20,8 +20,12 @@ async function getRandomPostsWithImages(posts: typeof blogsData, count: number) 
     return postsWithImages;
 }
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
-    const { slug } = await params;
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
+
+export default async function PostPage({ params }: PageProps) {
+    const { slug } = await params; 
 
     const currentPost = blogsData.find(post => post.searchKey === slug);
 

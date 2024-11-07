@@ -42,6 +42,15 @@ export interface BulletPointsProps {
     }[];
 }
 
+export interface BusinessBulletPointsProps {
+    heading: {
+        text: string;
+        highlited: string;
+    };
+    listItems: string[];
+}
+
+
 // Props for ServiceSummary
 export interface ServiceSummaryProps {
     imageSrc: StaticImageData;
@@ -49,8 +58,27 @@ export interface ServiceSummaryProps {
     listItems: string[];
 }
 
+export interface ServiceDetailsProps {
+    heading:{
+        primary: string;
+        secondary: string;
+    }
+    listItems:{
+        heading: string;
+        paragraph: string;
+    }[];
+}
+
 // Union type for contentData
-export type ContentType = 
+export type ServicesContentType = 
     | { type: "ServiceHero"; props: ServiceHeroProps }
     | { type: "BulletPoints"; props: BulletPointsProps }
     | { type: "ServiceSummary"; props: ServiceSummaryProps };
+
+
+export type BusinessContentType = 
+    | { type: "ServiceHero"; props: ServiceHeroProps }
+    | { type: "BulletPoints"; props: BusinessBulletPointsProps }
+    | { type: "ServiceDetails"; props: ServiceDetailsProps };
+
+

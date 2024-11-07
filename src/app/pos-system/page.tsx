@@ -2,7 +2,7 @@ import PromoSection from "@/src/components/promotion-section/promotion-section";
 import BulletPoints from "@/src/components/services/bullet-points";
 import ServiceHero from "@/src/components/services/hero";
 import ServiceSummary from "@/src/components/services/service-summary";
-import { ContentType } from "@/src/types/interfaces";
+import { ServicesContentType } from "@/src/types/interfaces";
 
 import PosHero from '@/public/rms/pos/pos-hero.png';
 import PosScreen from '@/public/rms/pos/pos-screen.png';
@@ -10,7 +10,7 @@ import PosIcon1 from "@/src/app/pos-system/icons/1";
 import PosIcon2 from "@/src/app/pos-system/icons/2";
 import PosIcon3 from "@/src/app/pos-system/icons/3";
 
-const contentData: ContentType[] = [
+const contentData: ServicesContentType[] = [
     {
         type: "ServiceHero",
         props: {

@@ -1,5 +1,10 @@
-import React from "react";
+"use client"
+
+import React, { useState, useEffect, useRef } from 'react';
 import PrimaryLine from "../../assets/primary-line";
+import PlusIcon from '../../assets/plus-icon';
+import MinusIcon from '../../assets/minus-icon';
+import PrimPlusIcon from '../../assets/primary-plus';
 
 export default function HomeSectionIII() {
     const articlesData = [
@@ -71,10 +76,32 @@ export default function HomeSectionIII() {
         }
     ];
     
+    const [isCollapsed, setIsCollapsed] = useState(false);
+    const contentRef = useRef<HTMLDivElement | null>(null);
+    const sectionRef = useRef<HTMLDivElement | null>(null);
+
+    const toggleCollapse = () => {
+        setIsCollapsed(!isCollapsed);
+        if (isCollapsed && sectionRef.current) {
+            sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     
-    return(
-        <div className="flex flex-col md:w-[95%] w-special justify-center items-center gap-[80px]" aria-labelledby="Amrk-solution-and-advantages">
-            <header className="flex flex-row w-full justify-center">
+    useEffect(() => {
+        if (contentRef.current) {
+            if (isCollapsed) {
+                contentRef.current.style.maxHeight = '0';
+            } else {
+                contentRef.current.style.maxHeight = contentRef.current.scrollHeight + 50 + 'px';
+            }
+        }
+    }, [isCollapsed]);
+    
+    return (
+        <div 
+            className="flex flex-col md:w-[95%] w-special justify-center items-center gap-[80px]" aria-labelledby="Amrk-solution-and-advantages"
+        >
+            <header className="flex flex-row w-full justify-center"  ref={sectionRef} >
                 <h1 className="w-1/2 text-5xl md:text-4xl font-medium leading-normal text-primText">
                     حل شامل لإدارة وتبسيط 
                     <br />
@@ -85,11 +112,13 @@ export default function HomeSectionIII() {
                     نظام أمرك يقدم حلاً متكاملاً لتسهيل إدارة عمليات مطعمك بمرونة وكفاءة. من استلام الطلبات إلى إدارة المخزون والمدفوعات، كل ما تحتاجه في مكان واحد.
                 </p>
             </header>
-            <section className="flex flex-col w-full gap-[32px]">
-                <PrimaryLine />
+            <section 
+                ref={contentRef} 
+                className="flex flex-col w-full transition-all duration-500 ease-in-out overflow-hidden"
+            >
                 {articlesData.map((article) => (
                     <React.Fragment key={article.id}>
-                        <article className="flex flex-row w-full">
+                        <article className="flex flex-row w-full border-bottom p-8">
                             <div className="flex flex-row items-baseline gap-[24px] w-1/2">
                                 <div className="flex items-center justify-center w-8 h-8 rounded border-2 border-[#b0438a] bg-white text-PrimBtn">
                                     <p className="text-xl">{article.id}</p>
@@ -110,23 +139,22 @@ export default function HomeSectionIII() {
                                 )}
                             </p>
                         </article>
-                        <PrimaryLine />
                     </React.Fragment>
                 ))}
-                <div className="flex flex-row justify-start w-full">
-                    <div className="flex flex-row items-center pl-[24px] text-PrimBtn gap-4">
-                        <span className="text-base font-medium">
-                            عرض أقل 
-                        </span>
-                                            
-                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 1L1 0.999999" stroke="#B0438A" strokeWidth="2" strokeLinecap="round"/>
-                            <path d="M13 1L1 0.999999" stroke="#B0438A" strokeWidth="2" strokeLinecap="round"/>
-                        </svg>
-                    </div>
-                </div>
             </section>
+            <div className="flex flex-row justify-start w-full">
+                <button 
+                    onClick={toggleCollapse} 
+                    className="flex flex-row items-center pl-[24px] text-PrimBtn gap-4"
+                >
+                    <span className="text-base font-medium">
+                        {isCollapsed ? 'عرض المزيد' : 'عرض أقل'}
+                    </span>
 
+                    {isCollapsed? <PrimPlusIcon /> : <MinusIcon />}
+                    
+                </button>
+            </div>
         </div>
     );
 }

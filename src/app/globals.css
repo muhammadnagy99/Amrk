@@ -140,3 +140,11 @@ p{
 .p-special{
   padding: 60px 40px;
 }
+
+.mx-h-special{
+  max-height: 1100px;
+}
+
+.border-bottom{
+  border-bottom: 1px solid #23314c33 ;
+}

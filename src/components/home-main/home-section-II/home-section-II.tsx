@@ -17,7 +17,7 @@ export default function HomeSectionII() {
             setTimeout(() => {
                 setActiveId(id);
                 setIsFading(false); // Trigger fade-in effect
-            }, 350); // Match this with the duration of the CSS transition
+            }, 400); // Match this with the duration of the CSS transition
         }
     };
 

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import localFont from "next/font/local";
 import MainHeader from "@/src/components/header/main-header";
 import MainFooter from "@/src/components/footer/Main-footer";
@@ -55,7 +54,6 @@ export default function RootLayout({
         <MainHeader />
         {children}
         <MainFooter />
-        <SpeedInsights />
       </body> 
     </html>
   );

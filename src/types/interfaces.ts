@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { StaticImageData } from "next/image";
+import React from "react";
 // Success stories 
 
 export interface StoryGridProps {
@@ -82,3 +83,28 @@ export type BusinessContentType =
     | { type: "ServiceDetails"; props: ServiceDetailsProps };
 
 
+export interface heading {
+    primary: string;
+    secondary: string;
+}
+
+interface Button {
+    label: string;
+    iconLight: ReactNode;
+    iconDark: ReactNode;
+}
+    
+interface Article {
+    title: string;
+    description: string;
+    imgSrc: StaticImageData;
+    imgAlt: string;
+    width: number;
+    height:number;
+}
+    
+export interface Section {
+    id: number;
+    button: Button;
+    article: Article;
+}

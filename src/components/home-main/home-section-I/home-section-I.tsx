@@ -12,17 +12,16 @@ export default function HomeSectionI() {
 
     const handleButtonClick = (id: number) => {
         if (id !== activeId) {
-            setIsFading(true); // Trigger fade-out effect
+            setIsFading(true); 
             setTimeout(() => {
                 setActiveId(id);
-                setIsFading(false); // Trigger fade-in effect
+                setIsFading(false); 
                 setVisibleId(id);
-            }, 300); // Match this with your desired fade-out duration
+            }, 300);
         }
     };
 
     useEffect(() => {
-        // Ensure the initial section is visible without delay
         if (activeId !== null) {
             setVisibleId(activeId);
         }
@@ -31,8 +30,12 @@ export default function HomeSectionI() {
     return (
         <div className="flex flex-col w-full h-[880px] justify-center items-center gap-[80px] bg-primText" aria-labelledby="Amrk-Solutions-Section">
             <div className="flex flex-col justify-center items-center text-SecTextV2 gap-[24px]">
-                <h1>حلول أمـركـ</h1>
-                <p>نوفر لك جميع الحلول المتكاملة التي تحتاجها لإدارة مطعمك بكفاءة أعلى</p>
+                <h1>
+                    {sectionHeading.primary}
+                </h1>
+                <p>
+                    {sectionHeading.primary}
+                </p>
             </div>
 
             <div className="flex flex-row gap-[40px] w-[792px] h-[544px]">

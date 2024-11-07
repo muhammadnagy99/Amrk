@@ -102,9 +102,28 @@ interface Article {
     width: number;
     height:number;
 }
+
+interface Button2 {
+    label: string;
+}
+    
+interface Article2 {
+    title: string;
+    description: string;
+    imgSrc: StaticImageData;
+    imgAlt: string;
+}
+    
     
 export interface Section {
     id: number;
     button: Button;
     article: Article;
+}
+
+
+export interface ScreensSection {
+    id: number;
+    button: Button2;
+    article: Article2;
 }

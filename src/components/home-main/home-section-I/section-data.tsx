@@ -74,7 +74,7 @@ export const sectionData: Section[] = [
         },
         article: {
             title: "نظام الاتصال الداخلي",
-            description: "يتيح نظام الاتصال الداخلي تواصل سريع بين جميع أقسام المطعم لضمان تنفيذ الطلبات بكفاءة.",
+            description: "ووكي توكي المدمج في نظام أمرك يمكّن الموظفين من بين الأقسام، مما يضمن معالجة المشكلات بسرعة",
             imgSrc: Art3,
             imgAlt: "Internal Communication System",
             width: 277,
@@ -90,7 +90,7 @@ export const sectionData: Section[] = [
         },
         article: {
             title: "أمـركـ أون لاين",
-            description: "يتيح نظام الاتصال الداخلي تواصل سريع بين جميع أقسام المطعم لضمان تنفيذ الطلبات بكفاءة.",
+            description: "تعمل أمرك أونلاين على تعزيز التفاعل مع العملاء، عبر اتاحة طلبات التوصيل، الاستلام، الطلب عبر QR، وبرامج الولاء لتجربة العملاء أفضل.",
             imgSrc: Art4,
             imgAlt: "Internal Communication System",
             width: 217,
@@ -106,7 +106,7 @@ export const sectionData: Section[] = [
         },
         article: {
             title: "تشغيل المطابخ السحابية",
-            description: "يتيح نظام الاتصال الداخلي تواصل سريع بين جميع أقسام المطعم لضمان تنفيذ الطلبات بكفاءة.",
+            description: "بسّط اعمال مطبخك السحابي من أمرك. إدارة علامات تجارية متعددة. قوائم طعام متعددة من موقع واحد، مع تحكم مخصص بالمخزون صمم خصيصاً للمطابخ السحابية.",
             imgSrc: Art5,
             imgAlt: "Internal Communication System",
             width: 300,
@@ -122,7 +122,7 @@ export const sectionData: Section[] = [
         },
         article: {
             title: "إدارة متطورة للمخزون",
-            description: "يتيح نظام الاتصال الداخلي تواصل سريع بين جميع أقسام المطعم لضمان تنفيذ الطلبات بكفاءة.",
+            description: "تحكم لحظي بالمخزون، إعادة الطلب الآلي، تتبع التكاليف، لضمان تحسين العمليات عبر مواقعك المتعددة.",
             imgSrc: Art6,
             imgAlt: "Internal Communication System",
             width: 320,
@@ -138,7 +138,7 @@ export const sectionData: Section[] = [
         },
         article: {
             title: "علامات متعددة في مطبخك السحابي",
-            description: "يتيح نظام الاتصال الداخلي تواصل سريع بين جميع أقسام المطعم لضمان تنفيذ الطلبات بكفاءة.",
+            description: "فعّل عدة علامات تجارية من مطبخ واحد، مع القدرة على إدارة قوائم متعددة وتبسيط سير العمل في مطبخك السحابي.",
             imgSrc: Art7,
             imgAlt: "MultiBrand Kitchen",
             width: 320,

@@ -112,6 +112,19 @@ export default function HomeSectionIII() {
                     نظام أمرك يقدم حلاً متكاملاً لتسهيل إدارة عمليات مطعمك بمرونة وكفاءة. من استلام الطلبات إلى إدارة المخزون والمدفوعات، كل ما تحتاجه في مكان واحد.
                 </p>
             </header>
+            <div className="flex flex-row justify-end w-full">
+                <button 
+                    onClick={toggleCollapse} 
+                    className="flex flex-row items-center pl-[24px] text-PrimBtn gap-4"
+                >
+                    <span className="text-base font-medium">
+                        {isCollapsed ? 'عرض المزيد' : 'عرض أقل'}
+                    </span>
+
+                    {isCollapsed? <PrimPlusIcon /> : <MinusIcon />}
+                    
+                </button>
+            </div>
             <section 
                 ref={contentRef} 
                 className="flex flex-col w-full transition-all duration-500 ease-in-out overflow-hidden"
@@ -142,19 +155,7 @@ export default function HomeSectionIII() {
                     </React.Fragment>
                 ))}
             </section>
-            <div className="flex flex-row justify-start w-full">
-                <button 
-                    onClick={toggleCollapse} 
-                    className="flex flex-row items-center pl-[24px] text-PrimBtn gap-4"
-                >
-                    <span className="text-base font-medium">
-                        {isCollapsed ? 'عرض المزيد' : 'عرض أقل'}
-                    </span>
-
-                    {isCollapsed? <PrimPlusIcon /> : <MinusIcon />}
-                    
-                </button>
-            </div>
+            
         </div>
     );
 }

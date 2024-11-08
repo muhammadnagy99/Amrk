@@ -34,7 +34,7 @@ export default function HomeSectionI() {
                     {sectionHeading.primary}
                 </h1>
                 <p>
-                    {sectionHeading.primary}
+                    {sectionHeading.secondary}
                 </p>
             </div>
 

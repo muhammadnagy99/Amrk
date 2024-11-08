@@ -125,6 +125,7 @@ export default function HomeSectionIII() {
                     
                 </button>
             </div>
+             {/* every thing is well */}
             <section 
                 ref={contentRef} 
                 className="flex flex-col w-full transition-all duration-500 ease-in-out overflow-hidden"

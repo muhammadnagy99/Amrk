@@ -34,6 +34,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSr
                         width={480}
                         height={490}
                         alt={imgAlt}
+                        placeholder="blur"
                         priority={false}
                     />
                     <figcaption className="hidden">{imgAlt}</figcaption>

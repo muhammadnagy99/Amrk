@@ -112,6 +112,7 @@ interface Article2 {
     description: string;
     imgSrc: StaticImageData;
     imgAlt: string;
+    priority: boolean
 }
     
     

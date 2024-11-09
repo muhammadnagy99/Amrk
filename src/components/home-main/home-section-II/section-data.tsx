@@ -23,7 +23,8 @@ export const sectionData: ScreensSection[] = [
             title: "مطاعم ومقاهي",
             description: "تبسيط العمليات من خلال نظام نقاط البيع وإدارة المخزون، وتوفير تجربة ممتعة للعملاء، مع حلول إدارة المطاعم الشاملة من أمرك.",
             imgSrc: Screen1,
-            imgAlt: "Amrk Restaurant Systems"
+            imgAlt: "Amrk Restaurant Systems",
+            priority: true
         },
     },
     {
@@ -35,7 +36,8 @@ export const sectionData: ScreensSection[] = [
             title: "مطابخ سحابية",
             description: "تسهيل إدارة العمليات التجارية المتعددة وتخصيص القوائم وتتبع المخزون، وإدارة طلبات التوصيل، المصممة خصيصًا لتلبية متطلبات المطابخ السحابية المتسارعة.",
             imgSrc: Screen2,
-            imgAlt: "Amrk Cloud Kitchen Systems"
+            imgAlt: "Amrk Cloud Kitchen Systems",
+            priority: false
         },
     },
     {
@@ -47,7 +49,8 @@ export const sectionData: ScreensSection[] = [
             title: "عربات الطعام",
             description: "إدارة الطلبات والمدفوعات بسهولة عبر نظام ملائم للأجهزة المحمولة، مما يحافظ على سير العمليات بسلاسة أثناء التنقل.",
             imgSrc: Screen3,
-            imgAlt: "Amrk Food Truck Systems"
+            imgAlt: "Amrk Food Truck Systems",
+            priority: false
         },
     },
     {
@@ -59,7 +62,8 @@ export const sectionData: ScreensSection[] = [
             title: "خدمة على الطاولة",
             description: "تحسين تجربة العملاء داخل المطعم من خلال إدارة طاولات مبسطة للداخل، حجوزات الطاولات، الطلب والدفع عبر QR، لضمان تجربة ضيافة سلسة.",
             imgSrc: Screen4,
-            imgAlt: "Amrk Table Service Systems"
+            imgAlt: "Amrk Table Service Systems",
+            priority: false
         },
     },
     {
@@ -71,7 +75,8 @@ export const sectionData: ScreensSection[] = [
             title: "الخدمة السريعة",
             description: "تسريع معالجة الطلبات، إدارة القوائم، والتعامل مع المدفوعات، لتقليل أوقات الانتظار وزيادة ولاء العملاء.",
             imgSrc: Screen5,
-            imgAlt: "Amrk Quick Service Systems"
+            imgAlt: "Amrk Quick Service Systems",
+            priority: false
         },
     },
     {
@@ -83,7 +88,8 @@ export const sectionData: ScreensSection[] = [
             title: "توريد الطعام",
             description: "إدارة الطلبات الكبيرة، وتتبع المخزون، وتنسيق الخدمات اللوجستية، لضمان تقديم الخدمات المناسبة للفعاليات والمناسبات.",
             imgSrc: Screen6,
-            imgAlt: "Amrk Catering Systems"
+            imgAlt: "Amrk Catering Systems",
+            priority: false
         },
     },    
 ];

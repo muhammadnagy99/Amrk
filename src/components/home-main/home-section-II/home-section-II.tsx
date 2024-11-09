@@ -14,12 +14,12 @@ export default function HomeSectionII() {
 
     const handleButtonClick = (id: number) => {
         if (id !== activeId) {
-            setIsFading(true); // Trigger fade-out effect
+            setIsFading(true); 
             setTimeout(() => {
                 setActiveId(id);
-                setIsFading(false); // Trigger fade-in effect
+                setIsFading(false);
                 setVisibleId(id);
-            }, 300); // Match this with the duration of the CSS transition
+            }, 300); 
         }
     };
 
@@ -72,6 +72,7 @@ export default function HomeSectionII() {
                                         description={section.article.description}
                                         imgSrc={section.article.imgSrc}
                                         imgAlt={section.article.imgAlt}
+                                        priority={section.article.priority}
                                 />
                             </div>
                         ))}

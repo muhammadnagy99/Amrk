@@ -6,9 +6,10 @@ interface ScreenContentProps {
     description: string;
     imgSrc: StaticImageData;
     imgAlt: string;
+    priority: boolean;
 }
 
-const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSrc, imgAlt }) => {
+const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSrc, imgAlt, priority }) => {
     return (
             <div className="flex flex-row absolute z-1 h-full justify-around w-full">
                 <div className="flex h-full items-end pb-[42px]">
@@ -35,7 +36,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSr
                         height={490}
                         alt={imgAlt}
                         placeholder="blur"
-                        priority={false}
+                        priority={priority}
                     />
                     <figcaption className="hidden">{imgAlt}</figcaption>
                 </figure>

@@ -9,6 +9,7 @@ import BG from '@/public/bg/BG.png'
 
 export default function HomeSectionII() {
     const [activeId, setActiveId] = useState<number | null>(sectionData[0]?.id || null);
+    const [visibleId, setVisibleId] = useState<number | null>(sectionData[0]?.id || null);
     const [isFading, setIsFading] = useState<boolean>(false);
 
     const handleButtonClick = (id: number) => {
@@ -17,7 +18,8 @@ export default function HomeSectionII() {
             setTimeout(() => {
                 setActiveId(id);
                 setIsFading(false); // Trigger fade-in effect
-            }, 400); // Match this with the duration of the CSS transition
+                setVisibleId(id);
+            }, 300); // Match this with the duration of the CSS transition
         }
     };
 
@@ -51,7 +53,31 @@ export default function HomeSectionII() {
                             priority={false}
                         />
                     </div>
-                    <div className={`transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
+
+                    <div className="h-full relative overflow-hidden">
+                        {sectionData.map((section) => (
+                            <div
+                                key={section.id}
+                                className={`absolute inset-0 transition-opacity duration-300 ${
+                                    visibleId === section.id ? (isFading ? 'opacity-0' : 'opacity-100') : 'opacity-0'
+                                }`}
+                                style={{
+                                    pointerEvents: visibleId === section.id ? 'auto' : 'none',
+                                    zIndex: visibleId === section.id ? 1 : 0
+                                }}
+                            >
+                            <ScreenContent
+                                        key={section.id}
+                                        title={section.article.title}
+                                        description={section.article.description}
+                                        imgSrc={section.article.imgSrc}
+                                        imgAlt={section.article.imgAlt}
+                                />
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* <div className={`transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
                         {sectionData.map((section) => (
                             activeId === section.id && (
                                 <ScreenContent
@@ -63,7 +89,7 @@ export default function HomeSectionII() {
                                 />
                             )
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

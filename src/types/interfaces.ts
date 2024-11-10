@@ -101,6 +101,7 @@ interface Article {
     imgAlt: string;
     width: number;
     height:number;
+    priority: boolean
 }
 
 interface Button2 {

@@ -72,6 +72,7 @@ export default function HomeSectionI() {
                                 imgAlt={section.article.imgAlt}
                                 width={section.article.width}
                                 height={section.article.height}
+                                priority={section.article.priority}
                             />
                         </div>
                     ))}

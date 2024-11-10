@@ -77,20 +77,6 @@ export default function HomeSectionII() {
                             </div>
                         ))}
                     </div>
-
-                    {/* <div className={`transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
-                        {sectionData.map((section) => (
-                            activeId === section.id && (
-                                <ScreenContent
-                                    key={section.id}
-                                    title={section.article.title}
-                                    description={section.article.description}
-                                    imgSrc={section.article.imgSrc}
-                                    imgAlt={section.article.imgAlt}
-                                />
-                            )
-                        ))}
-                    </div> */}
                 </div>
             </div>
         </div>

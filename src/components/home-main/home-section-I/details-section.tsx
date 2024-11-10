@@ -10,9 +10,10 @@ interface DetailsSectionProps {
     imgAlt: string;
     width: number;
     height: number;
+    priority: boolean
 }
 
-const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, imgSrc, imgAlt, width, height }) => {
+const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, imgSrc, imgAlt, width, height, priority }) => {
     const isKitchenScreen = title === "شاشة المطبخ";
 
     return (

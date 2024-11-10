@@ -47,6 +47,7 @@ export const sectionData: Section[] = [
             imgAlt: "Amrk Restaurant Systems",
             width: 355,
             height: 111,
+            priority: true
         },
     },
     {
@@ -63,6 +64,7 @@ export const sectionData: Section[] = [
             imgAlt: "Kitchen Screen",
             width: 349,
             height: 278,
+            priority: false
         },
     },
     {
@@ -79,6 +81,7 @@ export const sectionData: Section[] = [
             imgAlt: "Internal Communication System",
             width: 277,
             height: 275,
+            priority: false
         },
     },
     {
@@ -95,6 +98,7 @@ export const sectionData: Section[] = [
             imgAlt: "Internal Communication System",
             width: 217,
             height: 226,
+            priority: false
         },
     },
     {
@@ -111,6 +115,7 @@ export const sectionData: Section[] = [
             imgAlt: "Internal Communication System",
             width: 300,
             height: 150,
+            priority: false
         },
     },
     {
@@ -127,6 +132,7 @@ export const sectionData: Section[] = [
             imgAlt: "Internal Communication System",
             width: 320,
             height: 192,
+            priority: false
         },
     },
     {
@@ -143,6 +149,7 @@ export const sectionData: Section[] = [
             imgAlt: "MultiBrand Kitchen",
             width: 320,
             height: 215,
+            priority: false
         },
     },
     

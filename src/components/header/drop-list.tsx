@@ -9,31 +9,18 @@ const menuItems = [
     { text: "تحديثات أمرك", url: "/updates" }
 ];
 
-
 export default function DropList() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
 
-    // Close the menu when clicking outside
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-                setIsOpen(false);
-            }
-        };
-
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
-
     return (
-        <div ref={menuRef} className="relative flex">
-            <div
-                className={`flex w-auto items-center mx-2 gap-[8px] relative`}
-                onClick={() => setIsOpen((prev) => !prev)}
-            >
+        <div 
+            ref={menuRef} 
+            className="relative flex"
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+        >
+            <div className="flex w-auto items-center mx-2 gap-[8px] relative">
                 <label className="flex items-center text-primText cursor-pointer relative">
                     الموارد
                 </label>
@@ -53,18 +40,18 @@ export default function DropList() {
             ></span>
 
             <div
-                className={`fixed left-1/2 transform -translate-x-1/2 w-[188px] h-[168] mt-[70px] z-10 p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
+                className={`fixed left-1/2 transform -translate-x-1/2 w-[188px] h-[168px] mt-[70px] z-10 p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
                 ${isOpen ? 'opacity-100 scale-100 visible translate-y-0' : 'opacity-0 scale-95 invisible translate-y-[-20px]'}`}
             >
                 <div className="grid grid-cols-1 gap-4 p-4">
                     <div className="flex flex-col h-full">   
-                            <nav className="flex flex-col gap-4">
-                                {menuItems.map((item, index) => (
-                                    <a key={index} href={item.url} className="text-primText text-sm font-normal">
-                                        {item.text}
-                                    </a>
-                                ))}
-                            </nav>
+                        <nav className="flex flex-col gap-4">
+                            {menuItems.map((item, index) => (
+                                <a key={index} href={item.url} className="text-primText text-sm font-normal hover:text-PrimBtn">
+                                    {item.text}
+                                </a>
+                            ))}
+                        </nav>
                     </div>
                 </div>
             </div>

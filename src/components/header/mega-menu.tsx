@@ -62,26 +62,14 @@ export default function MegaMenu() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
 
-    // Close the menu when clicking outside
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-                setIsOpen(false);
-            }
-        };
-
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
-
     return (
-        <div ref={menuRef} className="relative flex">
-            <div
-                className={`flex w-auto items-center mx-2 gap-[8px] relative`}
-                onClick={() => setIsOpen((prev) => !prev)}
-            >
+        <div 
+            ref={menuRef} 
+            className="relative flex"
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+        >
+            <div className={`flex w-auto items-center mx-2 gap-[8px] relative`}>
                 <label className="flex items-center text-primText cursor-pointer relative">
                     الخدمات
                 </label>

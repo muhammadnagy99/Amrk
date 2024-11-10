@@ -21,8 +21,10 @@ export default function PromoSection() {
                     وابدأ إدارة أسهل
                 </h1>
 
-                <a href="/demo-schedule" className="flex items-center justify-center w-[243px] h-[72px] rounded-[12px] text-xl text-PrimBtn font-semibold secondary-btn-border-2">
-                    ابدأ باستخدام أمرك
+                <a href="/demo-schedule" className="hover:before:bg-PrimBtn relative flex items-center justify-center w-[243px] h-[72px] rounded-2xl text-PrimBtn overflow-hidden border-2 border-PrimBtn bg-transparent px-3 transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-PrimBtn before:transition-all before:duration-500 hover:text-white hover:before:right-0 hover:before:w-full">
+                    <span className="relative z-10 font-semibold text-xl">
+                        ابدأ باستخدام أمرك
+                    </span>
                 </a>
             </div>
             

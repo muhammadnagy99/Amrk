@@ -97,16 +97,16 @@ export default function HomeSectionIII() {
     
     return (
         <div 
-            className="flex flex-col md:w-[95%] w-special justify-center items-center gap-[80px]" aria-labelledby="Amrk-solution-and-advantages"
+            className="flex flex-col w-[88%] xl:max-w-[1200px] justify-center items-center gap-8 md:gap-[80px]" aria-labelledby="Amrk-solution-and-advantages"
         >
-            <header className="flex flex-row w-full justify-center" ref={sectionRef}>
-                <h1 className="w-1/2 text-5xl md:text-4xl font-medium leading-normal text-primText">
+            <header className="flex flex-col md:flex-row w-full justify-center gap-4" ref={sectionRef}>
+                <h1 className="w-full md:w-1/2 text-[32px] md:text-4xl font-medium leading-normal text-primText">
                     حل شامل لإدارة وتبسيط 
                     <br />
                     جميع جوانب مطعمك.
                 </h1>
 
-                <p className="flex font-normal items-baseline w-1/2 text-primText">
+                <p className="flex font-normal text-base md:text-xl items-baseline w-full md:w-1/2  text-primText">
                     نظام أمرك يقدم حلاً متكاملاً لتسهيل إدارة عمليات مطعمك بمرونة وكفاءة. من استلام الطلبات إلى إدارة المخزون والمدفوعات، كل ما تحتاجه في مكان واحد.
                 </p>
             </header>
@@ -117,16 +117,16 @@ export default function HomeSectionIII() {
             >
                 {articlesData.slice(0, isCollapsed ? 3 : articlesData.length).map((article) => (
                     <React.Fragment key={article.id}>
-                        <article className="flex flex-row w-full border-bottom p-8">
-                            <div className="flex flex-row items-baseline gap-[24px] w-1/2">
+                        <article className="flex flex-col md:flex-row w-full border-bottom pt-6 pb-6 md:p-8 gap-4">
+                            <div className="flex flex-row items-baseline gap-[24px] w-full md:w-1/2 ">
                                 <div className="flex items-center justify-center w-8 h-8 rounded border-2 border-[#b0438a] bg-white text-PrimBtn">
                                     <p className="text-xl">{article.id}</p>
                                 </div>
-                                <h2 className="text-[32px] font-normal text-primText">
+                                <h2 className="text-xl md:text-[32px] font-normal text-primText">
                                     {article.title}
                                 </h2>
                             </div>
-                            <p className="items-center w-1/2 text-primText">
+                            <p className="items-center w-full md:w-1/2  text-primText">
                                 {article.content.map((part, index) => 
                                     part.highlight ? (
                                         <strong key={index} className="text-PrimBtn">

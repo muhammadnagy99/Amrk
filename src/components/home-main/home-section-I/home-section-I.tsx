@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { sectionData, sectionHeading } from "./section-data";
 import NavButton from "./nav-button";
 import DetailsSection from "./details-section";
+import SectionHeader from "../section-heading";
 
 export default function HomeSectionI() {
     const [activeId, setActiveId] = useState<number | null>(sectionData[0]?.id || null);
@@ -28,18 +29,12 @@ export default function HomeSectionI() {
     }, [activeId]);
 
     return (
-        <div className="flex flex-col w-full h-[880px] justify-center items-center gap-[80px] bg-primText" aria-labelledby="Amrk-Solutions-Section">
-            <div className="flex flex-col justify-center items-center text-SecTextV2 gap-[24px]">
-                <h1>
-                    {sectionHeading.primary}
-                </h1>
-                <p>
-                    {sectionHeading.secondary}
-                </p>
-            </div>
+        <div className="flex flex-col w-full pt-14 pb-14 h-[1100px] md:h-[880px] justify-center items-center gap-6 md:gap-[80px] bg-primText" aria-labelledby="Amrk-Solutions-Section">
+            
+            <SectionHeader heading={sectionHeading.primary} paragraph={sectionHeading.secondary} color="#fff" />
 
-            <div className="flex flex-row gap-[40px] w-[792px] h-[544px]">
-                <nav className="flex flex-col gap-[16px]">
+            <div className="flex flex-col items-center md:flex-row gap-[40px] w-[88%] md:w-[792px] h-full md:h-[544px]">
+                <nav className="flex flex-col gap-[16px] w-full md:w-auto">
                     {sectionData.map((section) => (
                         <NavButton
                             key={section.id}
@@ -53,7 +48,7 @@ export default function HomeSectionI() {
                     ))}
                 </nav>
 
-                <div className="h-full rounded-xl bg-SecTextV2 w-[435px] relative overflow-hidden">
+                <div className="h-[460px] md:h-full rounded-xl bg-SecTextV2 w-full md:w-[435px] relative overflow-hidden">
                     {sectionData.map((section) => (
                         <div
                             key={section.id}

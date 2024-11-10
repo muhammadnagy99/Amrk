@@ -3,7 +3,7 @@ import SecondaryBtn from "../buttons/secondary-button";
 
 export default function BtnGroup() {
     return(
-        <div className="flex items-center justify-end w-btn-group md:w-[40%]">
+        <div className="hidden md:flex items-center justify-end w-btn-group md:w-[40%]">
 
             <a href="/" className="w-[32%] ml-[24px]">
                 <SecondaryBtn text={`أمرك أونلاين`} />

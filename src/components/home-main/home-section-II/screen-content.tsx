@@ -11,12 +11,12 @@ interface ScreenContentProps {
 
 const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSrc, imgAlt, priority }) => {
     return (
-            <div className="flex flex-row absolute z-1 h-full justify-around w-full">
-                <div className="flex h-full items-end pb-[42px]">
-                    <section className="screen-card rounded-3xl w-[440px] h-[255px] bg-white">
+            <div className="flex flex-col-reverse md:flex-row absolute z-1 h-full gap-4 md:gap-0 justify-end md:justify-around items-center w-full">
+                <div className="flex h-auto md:h-full justify-center md:items-end md:pb-[42px]">
+                    <section className="screen-card rounded-3xl w-[88%] h-[200px] md:w-[440px] md:h-[255px] bg-white">
                         <article className="flex flex-col p-[24px] gap-[16px]">
                             <h2 className="text-primText">{title}</h2>
-                            <p className="text-primText">{description}</p>
+                            <p className="text-primText text-ellipsis">{description}</p>
                         </article>
                         <div className="flex flex-row items-center justify-end pl-[24px] text-PrimBtn">
                             <a href='/' className="flex flex-row items-center justify-end content-center text-PrimBtn hover-underline w-[115px]">
@@ -39,7 +39,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSr
                        
                     </section>
                 </div>
-                <figure>
+                <figure className="h-[250px] w-[260px] md:h-auto md:w-auto">
                     <Image 
                         src={imgSrc}
                         width={480}
@@ -47,6 +47,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSr
                         alt={imgAlt}
                         placeholder="blur"
                         priority={priority}
+                        className="object-contain"
                     />
                     <figcaption className="hidden">{imgAlt}</figcaption>
                 </figure>

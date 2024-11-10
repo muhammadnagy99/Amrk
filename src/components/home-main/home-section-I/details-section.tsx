@@ -18,10 +18,10 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
 
     return (
         <section className="h-full">
-            <article className={`p-8 flex flex-col h-full w-[435px] justify-between ${isKitchenScreen ? 'pb-0' : ''}`}>
-                <div className="flex flex-col h-[35%] gap-[24px]">
+            <article className={`p-4 md:p-8 flex flex-col h-full w-full md:w-[435px] justify-between ${isKitchenScreen ? 'pb-0' : ''}`}>
+                <div className="flex flex-col h-[40%] md:h-[35%] gap-4 md:gap-[24px]">
                     <h2 className="text-primText">{title}</h2>
-                    <p className="text-base">{description}</p>
+                    <p className="text-base text-primText w-full">{description}</p>
 
                     <a href='/' className="flex flex-row items-center content-center text-PrimBtn hover-underline w-[115px]">
                         <span className="text-base font-medium">معرفة المزيد</span>
@@ -47,7 +47,7 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
                         width={width}
                         height={height}
                         alt={imgAlt}
-                        priority={true}
+                        priority={priority}
                     />
                     <figcaption className="hidden">{imgAlt}</figcaption>
                 </figure>

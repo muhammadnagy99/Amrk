@@ -47,7 +47,7 @@ export const sectionData: Section[] = [
             imgAlt: "Amrk Restaurant Systems",
             width: 355,
             height: 111,
-            priority: true
+            priority: false
         },
     },
     {

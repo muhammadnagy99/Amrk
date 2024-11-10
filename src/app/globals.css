@@ -25,6 +25,18 @@ p{
   font-weight: 300;
 }
 
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 24px;
+  }
+  p{
+    font-size: 12px;
+  }
+  h2{
+    font-size: 20px;
+  }
+}
+
 .p-secondary{
   font-size: 16px;
 }
@@ -239,4 +251,15 @@ p{
   display: -webkit-box;
   -webkit-line-clamp: 3; /* Number of lines before truncating */
   -webkit-box-orient: vertical;
+}
+
+/* Hide scrollbars for webkit-based browsers */
+.section-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars for other browsers */
+.section-bar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }

@@ -4,8 +4,8 @@ import DropList from "./drop-list";
 
 export default function NavBar() {
     return(
-        <div className="flex justify-center w-7/12" aria-labelledby="Amrk-NavBar">
-            <nav className="flex w-special-nav justify-between">
+        <div className="flex justify-center w-7/12">
+            <nav className="hidden md:flex w-special-nav justify-between">
                 <MegaMenu />
 
 
@@ -14,7 +14,7 @@ export default function NavBar() {
                 </a>
 
                 <DropList />
-                
+
                 <a href="/pricing" className="relative flex items-center mx-2 text-primText hover-underline">
                     الباقات
                 </a>

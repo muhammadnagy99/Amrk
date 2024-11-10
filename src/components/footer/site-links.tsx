@@ -80,7 +80,7 @@ export default function SiteLinks() {
     
     
     return (
-        <div className="grid grid-cols-6 gap-[24px] site-links-padding">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-[24px] site-links-padding">
             {navLinks.map((nav, index) => (
                 <nav key={index} aria-labelledby={`footer footer-links-${index}`} className="flex flex-col gap-[12px]">
                     <h2 className="text-SecTextV1 text-base">{nav.title}</h2>

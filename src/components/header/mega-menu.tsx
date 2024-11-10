@@ -115,7 +115,7 @@ export default function MegaMenu() {
                             </header>
                             <nav className="flex flex-col gap-4 p-2">
                                 {section.links.map((link, linkIndex) => (
-                                    <a key={linkIndex} href={link.url} className="text-primText text-sm font-normal">
+                                    <a key={linkIndex} href={link.url} className="text-primText text-sm font-normal hover:text-PrimBtn">
                                         {link.text}
                                     </a>
                                 ))}

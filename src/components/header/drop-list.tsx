@@ -10,7 +10,7 @@ const menuItems = [
 ];
 
 export default function DropList() {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [isOpen, setIsOpen] = useState<boolean>(true);
     const menuRef = useRef<HTMLDivElement | null>(null);
 
     return (
@@ -40,7 +40,7 @@ export default function DropList() {
             ></span>
 
             <div
-                className={`fixed left-1/2 transform -translate-x-1/2 w-[188px] h-[168px] mt-[70px] z-10 p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
+                className={`fixed w-[188px] h-[168px] mt-[70px] z-10 p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
                 ${isOpen ? 'opacity-100 scale-100 visible translate-y-0' : 'opacity-0 scale-95 invisible translate-y-[-20px]'}`}
             >
                 <div className="grid grid-cols-1 gap-4 p-4">

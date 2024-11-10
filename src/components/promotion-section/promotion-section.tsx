@@ -5,7 +5,8 @@ export default function PromoSection() {
     return(
         <div className="flex flex-row w-full justify-center content-center h-[360px] relative" aria-labelledby="Amrk-Demo-Promotion-Section">
              <div className="w-full background-1 h-[360px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
-                <Image 
+                <Image
+                    className="w-full h-full" 
                     src={BG}
                     width={1440}
                     height={360}

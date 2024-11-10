@@ -10,7 +10,7 @@ const menuItems = [
 ];
 
 export default function DropList() {
-    const [isOpen, setIsOpen] = useState<boolean>(true);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
 
     return (

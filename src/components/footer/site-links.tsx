@@ -87,7 +87,7 @@ export default function SiteLinks() {
                     <ul className="flex flex-col gap-[12px]">
                         {nav.items.map((item, i) => (
                             <li key={i} className="text-SecTextV2 text-[14px] font-light">
-                                <a href={item.url} className="text-SecTextV2 text-[14px] font-light hover:underline">
+                                <a href={item.url} className="text-SecTextV2 text-[14px] font-light hover:text-PrimBtn">
                                     {item.label}
                                 </a>
                             </li>
@@ -100,7 +100,7 @@ export default function SiteLinks() {
                             <ul className="flex flex-col gap-[12px]">
                                 {nav.additionalSection.items.map((item, i) => (
                                     <li key={i} className="text-SecTextV2 text-[14px] font-light">
-                                        <a href={item.url} className="text-SecTextV2 text-[14px] font-light hover:underline">
+                                        <a href={item.url} className="text-SecTextV2 text-[14px] font-light hover:text-PrimBtn">
                                             {item.label}
                                         </a>
                                     </li>

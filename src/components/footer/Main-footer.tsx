@@ -10,8 +10,6 @@ export default function MainFooter() {
             <SiteLinks />
             <Line />
             <SocialMedia />
-            <Line />
-            <CopyRight />
         </div>
       </footer> 
     );

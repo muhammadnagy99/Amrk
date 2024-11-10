@@ -3,9 +3,9 @@ import { StoryCardProps } from "@/src/types/interfaces";
 
 export default function StroryCard({ imageSrc, heading, paragraph, searchKey }: StoryCardProps) {
     return (
-        <a href={`/success-stories/${searchKey}`} className="flex flex-col gap-[24px] h-[395px] post-card rounded-[16px]">
+        <a href={`/success-stories/${searchKey}`} className="flex flex-col gap-[24px] h-[395px] post-card rounded-[16px] border border-textInfo">
             <Image
-                className="w-full h-[35%]"
+                className="w-full h-[37%] pt-6 pr-6 pl-6"
                 src={imageSrc}
                 width={524}
                 height={120}
@@ -14,11 +14,11 @@ export default function StroryCard({ imageSrc, heading, paragraph, searchKey }: 
                 priority={false}
             />
             <div className="flex flex-col justify-between h-[65%] pr-8 pl-8 pb-8">
-                <div className="flex flex-col gap-[16px]">
+                <div className="flex flex-col gap-[16px] h-">
                     <h2 className="text-primText text-[20px] leading-normal font-medium">
                         {heading}
                     </h2>
-                    <p className="text-primText text-base font-light">
+                    <p className="text-primText text-base font-light text-ellipsis">
                         {paragraph}
                     </p>
                 </div>

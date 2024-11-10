@@ -257,12 +257,10 @@ export default function AccordionContainer() {
     <div className="flex flex-col gap-4">
       {accordionData.map((item, index) => {
         if (item.type === "accordion") {
-          // Render as an accordion section
           return (
             <AccordionElement key={index} title={item.title} rows={item.rows} />
           );
         } else if (item.type === "simpleRow") {
-          // Render standalone rows
           return (
             <div key={index} className="flex flex-col gap-2">
               {item.rows.map((row, rowIndex) => (

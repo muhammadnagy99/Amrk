@@ -13,7 +13,7 @@ interface AccordionElementProps {
 }
 
 const AccordionElement: React.FC<AccordionElementProps> = ({ title = '' , rows }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);

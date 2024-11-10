@@ -83,10 +83,11 @@ export default function MegaMenu() {
                 </svg>
             </div> 
             <span
-                className={`absolute bottom-0 left-0 w-full h-[2px] bg-PrimBtn transform transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 w-full h-[2px] bg-PrimBtn transform transition-all duration-300 transform-origin-left ${
                     isOpen ? 'scale-x-100' : 'scale-x-0'
                 }`}
             ></span>
+
 
             <div
                 className={`fixed left-1/2 transform -translate-x-1/2 w-[95%] h-[370px] xl:w-[1200px] mt-[70px] z-10 p-1 bg-white shadow-lg rounded-lg transition-all duration-300 

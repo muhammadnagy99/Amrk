@@ -164,7 +164,7 @@ p{
   height: 2px; 
   background-color: currentColor; 
   transform: scaleX(0);
-  transform-origin: bottom right;
+  transform-origin: bottom;
   transition: transform 0.3s ease-out;
   color: #b0438a;
 }

@@ -69,7 +69,7 @@ export default function MegaMenu() {
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
         >
-            <div className={`flex w-auto items-center mx-2 gap-[8px] relative`}>
+            <div className={`flex w-auto items-center justify-center mx-2 gap-[8px] relative`}>
                 <label className="flex items-center text-primText cursor-pointer relative">
                     الخدمات
                 </label>

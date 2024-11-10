@@ -9,10 +9,10 @@ interface ImageCardProps {
 
 const ImageCardI: React.FC<ImageCardProps> = ({ imgSrc, title, description }) => {
   return (
-    <div className="relative w-[32%] flex flex-col xl:h-[280px] h-[220px] rounded-2xl justify-between p-4">
-      <div className="w-full xl:h-[280px] h-[220px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0 rounded-2xl">
+    <a className="relative w-[32%] flex flex-col xl:h-[280px] h-[220px] rounded-2xl justify-between p-4 cursor-pointer">
+      <div className="w-full xl:h-[280px] h-[220px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0 rounded-2xl overflow-hidden group">
         <Image 
-          className="rounded-2xl"
+          className="rounded-2xl transform group-hover:scale-[1.07] transition-transform duration-300 ease-in-out"
           src={imgSrc}
           fill
           alt={title}
@@ -20,6 +20,7 @@ const ImageCardI: React.FC<ImageCardProps> = ({ imgSrc, title, description }) =>
           priority={false}
         />
       </div>
+
 
       <article className="flex flex-col gap-2 z-10">
         <h1 className="text-white text-base font-light">
@@ -30,7 +31,7 @@ const ImageCardI: React.FC<ImageCardProps> = ({ imgSrc, title, description }) =>
         </p>
       </article>
 
-      <div className="flex flex-row items-center content-center text-white z-10 gap-2 h-6">
+      <div className="flex flex-row items-center content-center text-white z-10 gap-2 h-6 cursor-pointer hover:hover-underline2">
         <span className="h-full text-base font-medium">
           معرفة المزيد      
         </span>
@@ -40,7 +41,7 @@ const ImageCardI: React.FC<ImageCardProps> = ({ imgSrc, title, description }) =>
           </svg>
         </span>    
       </div>
-    </div>
+    </a>
   );
 };
 

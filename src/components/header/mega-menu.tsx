@@ -61,13 +61,26 @@ const sections = [
 export default function MegaMenu() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    const handleMouseEnter = () => {
+        clearTimeout(timeoutId);
+        setIsOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        timeoutId = setTimeout(() => {
+            setIsOpen(false);
+        }, 200);
+    };
+
 
     return (
         <div 
             ref={menuRef} 
             className="relative flex"
-            onMouseEnter={() => setIsOpen(true)}
-            onMouseLeave={() => setIsOpen(false)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
         >
             <div className={`flex w-auto items-center justify-center mx-2 gap-[8px] relative`}>
                 <label className="flex items-center text-primText cursor-pointer relative">
@@ -92,6 +105,8 @@ export default function MegaMenu() {
             <div
                 className={`fixed left-1/2 transform -translate-x-1/2 w-[95%] h-[370px] xl:w-[1200px] mt-[64px] z-10 p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
                 ${isOpen ? 'opacity-100 scale-100 visible translate-y-0' : 'opacity-0 scale-95 invisible translate-y-[-20px]'}`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
             >
                 <div className="grid grid-cols-4 gap-4 p-4">
                     {sections.map((section, index) => (

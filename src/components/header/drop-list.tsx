@@ -12,13 +12,25 @@ const menuItems = [
 export default function DropList() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    const handleMouseEnter = () => {
+        clearTimeout(timeoutId);
+        setIsOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        timeoutId = setTimeout(() => {
+            setIsOpen(false);
+        }, 200);
+    };
 
     return (
         <div 
             ref={menuRef} 
             className="relative flex"
-            onMouseEnter={() => setIsOpen(true)}
-            onMouseLeave={() => setIsOpen(false)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
         >
             <div className="flex w-auto items-center mx-2 gap-[8px] relative">
                 <label className="flex items-center text-primText cursor-pointer relative">
@@ -42,6 +54,8 @@ export default function DropList() {
             <div
                 className={`fixed w-[188px] h-[168px] mt-[64px] z-10 p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
                 ${isOpen ? 'opacity-100 scale-100 visible translate-y-0' : 'opacity-0 scale-95 invisible translate-y-[-20px]'}`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave} 
             >
                 <div className="grid grid-cols-1 gap-4 p-4">
                     <div className="flex flex-col h-full">   

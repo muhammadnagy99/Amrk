@@ -24,12 +24,12 @@ export default function MainHero() {
                 </p>
 
                 <div className="flex flex-row align-baseline w-full mb-[32px] gap-[24px]">
-                    <div className="w-[33.5%]">
+                    <a href="/demo-schedule" className="w-[33.5%]">
                         <PrimaryBtn text={`احجز موعد للتجربة`} />
-                    </div>
-                    <div className="w-[28.6666%]">
+                    </a>
+                    <a href="/" className="w-[28.6666%]">
                         <SecondaryBtn text={`أمـركـ أونلاين`} />
-                    </div>
+                    </a>
                 </div>
 
                 <div className="flex flex-row align-baseline items-center gap-[16px]">

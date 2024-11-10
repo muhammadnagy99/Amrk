@@ -1,8 +1,6 @@
 "use client"
 
 import React, { useState, useEffect, useRef } from 'react';
-import PrimaryLine from "../../assets/primary-line";
-import PlusIcon from '../../assets/plus-icon';
 import MinusIcon from '../../assets/minus-icon';
 import PrimPlusIcon from '../../assets/primary-plus';
 
@@ -76,13 +74,13 @@ export default function HomeSectionIII() {
         }
     ];
     
-    const [isCollapsed, setIsCollapsed] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useState(true);
     const contentRef = useRef<HTMLDivElement | null>(null);
     const sectionRef = useRef<HTMLDivElement | null>(null);
 
     const toggleCollapse = () => {
         setIsCollapsed(!isCollapsed);
-        if (isCollapsed && sectionRef.current) {
+        if (!isCollapsed && sectionRef.current) {
             sectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
@@ -90,9 +88,9 @@ export default function HomeSectionIII() {
     useEffect(() => {
         if (contentRef.current) {
             if (isCollapsed) {
-                contentRef.current.style.maxHeight = '0';
+                contentRef.current.style.maxHeight = contentRef.current.scrollHeight + 'px';
             } else {
-                contentRef.current.style.maxHeight = contentRef.current.scrollHeight + 50 + 'px';
+                contentRef.current.style.maxHeight = 'none';
             }
         }
     }, [isCollapsed]);
@@ -101,7 +99,7 @@ export default function HomeSectionIII() {
         <div 
             className="flex flex-col md:w-[95%] w-special justify-center items-center gap-[80px]" aria-labelledby="Amrk-solution-and-advantages"
         >
-            <header className="flex flex-row w-full justify-center"  ref={sectionRef} >
+            <header className="flex flex-row w-full justify-center" ref={sectionRef}>
                 <h1 className="w-1/2 text-5xl md:text-4xl font-medium leading-normal text-primText">
                     حل شامل لإدارة وتبسيط 
                     <br />
@@ -112,25 +110,12 @@ export default function HomeSectionIII() {
                     نظام أمرك يقدم حلاً متكاملاً لتسهيل إدارة عمليات مطعمك بمرونة وكفاءة. من استلام الطلبات إلى إدارة المخزون والمدفوعات، كل ما تحتاجه في مكان واحد.
                 </p>
             </header>
-            <div className="flex flex-row justify-end w-full">
-                <button 
-                    onClick={toggleCollapse} 
-                    className="flex flex-row items-center pl-[24px] text-PrimBtn gap-4"
-                >
-                    <span className="text-base font-medium">
-                        {isCollapsed ? 'عرض المزيد' : 'عرض أقل'}
-                    </span>
-
-                    {isCollapsed? <PrimPlusIcon /> : <MinusIcon />}
-                    
-                </button>
-            </div>
-             {/* every thing is well */}
+            
             <section 
                 ref={contentRef} 
                 className="flex flex-col w-full transition-all duration-500 ease-in-out overflow-hidden"
             >
-                {articlesData.map((article) => (
+                {articlesData.slice(0, isCollapsed ? 3 : articlesData.length).map((article) => (
                     <React.Fragment key={article.id}>
                         <article className="flex flex-row w-full border-bottom p-8">
                             <div className="flex flex-row items-baseline gap-[24px] w-1/2">
@@ -156,7 +141,19 @@ export default function HomeSectionIII() {
                     </React.Fragment>
                 ))}
             </section>
-            
+            <div className="flex flex-row justify-end w-full">
+                <button 
+                    onClick={toggleCollapse} 
+                    className="flex flex-row items-center pl-[24px] text-PrimBtn gap-4"
+                >
+                    <span className="text-base font-medium">
+                        {isCollapsed ? 'عرض المزيد' : 'عرض أقل'}
+                    </span>
+
+                    {isCollapsed ? <PrimPlusIcon /> : <MinusIcon />}
+                    
+                </button>
+            </div>
         </div>
     );
 }

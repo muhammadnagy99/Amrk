@@ -23,7 +23,7 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
                     <h2 className="text-primText">{title}</h2>
                     <p className="text-base">{description}</p>
 
-                    <div className="flex flex-row items-center content-center text-PrimBtn">
+                    <a href='/' className="flex flex-row items-center content-center text-PrimBtn hover-underline w-[115px]">
                         <span className="text-base font-medium">معرفة المزيد</span>
                         <svg
                             className="m-special"
@@ -38,7 +38,7 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
                                 fill="#B0438A"
                             />
                         </svg>
-                    </div>
+                    </a>
                 </div>
 
                 <figure className={`flex flex-col items-center ${isKitchenScreen ? 'justify-end' : 'justify-center'} h-[65%]`}>

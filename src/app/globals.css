@@ -148,3 +148,70 @@ p{
 .border-bottom{
   border-bottom: 1px solid #23314c33 ;
 }
+
+.nav-border-b{
+  border-bottom: 2px solid #b0438a;
+}
+
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: currentColor; 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+  color: #b0438a;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+}
+
+
+.button {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #B0438A; /* Original button color */
+  color: white;
+  z-index: 1; /* Ensures the button content is above the pseudo-element */
+  transition: color 0.3s ease-in-out;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #B0438A 0%, #DC5AAF 100%);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 0; /* Keeps the pseudo-element behind the text */
+}
+
+.button:hover::before {
+  opacity: 1;
+}
+
+.button > * {
+  position: relative;
+  z-index: 2; /* Ensures the button content is above the pseudo-element */
+}

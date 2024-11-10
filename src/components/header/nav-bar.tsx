@@ -1,5 +1,6 @@
 import Link from "next/link";
 import MegaMenu from "./mega-menu";
+import DropList from "./drop-list";
 
 export default function NavBar() {
     return(
@@ -12,14 +13,8 @@ export default function NavBar() {
                     قطاعات نخدمها
                 </a>
 
-                <a href="" className="flex items-center mx-2 gap-[8px]  text-primText">
-                    الموارد
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1.00012L6 6.00049L1 1.00012ZM6 6.00049L11 1.00012L6 6.00049Z" fill="#23314C"/>
-                    <path d="M1 1.00012L6 6.00049L11 1.00012" stroke="#23314C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                </a>
-
+                <DropList />
+                
                 <a href="/pricing" className="relative flex items-center mx-2 text-primText hover-underline">
                     الباقات
                 </a>

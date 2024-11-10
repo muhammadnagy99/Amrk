@@ -5,7 +5,7 @@ export default function BtnGroup() {
     return(
         <div className="flex items-center justify-end w-btn-group md:w-[40%]">
 
-            <a href="/" className="w-[29.5%] ml-[24px]">
+            <a href="/" className="w-[32%] ml-[24px]">
                 <SecondaryBtn text={`أمرك أونلاين`} />
             </a>
 

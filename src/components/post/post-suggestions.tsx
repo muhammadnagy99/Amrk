@@ -9,7 +9,6 @@ interface BlogGridProps {
         paragraph: string;
         content: string;
         searchKey: string;
-        index: number
     }[];
 }
 

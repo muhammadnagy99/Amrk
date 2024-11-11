@@ -6,7 +6,7 @@ interface PostCardProps {
     heading: string;
     paragraph: string;
     searchKey: string
-    index: number
+    index?: number
 }
 
 export default function PostCard({ imageSrc, heading, paragraph, searchKey, index }: PostCardProps) {

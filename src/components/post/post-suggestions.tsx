@@ -27,7 +27,6 @@ export default function PostSuggestions({ postCardsData }: BlogGridProps) {
                         heading={post.heading}
                         paragraph={post.paragraph}
                         searchKey={post.searchKey}
-                        index={post.id}
                     />
                 ))}
             </div>

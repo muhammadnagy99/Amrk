@@ -24,7 +24,7 @@ const config: Config = {
         primeHeader: "#f8f8f8",
         textInfo: "#23314c80",
         filedList: "#6e63a5",
-        cardBg: "#f7f7f7"
+        cardBg: "#f7f7f7",
       },
     },
   },

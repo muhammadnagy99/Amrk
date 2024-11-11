@@ -41,7 +41,7 @@ export default function HeroDetails() {
           variants={variants}
         >
           نظام
-          <strong className="font-medium">&nbsp; أمـركـ &nbsp;</strong>
+          <strong className="font-bold">&nbsp; أمـركـ &nbsp;</strong>
           الشامل. تبسيط العمليات. زيادة تفاعل العملاء.
         </motion.p>
       </div>

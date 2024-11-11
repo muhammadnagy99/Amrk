@@ -14,7 +14,7 @@ interface BlogGridProps {
 
 export default function BlogGrid({ postCardsData }: BlogGridProps) {
     return (
-        <div className="grid grid-cols-3 gap-[24px] w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-[24px] w-full">
             {postCardsData.map((post) => (
                 <PostCard
                     key={post.id}
@@ -22,6 +22,7 @@ export default function BlogGrid({ postCardsData }: BlogGridProps) {
                     heading={post.heading}
                     paragraph={post.paragraph}
                     searchKey={post.searchKey}
+                    index={post.id}
                 />
             ))}
         </div>

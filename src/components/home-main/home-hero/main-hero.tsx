@@ -1,8 +1,6 @@
 import Image from "next/image";
 import heroImage from '@/public/hero-full-art-1.webp';
 import heroImageMobile from '@/public/hero-full-art-1(1).webp';
-import PrimaryBtn from "../../buttons/primary-button";
-import SecondaryBtn from "../../buttons/secondary-button";
 import HeroDetails from "./hero-details";
 
 export default function MainHero() {

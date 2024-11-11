@@ -4,7 +4,7 @@ import { StoryGridProps } from "@/src/types/interfaces";
 
 export default function StoryGrid({ StoryGridProps }: StoryGridProps) {
     return (
-        <div className="grid grid-cols-2 gap-[24px] w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[24px] w-full">
             {StoryGridProps.map((story) => (
                 <StroryCard
                     key={story.id}

@@ -141,7 +141,9 @@ p{
   border-left: 1px solid #23314c80;
 }
 
-
+.post-card{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
 
 .custom-list-item::marker {
   color: #b0438a;

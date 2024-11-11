@@ -10,7 +10,7 @@ interface BlogHeroProps {
 
 export default function BlogHero({ imageSrc, heading, paragraph, searchKey }: BlogHeroProps) {
     return (
-        <div className="flex flex-row w-full h-[478px] gap-32">
+        <div className="hidden md:flex flex-col md:flex-row w-full md:h-[478px] gap-4 md:gap-32">
             <Image
                 src={imageSrc}
                 width={486}
@@ -19,7 +19,7 @@ export default function BlogHero({ imageSrc, heading, paragraph, searchKey }: Bl
                 placeholder="blur"
                 priority={true}
             />
-            <div className="flex flex-col justify-center h-full gap-[40px]">
+            <div className="flex flex-col justify-center md:h-full gap-[40px]">
                 <div className="flex flex-col gap-[24px]">
                     <h2 className="text-primText text-[36px] leading-normal font-medium">
                         {heading}

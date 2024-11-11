@@ -18,11 +18,6 @@ const rubik = localFont({
       style: "normal",
     },
     {
-      path: "./fonts/Rubik/Rubik-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
       path: "./fonts/Rubik/Rubik-Medium.ttf",
       weight: "500",
       style: "normal",

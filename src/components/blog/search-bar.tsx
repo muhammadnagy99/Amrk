@@ -1,7 +1,7 @@
 export default function SearchBar() {
     return(
         <div className="flex items-center justify-center w-full">
-            <div className="flex flex-row justify-between items-center w-[588px] h-[56px] rounded-xl border border-solid border-border1 p-4">
+            <div className="flex flex-row justify-between items-center w-full md:w-[588px] h-[56px] rounded-xl border border-solid border-border1 p-4">
                 <input 
                     className="w-[95%] outline-none h-full"
                     id="search-bar"

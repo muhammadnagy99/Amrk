@@ -4,6 +4,7 @@ import BlogGrid from "@/src/components/blog/blog-grid";
 import BlogHero from "@/src/components/blog/blog-hero";
 import BlogHeading from "@/src/components/blog/heading";
 import heroImage from '@/public/blog/thumbnails/hero.png';
+import herothumb from '@/public/blog/thumbnails/hero-thumb.png'
 import blogsData from "@/src/data/blogs.json";
 
 export default function BlogPage() {
@@ -12,14 +13,24 @@ export default function BlogPage() {
         imageSrc: heroImage
     };
 
-    const postCardsData = blogsData.slice(1).map((post, index) => ({
-        ...post,
-        imageSrc: require(`@/public/blog/thumbnails/bp${index + 1}.png`) 
-    }));
+    const postCardsData = blogsData.map((post, index) => {
+        if (index === 0) {
+            return {
+                ...post,
+                imageSrc: herothumb
+            };
+        } else {
+            return {
+                ...post,
+                imageSrc: require(`@/public/blog/thumbnails/bp${index}.png`)
+            };
+        }
+    });
+    
 
     return (
         <section className="flex flex-col justify-center items-center w-full" aria-labelledby="Amrk-Business-Types">
-            <div className="flex flex-col w-special md:w-[95%] justify-between gap-[120px] mt-[120px] mb-[80px]">
+            <div className="flex flex-col w-[88%] md:max-w-[1200px] justify-between gap-14 md:gap-[120px] mt-[120px] mb-[80px]">
                 <BlogHeading />
                 <BlogHero 
                     imageSrc={heroPost.imageSrc} 

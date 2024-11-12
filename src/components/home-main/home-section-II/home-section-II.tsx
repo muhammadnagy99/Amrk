@@ -66,7 +66,7 @@ export default function HomeSectionII() {
         </nav>
 
         <div className="relative h-[480px]">
-          <div className="block lg:hidden w-full bg-primText h-[320px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
+          <div className="block lg:hidden bg-primText h-[320px] w-[342px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
             <Image
               className="w-full h-full"
               src={BG2}

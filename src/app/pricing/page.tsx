@@ -40,7 +40,7 @@ export default function PricingPage() {
                 </div>
 
                 {/* Outer div to control the AccordionContainer display */}
-                <div className={`transition-all duration-300 ${isCollapsed ? 'max-h-0 overflow-hidden' : 'max-h-[1000px]'} w-full`}>
+                <div className={`transition-all duration-300 ${isCollapsed ? 'max-h-0 overflow-hidden' : 'max-h-auto'} w-full`}>
                     <AccordionContainer />
                 </div>
             </div>

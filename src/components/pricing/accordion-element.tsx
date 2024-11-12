@@ -24,7 +24,7 @@ const AccordionElement: React.FC<AccordionElementProps> = ({ title = '' , rows }
       <AccordionTitle title={title} onClick={toggleAccordion} isOpen={isOpen} />
       <div
         className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-          isOpen ? 'max-h-screen' : 'max-h-0'
+          isOpen ? 'max-h-[1500px]' : 'max-h-0'
         }`}
       >
         <div className="flex flex-col gap-2 p-2">

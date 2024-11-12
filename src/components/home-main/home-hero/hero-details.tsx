@@ -1,83 +1,35 @@
-"use client";
-
-import { motion } from "framer-motion";
 import PrimaryBtn from "../../buttons/primary-button";
 import SecondaryBtn from "../../buttons/secondary-button";
+import HeroHeading from "./hero-heading";
 
 export default function HeroDetails() {
-  const variants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.2,
-        duration: 0.7,
-        ease: "easeOut",
-      },
-    }),
-  };
-
   return (
-    <div className="flex flex-col justify-center align-baseline text-primText h-1/2 md:h-full">
-      <div className="flex flex-col h-1/2">
-        <motion.h1
-          className="mb-[16px] mt-16"
-          initial="hidden"
-          animate="visible"
-          custom={0}
-          variants={variants}
-        >
-          تكنولوجيا متقدمة
-          <br />
-          لتبسيط عمليات مطعمك
-        </motion.h1>
-
-        <motion.p
-          className="mb-[64px]"
-          initial="hidden"
-          animate="visible"
-          custom={1}
-          variants={variants}
-        >
+    <div className="flex flex-col justify-center align-baseline text-primText gap-[64px] h-full md:h-full mt-[72px] md:mt-0">
+      <div className="flex flex-col gap-4">
+        
+        <HeroHeading />
+        <p className="">
           نظام
           <strong className="font-bold">&nbsp; أمـركـ &nbsp;</strong>
           الشامل. تبسيط العمليات. زيادة تفاعل العملاء.
-        </motion.p>
-      </div>
-
-      <div className="flex flex-col md:flex-row align-baseline w-full mb-[32px] gap-[24px] h-1/2 md:h-auto">
-        <motion.a
-          href="/demo-schedule"
-          className="w-full md:w-[156px]"
-          initial="hidden"
-          animate="visible"
-          custom={2}
-          variants={variants}
-        >
-          <PrimaryBtn text={`احجز موعد للتجربة`} />
-        </motion.a>
-
-        <motion.a href="/" className="w-full md:w-[131px]"
-            initial="hidden"
-            animate="visible"
-            custom={3}
-            variants={variants}
-        >
-          <SecondaryBtn text={`أمـركـ أونلاين`} />
-        </motion.a>
-      </div>
-
-      <motion.div
-        className="hidden md:flex flex-row align-baseline items-center gap-[16px]"
-        initial="hidden"
-        animate="visible"
-        custom={4}
-        variants={variants}
-      >
-        <p className=" text-transparent bg-gradient-to-r from-[#b0438a] to-[#dc87be] font-rubik text-[12px] font-medium text-right bg-clip-text">
-          تسجيل الدخول
         </p>
+      </div>
+
+      <div className="flex flex-col align-baseline w-full mb-[32px] gap-[24px] h-1/2 md:h-auto">
+        <div className="flex flex-col md:flex-row gap-[24px]" >
+          <a href="/demo-schedule" className="w-full md:w-[156px]">
+            <PrimaryBtn text={`احجز موعد للتجربة`} />
+          </a>
+
+          <a href="/" className="w-full md:w-[131px]">
+            <SecondaryBtn text={`أمـركـ أونلاين`} />
+          </a>
+        </div>
+
+        <div className="hidden md:flex flex-row align-baseline items-center gap-[16px]">
+          <p className=" text-transparent bg-gradient-to-r from-[#b0438a] to-[#dc87be] font-rubik text-[12px] font-medium text-right bg-clip-text">
+            تسجيل الدخول
+          </p>
 
           <svg
             width="12"
@@ -104,7 +56,8 @@ export default function HeroDetails() {
               </linearGradient>
             </defs>
           </svg>
-      </motion.div>
+        </div>
+      </div>
     </div>
   );
 }

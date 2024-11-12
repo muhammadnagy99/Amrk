@@ -7,7 +7,7 @@ import SideBarToggle from "./mobile/side-bar-toggle";
 export default function MainHeader() {
     return(
         <header className="flex items-center justify-center h-[64px] md:h-[104px] w-full header-shadow sticky inset-0 bg-white z-[100]">
-            <div className="w-[88%] flex items-center justify-between md:justify-end xl:w-10/12">
+            <div className="w-[88%] flex items-center justify-between lg:justify-end xl:w-10/12">
                 <a href="/" aria-label="Amrk-Logo">
                     <Logo />
                 </a>

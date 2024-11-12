@@ -43,7 +43,7 @@ export default function HomeSectionII() {
 
   return (
     <div
-      className="flex flex-col w-[88%] xl:max-w-[1200px] md:h-[880px] justify-start md:justify-center items-center gap-[56px]"
+      className="flex flex-col w-[88%] xl:max-w-[1200px] lg:h-[880px] justify-start md:justify-center items-center gap-[56px]"
       aria-labelledby="Amrk-Served-Sectors"
     >
       <SectionHeader
@@ -52,12 +52,12 @@ export default function HomeSectionII() {
         color="#23314c"
       />
 
-      <div className="flex flex-col w-full gap-6 md:gap-[80px]">
-        <nav className="section-bar flex flex-row items-center md:w-full overflow-x-auto overflow-y-hidden h-[64px] md:h-[80px] rounded-[80px] p-4 gap-2 md:gap-[16px]">
+      <div className="flex flex-col w-full gap-6 lg:gap-[80px]">
+        <nav className="section-bar flex flex-row items-center lg:w-full overflow-x-auto overflow-y-hidden h-[64px] lg:h-[80px] rounded-[80px] p-4 gap-2 md:gap-[16px]">
           {sectionData.map((section) => (
             <NavButton
               key={section.id}
-              id={`nav-button-${section.id}`} // Make sure this matches the getElementById in the function
+              id={`nav-button-${section.id}`} 
               label={section.button.label}
               isActive={activeId === section.id}
               onClick={() => handleButtonClick(section.id)}
@@ -66,7 +66,7 @@ export default function HomeSectionII() {
         </nav>
 
         <div className="relative h-[480px]">
-          <div className="block md:hidden w-full bg-primText h-[320px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
+          <div className="block lg:hidden w-full bg-primText h-[320px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
             <Image
               className="w-full h-full"
               src={BG2}
@@ -77,7 +77,7 @@ export default function HomeSectionII() {
             />
           </div>
 
-          <div className="hidden md:block w-full bg-primText h-[320px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
+          <div className="hidden lg:block w-full bg-primText h-[320px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
             <Image
               className="w-full h-full"
               src={BG}
@@ -88,7 +88,7 @@ export default function HomeSectionII() {
             />
           </div>
 
-          <div className="h-[530px] md:h-full relative overflow-hidden">
+          <div className="h-[530px] lg:h-full relative overflow-hidden">
             {sectionData.map((section) => (
               <div
                 key={section.id}

@@ -5,7 +5,7 @@ export default function StroryCard({ imageSrc, heading, paragraph, searchKey }: 
     return (
         <a href={`/success-stories/${searchKey}`} className="flex flex-col gap-[24px] h-[395px] post-card rounded-[16px] border border-textInfo">
             <Image
-                className="w-full h-[37%] pt-6 pr-6 pl-6"
+                className="w-full h-[37%] pt-6 pr-6 pl-6 object-cover"
                 src={imageSrc}
                 width={524}
                 height={120}

@@ -6,7 +6,7 @@ import HomeSectionIII from "./home-section-III/home-section-III";
 
 export default function HomeMain() {
     return(
-        <main className="flex flex-col justify-center items-center w-full gap-[80px]">
+        <main className="flex flex-col justify-center items-center w-full gap-10 md:gap-14 lg:gap-[80px]">
             <MainHero />
             <HomeSectionI />
             <HomeSectionII />

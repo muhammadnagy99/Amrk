@@ -18,7 +18,7 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
 
     return (
         <section className="h-full">
-            <article className={`p-4 md:p-8 flex flex-col h-full w-full md:w-[435px] justify-between ${isKitchenScreen ? 'pb-0' : ''}`}>
+            <article className={`p-4 md:p-8 flex flex-col h-full w-full lg:w-[435px] justify-between items-center ${isKitchenScreen ? 'pb-0' : ''}`}>
                 <div className="flex flex-col h-[40%] md:h-[35%] gap-4 md:gap-[24px]">
                     <h2 className="text-primText">{title}</h2>
                     <p className="text-base text-primText w-full">{description}</p>
@@ -41,7 +41,7 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
                     </a>
                 </div>
 
-                <figure className={`flex flex-col items-center ${isKitchenScreen ? 'justify-end' : 'justify-center'} h-[65%]`}>
+                <figure className={`flex flex-col items-center w-[75%] md:w-full ${isKitchenScreen ? 'justify-end' : 'justify-center'} h-[65%]`}>
                     <Image
                         src={imgSrc}
                         width={width}

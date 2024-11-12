@@ -43,7 +43,7 @@ export default function HomeSectionII() {
 
   return (
     <div
-      className="flex flex-col w-[88%] xl:max-w-[1200px] lg:h-[880px] justify-start md:justify-center items-center gap-[56px]"
+      className="flex flex-col w-[88%] xl:max-w-[1200px] h-[700px] md:h-[800px] lg:h-[880px] justify-start md:justify-center items-center gap-[56px]"
       aria-labelledby="Amrk-Served-Sectors"
     >
       <SectionHeader
@@ -66,7 +66,7 @@ export default function HomeSectionII() {
         </nav>
 
         <div className="relative h-[480px]">
-          <div className="block lg:hidden bg-primText h-[320px] w-[342px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
+          <div className="block md:hidden bg-primText h-[320px] w-[342px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
             <Image
               className="w-full h-full"
               src={BG2}
@@ -77,7 +77,7 @@ export default function HomeSectionII() {
             />
           </div>
 
-          <div className="hidden lg:block w-full bg-primText h-[320px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
+          <div className="hidden md:block w-full bg-primText h-[320px] rounded-3xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0">
             <Image
               className="w-full h-full"
               src={BG}

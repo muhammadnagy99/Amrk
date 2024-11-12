@@ -25,16 +25,6 @@ export default function SiteLinks() {
             ]
         },
         {
-            title: "إدارة متطورة للمخزون",
-            items: [
-                { label: "إدارة المشتريات", url: "/purchase-management" },
-                { label: "إدارة المنيو والوصفات", url: "/menu-recipes-management" },
-                { label: "التحكم الشامل في المخزون", url: "/inventory-control" },
-                { label: "إدارة المستودعات، المطابخ المركزية، والمطابخ السحابية", url: "/warehouse-management" },
-                { label: "صلاحيات الموافقات الإلكترونية", url: "/approval-permissions" }
-            ]
-        },
-        {
             title: "تشغيل المطابخ السحابية",
             items: [
                 { label: "علامات متعددة في مطبخك", url: "/multi-brands-kitchen" },
@@ -46,6 +36,16 @@ export default function SiteLinks() {
                 { label: "مراقبة مطبخك", url: "/kitchen-monitoring" },
                 { label: "لوحة تقييم مطبخك", url: "/kitchen-rating" },
                 { label: "ربط تطبيقات التوصيل بمطبخك", url: "/kitchen-delivery-integration" }
+            ]
+        },
+        {
+            title: "إدارة متطورة للمخزون",
+            items: [
+                { label: "إدارة المشتريات", url: "/purchase-management" },
+                { label: "إدارة المنيو والوصفات", url: "/menu-recipes-management" },
+                { label: "التحكم الشامل في المخزون", url: "/inventory-control" },
+                { label: "إدارة المستودعات، المطابخ المركزية، والمطابخ السحابية", url: "/warehouse-management" },
+                { label: "صلاحيات الموافقات الإلكترونية", url: "/approval-permissions" }
             ]
         },
         {
@@ -80,7 +80,7 @@ export default function SiteLinks() {
     
     
     return (
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-[24px] site-links-padding">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[24px] site-links-padding">
             {navLinks.map((nav, index) => (
                 <nav key={index} aria-labelledby={`footer footer-links-${index}`} className="flex flex-col gap-[12px]">
                     <h2 className="text-SecTextV1 text-base">{nav.title}</h2>

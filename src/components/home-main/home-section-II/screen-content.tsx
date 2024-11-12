@@ -11,9 +11,9 @@ interface ScreenContentProps {
 
 const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSrc, imgAlt, priority }) => {
     return (
-            <div className="flex flex-col-reverse md:flex-row absolute z-1 h-full gap-4 md:gap-0 justify-end md:justify-around items-center w-full">
-                <div className="flex h-auto md:h-full justify-center md:items-end md:pb-[42px]">
-                    <section className="screen-card rounded-3xl w-[88%] h-[200px] md:w-[440px] md:h-[255px] bg-white">
+            <div className="flex flex-col-reverse lg:flex-row absolute z-1 h-full gap-4 md:gap-0 justify-end md:justify-around items-center w-full">
+                <div className="flex h-auto lg:h-full justify-center lg:items-end lg:pb-[42px]">
+                    <section className="screen-card rounded-3xl w-[88%] h-[200px] md:h-[230px] lg:w-[440px] lg:h-[255px] bg-white">
                         <article className="flex flex-col p-[24px] gap-[16px]">
                             <h2 className="text-primText">{title}</h2>
                             <p className="text-primText text-ellipsis">{description}</p>
@@ -39,7 +39,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({ title, description, imgSr
                        
                     </section>
                 </div>
-                <figure className="h-[250px] w-[260px] md:h-auto md:w-auto">
+                <figure className="h-[250px] w-[260px] md:w-[295px] lg:h-auto lg:w-auto">
                     <Image 
                         src={imgSrc}
                         width={480}

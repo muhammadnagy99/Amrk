@@ -33,8 +33,8 @@ export default function HomeSectionI() {
             
             <SectionHeader heading={sectionHeading.primary} paragraph={sectionHeading.secondary} color="#fff" />
 
-            <div className="flex flex-col items-center md:flex-row gap-[40px] w-[88%] md:w-[792px] h-full md:h-[544px]">
-                <nav className="flex flex-col gap-[16px] w-full md:w-auto">
+            <div className="flex flex-col items-center md:justify-between md:flex-row gap-[40px] w-[88%] lg:w-[792px] h-full md:h-[544px]">
+                <nav className="flex flex-col gap-[16px] w-full lg:w-auto md:w-[38%]">
                     {sectionData.map((section) => (
                         <NavButton
                             key={section.id}
@@ -48,7 +48,7 @@ export default function HomeSectionI() {
                     ))}
                 </nav>
 
-                <div className="h-[460px] md:h-full rounded-xl bg-SecTextV2 w-full md:w-[435px] relative overflow-hidden">
+                <div className="h-[460px] md:h-full rounded-xl bg-SecTextV2 w-full lg:w-[435px] md:w-[65%] relative overflow-hidden">
                     {sectionData.map((section) => (
                         <div
                             key={section.id}

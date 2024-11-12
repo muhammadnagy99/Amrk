@@ -1,80 +1,15 @@
 "use client"
 
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+
 import MinusIcon from '../../assets/minus-icon';
 import PrimPlusIcon from '../../assets/primary-plus';
+import { articlesData } from './section-data';
 import Heading from './heading';
 
 export default function HomeSectionIII() {
-    const articlesData = [
-        {
-            id: 1,
-            title: "نظام إدارة المطاعم الشامل",
-            content: [
-                { text: "منصة موحدة", highlight: true },
-                { text: " لإدارة العمليات، الطلبات، المخزون، والمزيد. تدمج أمرك وظائف متعددة في ", highlight: false },
-                { text: "نظام سهل الاستخدام", highlight: true },
-                { text: " ، مما يسمح لأصحاب المطاعم بالتركيز على أعمالهم الأساسية دون الحاجة للتعامل مع عدة حلول برمجية.", highlight: false }
-            ]
-        },
-        {
-            id: 2,
-            title: "تيسير العمليات",
-            content: [
-                { text: "دمج جميع أدوات التشغيل", highlight: true },
-                { text: " في منصة أمرك الشاملة لتعزيز الإنتاجية وتقليل التكاليف. كلما كان لديك نقطة اتصال واحدة للمخزون، وخدمات التوصيل يضمن ", highlight: false },
-                { text: "سر العمليات بسلاسة", highlight: true },
-                { text: " وتحسين تجربة العملاء.", highlight: false }
-            ]
-        },
-        {
-            id: 3,
-            title: "حلول قابلة للتخصيص",
-            content: [
-                { text: "قم بتخصيص أدواتك", highlight: true },
-                { text: " لتلبية احتياجات أعمالك، سواء كنت تدير مطعماً، أو مقهى، أو مطبخ سحابي. يوفر أمرك حلولاً على درجة عالية من التكيف مع متطلباتك الخاصة، مما يجعل عملية تشغيل سلسة.", highlight: false }
-            ]
-        },
-        {
-            id: 4,
-            title: "واجهة سهلة الاستخدام",
-            content: [
-                { text: "تصميم بديهي سهل على الموظفين التعامل معه، تقليل الحاجة إلى منحنى التعلم للموظفين الجدد، مما ", highlight: false },
-                { text: "يرفع إنتاجيتهم", highlight: true },
-                { text: " ويسرع أداء العمل.", highlight: false }
-            ]
-        },
-        {
-            id: 5,
-            title: "مناسب للمطابخ السحابية",
-            content: [
-                { text: "مصمم لدعم العمليات متعددة القنوات المباشرة وتوسيع إدارة المطابخ السحابية، يوفر أدوات لتنسيق الطلبات على مستوى عالٍ، في جميع نقاط الطلب. مع سهولة ", highlight: false },
-                { text: "سير العمل", highlight: true },
-                { text: " وزيادة المرونة في البيانات ذات الطلب العالي.", highlight: false }
-            ]
-        },
-        {
-            id: 6,
-            title: "إدارة متقدمة للمخزون",
-            content: [
-                { text: "تتبع المخزون والسيطرة عليه بسهولة عبر أدوات مخصصة للمطاعم والمطابخ السحابية، مما يساعد على ", highlight: false },
-                { text: "الحفاظ على مستويات مخزون مثالية", highlight: true },
-                { text: " وتقليل الهدر وتخفيض تكاليف المواد على مدار العام.", highlight: false }
-            ]
-        },
-        {
-            id: 7,
-            title: "أدوات CRM مخصصة",
-            content: [
-                { text: "بناء علاقات دائمة مع ", highlight: false },
-                { text: "أدوات تفاعل العملاء", highlight: true },
-                { text: " المخصصة. تتيح لك أدوات CRM هذه المرونة بحيث يمكنك ", highlight: false },
-                { text: "بناء خدمات متميزة", highlight: true },
-                { text: " لتعزيز ولاء العملاء، وتعزيز أداء أعمالك عبر استهداف أوسع للعملاء وتكرارهم.", highlight: false }
-            ]
-        }
-    ];
-    
+
     const [isCollapsed, setIsCollapsed] = useState(true);
     const contentRef = useRef<HTMLDivElement | null>(null);
     const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -96,21 +31,34 @@ export default function HomeSectionIII() {
         }
     }, [isCollapsed]);
     
+    const isInView = useInView(contentRef);
+
+    const sectionAnimation = {
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            delay: 1, 
+            duration: 0.5,
+            ease: "easeOut",
+          },
+        },
+      };
+
     return (
         <div 
             className="flex flex-col w-[88%] xl:max-w-[1200px] justify-center items-center gap-8 md:gap-[80px]" aria-labelledby="Amrk-solution-and-advantages"
         >
             <header className="flex flex-col md:flex-row w-full justify-center gap-4" ref={sectionRef}>
                 <Heading />
-
-                <p className="flex font-normal text-base md:text-xl items-baseline w-full md:w-1/2  text-primText">
-                    نظام أمرك يقدم حلاً متكاملاً لتسهيل إدارة عمليات مطعمك بمرونة وكفاءة. من استلام الطلبات إلى إدارة المخزون والمدفوعات، كل ما تحتاجه في مكان واحد.
-                </p>
             </header>
             
-            <section 
+            <motion.section 
                 ref={contentRef} 
                 className="flex flex-col w-full transition-all duration-500 ease-in-out overflow-hidden"
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={sectionAnimation}
             >
                 {articlesData.slice(0, isCollapsed ? 3 : articlesData.length).map((article) => (
                     <React.Fragment key={article.id}>
@@ -137,7 +85,8 @@ export default function HomeSectionIII() {
                         </article>
                     </React.Fragment>
                 ))}
-            </section>
+            </motion.section>
+
             <div className="flex flex-row justify-end w-full">
                 <button 
                     onClick={toggleCollapse} 

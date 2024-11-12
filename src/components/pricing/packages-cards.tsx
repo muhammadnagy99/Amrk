@@ -54,7 +54,7 @@ const packages: Package[] = [
   
 export default function PackagesCards() {
     return(
-        <div className="flex flex-row justify-end gap-4">
+        <div className="flex flex-row xl:justify-end gap-2 xl:gap-4">
             {packages.map((pkg, index) => (
                 <PackageCard
                     key={index}

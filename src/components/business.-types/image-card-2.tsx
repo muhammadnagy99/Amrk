@@ -9,8 +9,8 @@ interface ImageCardProps {
 
 const ImageCardII: React.FC<ImageCardProps> = ({ imgSrc, title, description }) => {
   return (
-    <a className="relative w-[49%] flex flex-col h-[280px] rounded-2xl justify-between p-4 cursor-pointer">
-      <div className="w-full h-[280px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0 rounded-2xl overflow-hidden group">
+    <a className="relative w-full md:w-[49%] flex flex-col md:h-[280px] h-[160px] rounded-2xl justify-between p-4 cursor-pointer">
+      <div className="w-full md:h-[280px] h-[160px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0 rounded-2xl overflow-hidden group">
         <Image 
           className="rounded-2xl transform group-hover:scale-[1.07] transition-transform duration-300 ease-in-out"
           src={imgSrc}

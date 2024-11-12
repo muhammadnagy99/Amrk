@@ -13,9 +13,9 @@ import PromoSection from "@/src/components/promotion-section/promotion-section";
 export default function CertificationsPage() {
     return(
         <section className="flex flex-col justify-center items-center w-full" aria-labelledby="Amrk-Business-Types">
-            <div className="flex flex-col w-special md:w-[95%] justify-between gap-[120px] mt-[120px] mb-[80px]">
+            <div className="flex flex-col w-[88%] xl:max-w-[1200px] justify-between items-center gap-10 mt-10 mb-10 md:gap-[120px] md:mt-[120px] md:mb-[80px]">
                 <CertificatoinHeading />
-                <div className="flex flex-col w-special md:w-[95%] justify-between gap-[80px]">
+                <div className="flex flex-col w-[88%] xl:max-w-[1200px] justify-between gap-8 md:gap-[80px]">
                     <SectionI />
                     <SectionII />
                     <SectionIII />

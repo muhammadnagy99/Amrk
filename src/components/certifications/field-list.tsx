@@ -14,8 +14,8 @@ interface FieldListProps {
 
 export default function FieldList({ legendText, images }: FieldListProps) {
     return (
-        <div className="flex flex-row justify-around items-center w-full h-[120px] relative">
-            <fieldset className="absolute h-[140px] w-full border border-solid border-border1 text-center rounded-2xl">
+        <div className="flex flex-row justify-center md:justify-around items-center w-full h-[120px] md:h-[130px] relative p-10 gap-4">
+            <fieldset className="absolute h-full w-full border border-solid border-border1 text-center rounded-2xl">
                 <legend className="inline-block text-base font-normal text-filedList m-1">
                     &nbsp;
                     {legendText}
@@ -23,7 +23,7 @@ export default function FieldList({ legendText, images }: FieldListProps) {
                 </legend>
             </fieldset>
             {images.map((image, index) => (
-                <div key={index} className="h-full flex items-center">
+                <div key={index} className="h-full flex justify-between items-center">
                     <Image
                         src={image.src}
                         width={image.width || 262} // Default width

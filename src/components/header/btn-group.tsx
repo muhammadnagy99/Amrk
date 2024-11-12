@@ -3,13 +3,13 @@ import SecondaryBtn from "../buttons/secondary-button";
 
 export default function BtnGroup() {
     return(
-        <div className="hidden md:flex items-center justify-end w-btn-group md:w-[40%]">
+        <div className="hidden md:flex items-center justify-end gap-6 w-btn-group md:w-[40%]">
 
-            <a href="/" className="w-[32%] ml-[24px]">
+            <a href="/" className="w-[131px]">
                 <SecondaryBtn text={`أمرك أونلاين`} />
             </a>
 
-            <a href="/demo-schedule" className="w-[36.5%] ml-[24px]">
+            <a href="/demo-schedule" className="w-[156px]">
                 <PrimaryBtn text={`احجز موعد للتجربة`} />
             </a>
 

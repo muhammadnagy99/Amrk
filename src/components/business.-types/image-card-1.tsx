@@ -9,10 +9,10 @@ interface ImageCardProps {
 
 const ImageCardI: React.FC<ImageCardProps> = ({ imgSrc, title, description }) => {
   return (
-    <a className="relative w-[32%] flex flex-col xl:h-[280px] h-[220px] rounded-2xl justify-between p-4 cursor-pointer">
-      <div className="w-full xl:h-[280px] h-[220px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0 rounded-2xl overflow-hidden group">
+    <a className="relative w-full md:w-[32%] flex flex-col xl:h-[280px] h-[160px] rounded-2xl justify-between p-4 cursor-pointer">
+      <div className="w-full xl:h-[280px] h-[160px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0 rounded-2xl overflow-hidden group">
         <Image 
-          className="rounded-2xl transform group-hover:scale-[1.07] transition-transform duration-300 ease-in-out"
+          className="object-cover rounded-2xl transform group-hover:scale-[1.07] transition-transform duration-300 ease-in-out"
           src={imgSrc}
           fill
           alt={title}
@@ -23,7 +23,7 @@ const ImageCardI: React.FC<ImageCardProps> = ({ imgSrc, title, description }) =>
 
 
       <article className="flex flex-col gap-2 z-10">
-        <h1 className="text-white text-base font-light">
+        <h1 className="text-white text-sm md:text-base font-light">
           {title}
         </h1>
         <p className="text-white text-base font-medium">

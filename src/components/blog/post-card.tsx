@@ -22,7 +22,7 @@ export default function PostCard({ imageSrc, heading, paragraph, searchKey, inde
                 priority={false}
                 className="w-full md:h-[240px]"
             />
-            <div className="flex flex-col w-full gap-3 md:justify-between md:h-[180px] pr-4 pl-4 pb-2">
+            <div className="flex flex-col w-full gap-3 md:justify-between md:h-[180px] pr-4 pl-4 pb-4">
                 <div className="flex w-full flex-col gap-2 md:gap-[16px]">
                     <h3 className="text-primText w-full text-[20px] leading-normal font-medium">
                         {heading}

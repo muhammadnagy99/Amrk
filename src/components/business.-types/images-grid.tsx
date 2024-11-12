@@ -65,7 +65,7 @@ const R3imageCards = [
 export default function ImagesGrid() {
     return(
         <div className="flex flex-col w-full gap-[24px]">
-            <div className="flex flex-row w-full justify-between">
+            <div className="flex flex-col md:flex-row w-full justify-between gap-6">
                 {R1imageCards.map((card, index) => (
                     <ImageCardI 
                     key={index} 
@@ -76,7 +76,7 @@ export default function ImagesGrid() {
                 ))}
             </div>
 
-            <div className="flex flex-row w-full justify-between">
+            <div className="flex flex-col md:flex-row w-full justify-between gap-6">
                 {R2imageCards.map((card, index) => (
                     <ImageCardII 
                     key={index} 
@@ -87,7 +87,7 @@ export default function ImagesGrid() {
                 ))}
             </div>
 
-            <div className="flex flex-row w-full justify-between">
+            <div className="flex flex-col md:flex-row w-full justify-between gap-6">
                 {R3imageCards.map((card, index) => (
                     <ImageCardI 
                     key={index} 

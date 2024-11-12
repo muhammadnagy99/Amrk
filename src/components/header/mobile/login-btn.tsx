@@ -2,7 +2,7 @@ export default function LoginBtn() {
     return(
         <div
         className="flex w-full flex-row justify-center items-center gap-[16px]"
-      >
+        >
         <p className=" text-transparent bg-gradient-to-r from-[#b0438a] to-[#dc87be] font-rubik text-[14px] font-medium text-right bg-clip-text">
           تسجيل الدخول
         </p>

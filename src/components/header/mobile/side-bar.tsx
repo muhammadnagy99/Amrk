@@ -84,7 +84,7 @@ export default function Sidebar() {
     };
 
     return (
-        <div className="fixed top-[64px] flex justify-center inset-y-104 left-0 z-40 w-full h-full bg-white shadow-lg transition-transform transform -translate-x-full peer-checked:translate-x-0 duration-300">
+        <div className="fixed top-[64px] flex justify-center inset-y-104 left-0 z-40 w-full h-[1000px] overflow-scroll bg-white shadow-lg transition-transform transform -translate-x-full peer-checked:translate-x-0 duration-300">
             <div className="w-full h-full p-6 flex flex-col gap-4">
                 <SidebarMenu
                     title={amrkSolutinosNavs.title}

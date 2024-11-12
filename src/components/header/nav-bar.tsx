@@ -5,7 +5,7 @@ import DropList from "./drop-list";
 export default function NavBar() {
     return(
         <div className="flex justify-center w-7/12">
-            <nav className="hidden md:flex w-special-nav justify-between">
+            <nav className="hidden md:flex w-special-nav justify-around">
                 <MegaMenu />
 
 

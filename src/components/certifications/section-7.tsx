@@ -57,17 +57,17 @@ const fieldLists = [
 
 export default function SectionVII() {
     return (
-        <div className="flex flex-col w-full gap-[70px]"> 
-            <article className="flex flex-col w-full items-center justify-center">
-                <h2 className="text-[32px] font-semibold text-primText">
+        <div className="flex flex-col w-full gap-8 md:gap-[70px]"> 
+            <article className="flex flex-col w-full items-center justify-center gap-2">
+                <h2 className="text-xl md:text-[32px] text-center font-semibold text-primText">
                     بنية تقنية موثوقة لتجربة سلسة                
                 </h2>
-                <p className="text-primText text-base font-normal">
+                <p className="text-primText text-center text-sm md:text-base font-normal">
                     تعتمد حلولنا على أحدث التقنيات لضمان أداء عالي وأمان متقدم
                 </p>
             </article>
 
-            <div className="w-full flex flex-col gap-12">
+            <div className="w-full flex flex-col gap-4 md:gap-12">
                 <div className="flex flex-row w-full mt-[20px]">
                     <FieldList
                         legendText={fieldLists[0].legendText}
@@ -75,14 +75,14 @@ export default function SectionVII() {
                     />
                 </div>
 
-                <div className="flex flex-row w-full justify-between">
-                    <div className="w-[49%] flex justify-center items-center">
+                <div className="flex flex-col md:flex-row w-full justify-between gap-4">
+                    <div className="w-full md:w-[49%] flex justify-center items-center">
                         <FieldList
                             legendText={fieldLists[1].legendText}
                             images={fieldLists[1].images}
                         />
                     </div>
-                    <div className="w-[49%] flex justify-between items-center">
+                    <div className="w-full md:w-[49%] flex justify-between items-center">
                         <div className="w-[49%] flex justify-center items-center">
                             <FieldList
                                 legendText={fieldLists[2].legendText}
@@ -99,14 +99,14 @@ export default function SectionVII() {
                 </div>
 
 
-                <div className="flex flex-row w-full justify-between">
-                    <div className="w-[49%] flex justify-center items-center">
+                <div className="flex flex-col md:flex-row w-full justify-between">
+                    <div className="w-full md:w-[49%] flex justify-center items-center">
                         <FieldList
                             legendText={fieldLists[4].legendText}
                             images={fieldLists[4].images}
                         />
                     </div>
-                    <div className="w-[49%] flex justify-center items-center">
+                    <div className="w-full md:w-[49%] flex justify-center items-center">
                         <FieldList
                             legendText={fieldLists[5].legendText}
                             images={fieldLists[5].images}

@@ -39,7 +39,7 @@ export default async function PostPage({ params }: PageProps) {
 
     return (
         <section className="flex flex-col justify-center items-center w-full" aria-labelledby="Amrk-Business-Types">
-            <div className="flex flex-col items-center w-special md:w-[95%] justify-between gap-[68px] mt-[120px] mb-[80px]">
+            <div className="flex flex-col items-center w-[88%] md:max-w-[1200px] justify-between gap-10 md:gap-[68px] mt-[40px] mb-[40px] md:mt-[120px] md:mb-[80px]">
                 <PostHeading heading={currentPost.heading} />
                 <PostCover src={postCoverImage} />
                 <PostBody content={currentPost.content} />

@@ -15,10 +15,10 @@ interface BlogGridProps {
 export default function PostSuggestions({ postCardsData }: BlogGridProps) {
     return(
         <div className="flex flex-col w-full gap-[24px]">
-            <h2 className="flex xl:text-[32px] text-4xl font-bold text-primText leading-[1.5]">
+            <h2 className="flex text-2xl xl:text-[32px] md:text-4xl font-bold text-primText leading-[1.5]">
                 المزيد من المقالات  
             </h2>
-            <div className="grid grid-cols-3 gap-[24px] w-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] w-full">
                 {postCardsData.map((post) => (
                     <PostCard
                         key={post.id}

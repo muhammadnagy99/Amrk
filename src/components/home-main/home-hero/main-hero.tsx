@@ -5,7 +5,7 @@ import HeroDetails from "./hero-details";
 
 export default function MainHero() {
     return(
-        <div className="flex flex-col md:flex-row xl:max-w-[1200px] w-[88%] justify-between h-full md:h-[500px] lg:h-[600px]">
+        <div className="flex flex-col md:flex-row xl:max-w-[1200px] w-[88%] justify-between h-full md:h-[500px] xl:h-[750px] lg:h-[600px]">
             <HeroDetails />
             <div className="hidden md:block">
                 <Image

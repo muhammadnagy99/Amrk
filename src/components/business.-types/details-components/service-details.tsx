@@ -6,7 +6,7 @@ export default function ServicesDetails({heading, listItems}: ServiceDetailsProp
     return(
         <div className="flex flex-col md:flex-row gap-8">
             <article className="flex flex-col h-auto w-full md:w-1/3 gap-4 items-start justify-start">
-                <h3 className="text-xl md:text-[32px] font-bold text-primText w-full md:w-[70%]">
+                <h3 className="text-xl md:text-[32px] font-bold text-primText w-full md:w-[70%] leading-6 md:leading-10">
                     {heading.primary}
                 </h3>
                 <p className="text-sm md:text-xl font-normal text-primText w-full md:w-[70%]">

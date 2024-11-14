@@ -16,7 +16,7 @@ export const heroContent = {
   };
   
   export const heroContent_en = {
-    headingText: "Cutting-Edge Tech to\n Simplify Your Restaurant",
+    headingText: "Cutting-Edge Tech to\nSimplify Your Restaurant",
     heroText: [
       "Complete System,",
       " Simple Ops, ",

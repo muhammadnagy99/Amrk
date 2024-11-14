@@ -33,8 +33,10 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
           <div className="flex flex-row items-center justify-end pl-[24px] pr-[24px] text-PrimBtn">
             <a
               href={url}
-              className="flex flex-row items-center justify-between content-center text-PrimBtn hover-underline w-[116px]"
+              aria-label={title}
+              className="flex flex-row items-center justify-between content-center text-PrimBtn hover-underline w-[116px] text-[0px]"
             >
+                {title}
               <span className="text-base font-medium">{more}</span>
               <svg
                 className={`${dir == 0 ? "m-special rotate-0" : "rotate-180"}`}

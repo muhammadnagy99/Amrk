@@ -1,4 +1,4 @@
-import RACHero from '@/public/business-types/restaurants-cafes/rac-hero.png'
+import RACHero from '@/public/business-types/types/rac-hero.png'
 import { BusinessContentType } from "@/src/types/interfaces"
 
 export const contentData: BusinessContentType[] = [
@@ -117,6 +117,128 @@ export const contentData: BusinessContentType[] = [
                 {
                     heading: "ربط تطبيقات التوصيل",
                     paragraph: "تشمل ربط المنصة مع تطبيقات توصيل الطعام لتحسين الكفاءة والسرعة في إدارة الطلبات."
+                }
+            ]
+        }
+    }
+];
+
+export const contentData_en: BusinessContentType[] = [
+    {
+        type: "ServiceHero",
+        props: {
+            heading: "Restaurants & Cafés",
+            description: "Run Your Restaurant Efficiently, Boost Satisfaction",
+            btnText: "Book a Demo",
+            image: {
+                src: RACHero,
+                alt: "Amrk Restaurant Systems"
+            }
+        }
+    },
+    {
+        type: "BulletPoints",
+        props: {
+            heading: {
+                text: "Optimize all aspects of your operations from inventory to customer engagement with Amrk’s complete restaurant management platform.",
+                highlited: "complete restaurant management"
+            },
+            listItems: [
+                "Streamline order processing to reduce wait times and enhance customer satisfaction.",
+                "Maintain precise inventory control to minimize waste and manage costs effectively.",
+                "Facilitate quick, secure payments with integrated POS systems for smoother transactions.",
+                "Track sales trends and menu performance to adjust offerings based on customer preferences.",
+                "Automate loyalty programs to encourage repeat visits and build customer loyalty."
+            ]
+        }
+    },
+    {
+        type: "ServiceDetails",
+        props: {
+            heading: {
+                primary: "Features tailored to meet your business needs",
+                secondary: "Discover features designed to support your business type and achieve your goals"
+            },
+            listItems: [
+                {
+                    heading: "POS",
+                    paragraph: "Includes mobile, tablet, and web POS to simplify sales management."
+                },
+                {
+                    heading: "Payment Terminal",
+                    paragraph: "Integrated POS with payment devices for faster, smoother transactions."
+                },
+                {
+                    heading: "Menu Management",
+                    paragraph: "Manage multiple menus, customize items, add new ones, and set special offers."
+                },
+                {
+                    heading: "Table Management",
+                    paragraph: "Manage tables, waiter app, reservations, customer waitlist, QR order & payment with bill-splitting, and table analytics."
+                },
+                {
+                    heading: "Online Service",
+                    paragraph: "Includes QR order & payment, pickup and social media orders, delivery, geolocation zones, e-payments, loyalty programs, and digital menus."
+                },
+                {
+                    heading: "Advanced Inventory",
+                    paragraph: "Includes purchasing and suppliers, inventory monitoring, management of central and cloud kitchens, and approval processes."
+                },
+                {
+                    heading: "Loyalty Programs",
+                    paragraph: "Customer loyalty programs to encourage repeat business and build long-term relationships."
+                },
+                {
+                    heading: "Gift Cards",
+                    paragraph: "Offers flexible gifting, boosting new customer attraction and loyalty."
+                },
+                {
+                    heading: "Kitchen Display",
+                    paragraph: "Order organization ensures preparation accuracy and service speed."
+                },
+                {
+                    heading: "Serving Screen",
+                    paragraph: "Facilitates communication among team members by displaying orders and streamlining the service process."
+                },
+                {
+                    heading: "Web Cashier",
+                    paragraph: "Includes cashier, kitchen, and service screens to efficiently manage orders and enhance customer experience."
+                },
+                {
+                    heading: "Employees Timecard",
+                    paragraph: "Includes employee time tracking and shift scheduling for improved labor efficiency."
+                },
+                {
+                    heading: "Walkie-Talkie",
+                    paragraph: "Instant communication among staff for effective coordination and improved workflow."
+                },
+                {
+                    heading: "Offline Mode",
+                    paragraph: "Works offline for flexibility in managing operations."
+                },
+                {
+                    heading: "ZATCA Receipts",
+                    paragraph: "Receipts ensure compliance with ZATCA regulations."
+                },
+                {
+                    heading: "SMS Notifications",
+                    paragraph: "Notifications include order updates, readiness alerts, and digital receipts via SMS."
+                },
+                {
+                    heading: "CRM & Campaigns",
+                    paragraph: "Analyzes customer preferences and behaviors, plus targeted marketing campaigns to boost engagement and loyalty."
+                },
+                {
+                    heading: "Dashboard",
+                    paragraph: "Dashboards and reports for effective data analysis and informed decision-making."
+                },
+                {
+                    heading: "Delivery Aggregators",
+                    paragraph: "Integrates with food delivery platforms for streamlined order management and expanded customer reach."
+                },
+                {
+                    heading: "API Access",
+                    paragraph: "Offers API access for integration and extending system functionality."
                 }
             ]
         }

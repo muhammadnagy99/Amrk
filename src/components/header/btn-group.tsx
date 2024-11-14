@@ -30,7 +30,7 @@ export default function BtnGroup({ data }: BtnGroupProps) {
                 </a>
             ))}
              {icon && (
-                <a href={icon.url} className="w-[5%]">
+                <a href={icon.url} className="w-[5%]" aria-label="Amrk Home Page">
                     {icon.source}
                 </a>
             )}

@@ -22,7 +22,7 @@ export default function BusinessBulletPoints({ heading, listItems }: BusinessBul
                     {listItems.map((item, index) => (
                         <li key={index} className="flex flex-row items-center gap-4">
                             <RightIcon2 />
-                            <p className="text-xs md:text-xl font-normal text-primText">
+                            <p className="w-4/5 text-xs md:text-xl font-normal text-primText">
                                 {item}
                             </p>
                         </li>

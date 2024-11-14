@@ -26,7 +26,8 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
                     <h2 className="text-primText">{title}</h2>
                     <p className="text-base text-primText w-full">{description}</p>
 
-                    <a href={url} className="flex flex-row items-center justify-between content-center text-PrimBtn hover-underline w-[118px]">
+                    <a href={url} aria-label={title} className="flex flex-row items-center justify-between content-center text-PrimBtn hover-underline w-[118px] text-[0px]">
+                        {title}
                         <span className="text-base font-medium">{more}</span>
                         <svg
                             className={`${dir == 0 ? 'm-special rotate-0' : 'rotate-180'}`}

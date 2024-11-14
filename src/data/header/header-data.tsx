@@ -96,14 +96,14 @@ export const megaMenuData = {
       heading: "إدارة متطورة للمخزون",
       icon: <Icon3 />,
       links: [
-        { text: "إدارة المشتريات والموارد", url: "/purchasing-management" },
-        { text: "إدارة المينو والوصفات", url: "/menu-recipe-management" },
-        { text: "التحكم الشامل في المخزون", url: "/inventory-control" },
+        { text: "إدارة المشتريات والموارد", url: "/procurement-management" },
+        { text: "إدارة المينو والوصفات", url: "/menu-recipes-management" },
+        { text: "التحكم الشامل في المخزون", url: "/stock-control" },
         {
           text: "إدارة المستودعات، المطابخ المركزية، والمطابخ السحابية",
-          url: "/warehouse-central-kitchens",
+          url: "/warehouse-management",
         },
-        { text: "صلاحيات الموافقات الإلكترونية", url: "/electronic-approvals" },
+        { text: "صلاحيات الموافقات الإلكترونية", url: "/approval-process" },
       ],
     },
     {
@@ -201,16 +201,16 @@ export const sidebarData = {
       {
         title: "إدارة متطورة للمخزون",
         items: [
-          { label: "إدارة المشتريات", url: "/purchase-management" },
+          { label: "إدارة المشتريات", url: "/procurement-management" },
           { label: "إدارة المنيو والوصفات", url: "/menu-recipes-management" },
-          { label: "التحكم الشامل في المخزون", url: "/inventory-control" },
+          { label: "التحكم الشامل في المخزون", url: "/stock-control" },
           {
             label: "إدارة المستودعات، المطابخ المركزية، والمطابخ السحابية",
             url: "/warehouse-management",
           },
           {
             label: "صلاحيات الموافقات الإلكترونية",
-            url: "/approval-permissions",
+            url: "/approval-process",
           },
         ],
       },
@@ -343,14 +343,14 @@ export const megaMenuData_en = {
       heading: "Inventory Management",
       icon: <Icon3 />,
       links: [
-        { text: "Procurement Management", url: "/purchasing-management" },
-        { text: "Menu and Recipes", url: "/menu-recipe-management" },
-        { text: "Stock Control", url: "/inventory-control" },
+        { text: "Procurement Management", url: "/procurement-management" },
+        { text: "Menu and Recipes", url: "/menu-recipes-management" },
+        { text: "Stock Control", url: "/stock-control" },
         {
           text: "Warehouse, Central Kitchen, and Cloud Kitchen",
-          url: "/warehouse-central-kitchens",
+          url: "/warehouse-management",
         },
-        { text: "Approval Process", url: "/electronic-approvals" },
+        { text: "Approval Process", url: "/approval-process" },
       ],
     },
     {
@@ -448,16 +448,16 @@ export const sidebarData_en = {
       {
         title: "Inventory Management",
         items: [
-          { label: "Procurement Management", url: "/purchase-management" },
+          { label: "Procurement Management", url: "/procurement-management" },
           { label: "Menu and Recipes", url: "/menu-recipes-management" },
-          { label: "Stock Control", url: "/inventory-control" },
+          { label: "Stock Control", url: "/stock-control" },
           {
             label: "Warehouse, Central Kitchen, and Cloud Kitchen",
             url: "/warehouse-management",
           },
           {
             label: "Approval Process",
-            url: "/approval-permissions",
+            url: "/approval-process",
           },
         ],
       },

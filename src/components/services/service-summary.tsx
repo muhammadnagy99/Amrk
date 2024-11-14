@@ -24,7 +24,7 @@ export default function ServiceSummary({ imageSrc, heading, listItems }: Service
                     {listItems.map((item, index) => (
                         <li key={index} className="flex flex-row items-center gap-4">
                             <RightIcon2 />
-                            <p className="text-xs md:text-xl font-normal text-white">
+                            <p className="w-4/5 text-xs md:text-xl font-normal text-white">
                                 {item}
                             </p>
                         </li>

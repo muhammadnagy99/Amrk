@@ -82,14 +82,14 @@ export const footerNavLinks = [
   {
     title: "إدارة متطورة للمخزون",
     items: [
-      { label: "إدارة المشتريات", url: "/purchase-management" },
+      { label: "إدارة المشتريات", url: "/procurement-management" },
       { label: "إدارة المنيو والوصفات", url: "/menu-recipes-management" },
-      { label: "التحكم الشامل في المخزون", url: "/inventory-control" },
+      { label: "التحكم الشامل في المخزون", url: "/stock-control" },
       {
         label: "إدارة المستودعات، المطابخ المركزية، والمطابخ السحابية",
         url: "/warehouse-management",
       },
-      { label: "صلاحيات الموافقات الإلكترونية", url: "/approval-permissions" },
+      { label: "صلاحيات الموافقات الإلكترونية", url: "/approval-process" },
     ],
   },
   {
@@ -231,14 +231,14 @@ export const footerNavLinks_en = [
     {
       title: "Inventory Management",
       items: [
-        { label: "Procurement Management", url: "/purchase-management" },
+        { label: "Procurement Management", url: "/procurement-management" },
         { label: "Menu and Recipes", url: "/menu-recipes-management" },
-        { label: "Stock Control", url: "/inventory-control" },
+        { label: "Stock Control", url: "/stock-control" },
         {
           label: "Warehouse, Central Kitchen, and Cloud Kitchen",
           url: "/warehouse-management",
         },
-        { label: "Approval Process", url: "/approval-permissions" },
+        { label: "Approval Process", url: "/approval-process" },
       ],
     },
     {

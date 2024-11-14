@@ -10,13 +10,13 @@ export default function BulletPoints({ heading, listItems }: BulletPointsProps) 
                     </h2>
                 </article>
             </div>
-            <ul className="flex flex-col gap-[24px] w-full md:w-[50%]">
+            <ul className="flex flex-col gap-4 h-full w-full md:w-[50%]">
                 {listItems.map((item, index) => (
-                    <li key={index} className="flex flex-row gap-[16px] items-center">
-                        <p className="w-12 md:w-16">
+                    <li key={index} className="flex flex-row justify-start gap-3 items-center h-12 md:h-16">
+                        <p className="flex justify-start w-1/5 h-full">
                             {item.icon}
                         </p>
-                        <p className="flex justify-start items-center h-full text-sm md:text-2xl font-normal text-primText">
+                        <p className="flex justify-start items-center h-full text-sm md:text-2xl w-4/5 font-normal text-primText">
                             {item.text}
                         </p>
                     </li>

@@ -1,9 +1,17 @@
-import Image from "next/image";
-import { ServiceHeroProps } from "@/src/types/interfaces";
+import Image, {StaticImageData} from "next/image";
 import HeroDetails from "./hero-details";
 
+export interface HeroProps {
+    heading: string;
+    description: string;
+    btnText: string
+    image: {
+      src: StaticImageData;
+      alt: string;
+    };
+  }
 
-export default function ServiceHero({ heading, description, btnText, image }: ServiceHeroProps) {
+export default function ServiceHero({ heading, description, btnText, image }: HeroProps) {
     return (
         <div className="flex flex-col md:flex-row gap-10" aria-labelledby="Service-Hero-Section">
 

@@ -3,7 +3,7 @@
 import BlogGrid from "@/src/components/blog/blog-grid";
 import BlogHero from "@/src/components/blog/blog-hero";
 import BlogHeading from "@/src/components/blog/heading";
-import heroImage from '@/src/public/blog/thumbnails/hero.png';
+import heroImage from "@/public/blog/thumbnails/hero.png"
 import herothumb from '@/public/blog/thumbnails/hero-thumb.png'
 import { blogHeadingContent } from "@/src/data/blog/blog-data";
 import blogsData from "@/src/data/blogs.json";

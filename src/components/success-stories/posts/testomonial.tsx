@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Bg from "@/public/bg/testomonial.png";
+import Bg from "@/public/bg/testomonial.png"
 
 interface props {
   qoute: string;

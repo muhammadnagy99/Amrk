@@ -18,12 +18,12 @@ export const sections = [
         heading: "حلول أمرك أون لاين",
         icon: <Icon2 />, 
         links: [
-            { text: "توصيل الطلبات", url: "/order-delivery" },
+            { text: "توصيل الطلبات", url: "/home-delivery" },
             { text: "طلبات الاستلام", url: "/pickup-orders" },
-            { text: "الطلب والدفع عبر (QR)", url: "/qr-order-payment" },
-            { text: "الطلب عبر وسائل التواصل الاجتماعي", url: "/social-media-orders" },
+            { text: "الطلب والدفع عبر (QR)", url: "/qr-ordering" },
+            { text: "الطلب عبر وسائل التواصل الاجتماعي", url: "/social-media-ordering" },
             { text: "برامج الولاء", url: "/loyalty-programs" },
-            { text: "حجز الطاولات", url: "/table-reservation" }
+            { text: "حجز الطاولات", url: "/table-reservations" }
         ]
     },
     {

@@ -5,15 +5,14 @@ base_directory = "./"
 
 # List of .tsx filenames
 tsx_files = [
-    "crm-marketing.tsx",
-    "delivery-integration.tsx",
-    "icons.tsx",
-    "integrated-walkie-talkie.tsx",
-    "kitchen-display.tsx",
-    "offline-mode.tsx",
-    "pos.tsx",
+    "home-delivery.tsx",
+    "qr-ordering.tsx",
+    "pickup-orders.tsx",
+    "social-media-ordering.tsx",
+    "home-delivery.tsx",
+    "loyalty-programs.tsx",
     "service-display.tsx",
-    "table-management.tsx"
+    "table-reservations.tsx"
 ]
 
 # Code template for each page.tsx file
@@ -24,7 +23,7 @@ import ServiceSummary from "@/src/components/services/service-summary";
 import {{ Locale }} from "@/src/i18n-config";
 
 import {{ promoContent, promoContent_en }} from "@/src/data/global/promo-text";
-import {{ contentData, contentData_en }} from "@/src/data/RMS/{component_name}";
+import {{ contentData, contentData_en }} from "@/src/data/amrk-online/{component_name}";
 
 export default async function {component_name_capitalized}Page(props: {{
     params: Promise<{{ lang: Locale }}>;

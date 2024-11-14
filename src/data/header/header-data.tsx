@@ -81,15 +81,15 @@ export const megaMenuData = {
       heading: "حلول أمرك أون لاين",
       icon: <Icon2 />,
       links: [
-        { text: "توصيل الطلبات", url: "/order-delivery" },
+        { text: "توصيل الطلبات", url: "/home-delivery" },
         { text: "طلبات الاستلام", url: "/pickup-orders" },
-        { text: "الطلب والدفع عبر (QR)", url: "/qr-order-payment" },
+        { text: "الطلب والدفع عبر (QR)", url: "/qr-ordering" },
         {
           text: "الطلب عبر وسائل التواصل الاجتماعي",
-          url: "/social-media-orders",
+          url: "/social-media-ordering",
         },
         { text: "برامج الولاء", url: "/loyalty-programs" },
-        { text: "حجز الطاولات", url: "/table-reservation" },
+        { text: "حجز الطاولات", url: "/table-reservations" },
       ],
     },
     {
@@ -331,12 +331,12 @@ export const megaMenuData_en = {
       heading: "Online Service",
       icon: <Icon2 />,
       links: [
-        { text: "QR Order & Pay", url: "/qr-order-payment" },
+        { text: "QR Order & Pay", url: "/qr-ordering" },
         { text: "Pickup Orders", url: "/pickup-orders" },
-        { text: "Social Media Ordering", url: "/social-media-orders" },
-        { text: "Delivery", url: "/order-delivery" },
+        { text: "Social Media Ordering", url: "/social-media-ordering" },
+        { text: "Delivery", url: "/home-delivery" },
         { text: "Loyalty Programs", url: "/loyalty-programs" },
-        { text: "Table Reservations", url: "/table-reservation" },
+        { text: "Table Reservations", url: "/table-reservations" },
       ],
     },
     {

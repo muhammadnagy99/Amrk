@@ -8,9 +8,9 @@ import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
 import {
   contentData,
   contentData_en,
-} from "@/src/data/RMS/service-display";
+} from "@/src/data/amrk-online/home-delivery";
 
-export default async function ServiceDisplayPage(props: {
+export default async function HomeDeliveryPage(props: {
   params: Promise<{ lang: Locale }>;
 }) {
   const params = await props.params;

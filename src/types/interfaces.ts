@@ -27,6 +27,7 @@ export interface StoryCardProps {
 export interface ServiceHeroProps {
   heading: string;
   description: string;
+  btnText?: string
   image: {
     src: StaticImageData;
     alt: string;

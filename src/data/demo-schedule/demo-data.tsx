@@ -66,6 +66,6 @@ export const demoScheduleData_en: DemoData = {
       { value: "5", label: "5" },
       { value: "more", label: "More" },
     ],
-    lang: "ar",
+    lang: "en",
   },
 };

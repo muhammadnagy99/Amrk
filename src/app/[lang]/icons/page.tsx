@@ -5,9 +5,9 @@ import ServiceSummary from "@/src/components/services/service-summary";
 import { Locale } from "@/src/i18n-config";
 
 import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
-import { contentData, contentData_en } from "@/src/data/RMS/pos";
+import { contentData, contentData_en } from "@/src/data/RMS/icons";
 
-export default async function PosPage(props: {
+export default async function IconsPage(props: {
     params: Promise<{ lang: Locale }>;
 }) {
     const params = await props.params;
@@ -30,7 +30,7 @@ export default async function PosPage(props: {
                         default:
                             return null;
                     }
-                })}
+                ))}
             </div>
             <PromoSection content={promoContentToUse} />
         </section>

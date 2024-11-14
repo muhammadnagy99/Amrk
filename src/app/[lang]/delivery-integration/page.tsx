@@ -5,9 +5,9 @@ import ServiceSummary from "@/src/components/services/service-summary";
 import { Locale } from "@/src/i18n-config";
 
 import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
-import { contentData, contentData_en } from "@/src/data/RMS/pos";
+import { contentData, contentData_en } from "@/src/data/RMS/delivery-integration";
 
-export default async function PosPage(props: {
+export default async function DeliveryIntegrationPage(props: {
     params: Promise<{ lang: Locale }>;
 }) {
     const params = await props.params;
@@ -19,7 +19,7 @@ export default async function PosPage(props: {
     return (
         <section className="flex flex-col justify-center items-center w-full" aria-labelledby="Amrk-Business-Types">
             <div className="flex flex-col w-[88%] xl:max-w-[1200px] justify-between gap-10 md:gap-[120px] mt-12 md:mt-[120px] mb-[80px]">
-                {contentDataToUse.map((content, index) => {
+            {contentDataToUse.map((content, index) =>{
                     switch (content.type) {
                         case "ServiceHero":
                             return <ServiceHero key={index} {...content.props} />;

@@ -65,8 +65,8 @@ export const megaMenuData = {
       icon: <Icon1 />,
       links: [
         { text: "نظام نقاط البيع", url: "/pos-system" },
-        { text: "شاشة المطبخ", url: "/kitchen-screen" },
-        { text: "شاشة الخدمات", url: "/service-screen" },
+        { text: "شاشة المطبخ", url: "/kitchen-display" },
+        { text: "شاشة الخدمات", url: "/service-display" },
         { text: "إدارة الطاولات", url: "/table-management" },
         { text: "ووك توكي مدمج", url: "/integrated-walkie-talkie" },
         { text: "وضع عدم الاتصال", url: "/offline-mode" },
@@ -318,13 +318,13 @@ export const megaMenuData_en = {
       icon: <Icon1 />,
       links: [
         { text: "Point of Sale System (POS)", url: "/pos-system" },
-        { text: "Kitchen Display (KDS)", url: "/kitchen-screen" },
-        { text: "Service Station Screen", url: "/service-screen" },
+        { text: "Kitchen Display (KDS)", url: "/kitchen-display" },
+        { text: "Service Station Screen", url: "/service-display" },
         { text: "Tables Management", url: "/table-management" },
         { text: "E-Walkie Talkie", url: "/integrated-walkie-talkie" },
         { text: "Offline Mode", url: "/offline-mode" },
         { text: "CRM & Targeted Marketing", url: "/crm-marketing" },
-        { text: "Food Aggregators", url: "/delivery-app-integration" },
+        { text: "Food Aggregators", url: "/delivery-integration" },
       ],
     },
     {

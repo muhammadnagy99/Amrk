@@ -3,11 +3,11 @@ import { ServiceHeroProps } from "@/src/types/interfaces";
 import HeroDetails from "./hero-details";
 
 
-export default function ServiceHero({ heading, description, image }: ServiceHeroProps) {
+export default function ServiceHero({ heading, description, btnText, image }: ServiceHeroProps) {
     return (
         <div className="flex flex-col md:flex-row gap-10" aria-labelledby="Service-Hero-Section">
 
-            <HeroDetails heading={heading} description={description} />
+            <HeroDetails heading={heading} description={description} btnText={btnText} />
 
             <div className="w-full md:w-1/2">
                 <Image

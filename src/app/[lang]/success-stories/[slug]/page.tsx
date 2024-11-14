@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import ServiceHero from "@/src/components/success-stories/posts/hero";
 import RowDotted from "@/src/components/success-stories/posts/row-dotted";
 import RowDottedWithIntro from "@/src/components/success-stories/posts/row-dotted-normal";
@@ -5,10 +6,18 @@ import RowNumbered from "@/src/components/success-stories/posts/row-numbered";
 import RowHighlited from "@/src/components/success-stories/posts/row-highlited";
 import StoriessData from "@/src/data/success-stories/success-stories.json";
 import Row from "@/src/components/success-stories/posts/row";
-import { ServiceHeroProps } from "@/src/types/interfaces";
 import Testmonial from "@/src/components/success-stories/posts/testomonial";
 interface PageProps {
   params: Promise<{ slug: string }>;
+}
+
+interface heroDetails {
+  heading: string;
+  description: string;
+  image: {
+    src: StaticImageData;
+    alt: string;
+  };
 }
 
 export default async function PostPage({ params }: PageProps) {
@@ -40,7 +49,7 @@ export default async function PostPage({ params }: PageProps) {
     await import(`@/public/blog/stories/posts/p${currentStory.id}.png`)
   ).default;
 
-  const heroData: ServiceHeroProps = {
+  const heroData: heroDetails = {
     heading: currentStory.name,
     description: currentStory.heading,
     image: {

@@ -1,15 +1,15 @@
-import PrimaryLine from "@/components/assets/primary-line";
-import CertificatoinHeading from "@/components/certifications/heading";
-import SectionI from "@/components/certifications/section-1";
-import SectionII from "@/components/certifications/section-2";
-import SectionIII from "@/components/certifications/section-3";
-import SectionIV from "@/components/certifications/section-4";
-import SectionV from "@/components/certifications/section-5";
-import SectionVII from "@/components/certifications/section-7";
-import SectionVI from "@/components/certifications/section-6";
-import PromoSection from "@/components/promotion-section/promotion-section";
-import { promoContent } from "@/data/global/promo-text";
-import { sectionIContent, sectionIIContent, sectionIIIContent, sectionIVContent, sectionVContent, sectionVIContent, sectionVIIContent } from "@/data/certifications/cert-data";
+import PrimaryLine from "@/src/components/assets/primary-line";
+import CertificatoinHeading from "@/src/components/certifications/heading";
+import SectionI from "@/src/components/certifications/section-1";
+import SectionII from "@/src/components/certifications/section-2";
+import SectionIII from "@/src/components/certifications/section-3";
+import SectionIV from "@/src/components/certifications/section-4";
+import SectionV from "@/src/components/certifications/section-5";
+import SectionVII from "@/src/components/certifications/section-7";
+import SectionVI from "@/src/components/certifications/section-6";
+import PromoSection from "@/src/components/promotion-section/promotion-section";
+import { promoContent } from "@/src/data/global/promo-text";
+import { sectionIContent, sectionIIContent, sectionIIIContent, sectionIVContent, sectionVContent, sectionVIContent, sectionVIIContent } from "@/src/data/certifications/cert-data";
 
 export default function CertificationsPage() {
 

@@ -1,13 +1,12 @@
-import ServiceHero from "@/components/success-stories/posts/hero";
-import RowDotted from "@/components/success-stories/posts/row-dotted";
-import RowDottedWithIntro from "@/components/success-stories/posts/row-dotted-normal";
-import RowNumbered from "@/components/success-stories/posts/row-numbered";
-import RowHighlited from "@/components/success-stories/posts/row-highlited";
+import ServiceHero from "@/src/components/success-stories/posts/hero";
+import RowDotted from "@/src/components/success-stories/posts/row-dotted";
+import RowDottedWithIntro from "@/src/components/success-stories/posts/row-dotted-normal";
+import RowNumbered from "@/src/components/success-stories/posts/row-numbered";
+import RowHighlited from "@/src/components/success-stories/posts/row-highlited";
 import StoriessData from "@/src/data/success-stories/success-stories.json";
-import Row from "@/components/success-stories/posts/row";
+import Row from "@/src/components/success-stories/posts/row";
 import { ServiceHeroProps } from "@/src/types/interfaces";
-import strory1 from "@/data/success-stories/s1";
-import Testmonial from "@/components/success-stories/posts/testomonial";
+import Testmonial from "@/src/components/success-stories/posts/testomonial";
 interface PageProps {
   params: Promise<{ slug: string }>;
 }

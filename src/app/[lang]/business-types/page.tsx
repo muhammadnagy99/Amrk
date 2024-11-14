@@ -1,8 +1,8 @@
-import ImagesGrid from "@/components/business.-types/images-grid";
-import PageHeader from "@/components/assets/page-header";
-import PromoSection from "@/components/promotion-section/promotion-section";
-import { promoContent } from "@/data/global/promo-text";
-import { imagesGridContent, pageHeading } from "@/data/business-types/landing-page";
+import ImagesGrid from "@/src/components/business.-types/images-grid";
+import PageHeader from "@/src/components/assets/page-header";
+import PromoSection from "@/src/components/promotion-section/promotion-section";
+import { promoContent } from "@/src/data/global/promo-text";
+import { imagesGridContent, pageHeading } from "@/src/data/business-types/landing-page";
 
 export default function BusinessTypes() {
     return(

@@ -1,10 +1,10 @@
-import ServiceHero from "@/components/services/hero";
-import PromoSection from "@/components/promotion-section/promotion-section";
-import BusinessBulletPoints from "@/components/business.-types/details-components/bullet-points";
-import ServicesDetails from "@/components/business.-types/details-components/service-details";
+import ServiceHero from "@/src/components/services/hero";
+import PromoSection from "@/src/components/promotion-section/promotion-section";
+import BusinessBulletPoints from "@/src/components/business.-types/details-components/bullet-points";
+import ServicesDetails from "@/src/components/business.-types/details-components/service-details";
 
-import { promoContent } from "@/data/global/promo-text";
-import { contentData } from "@/data/business-types/restaurants-cafes";
+import { promoContent } from "@/src/data/global/promo-text";
+import { contentData } from "@/src/data/business-types/restaurants-cafes";
 
 
 

@@ -1,5 +1,7 @@
 import type { MetadataRoute } from 'next'
  
+const DOMAIN = 'https://amrk.vercel.app';
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
@@ -7,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://acme.com/sitemap.xml',
+    sitemap: `${DOMAIN}/sitemap.xml`,
   }
 }

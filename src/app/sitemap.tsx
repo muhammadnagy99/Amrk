@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const DOMAIN = 'https://yourdomain.com'; // Change this constant as needed
+const DOMAIN = 'https://amrk.vercel.app'; 
 
 import { footerNavLinks_en } from '../data/footer/footer-data';
 

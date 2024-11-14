@@ -47,7 +47,7 @@ export default function PricingPage() {
                 </div>
 
                 <div className="flex justify-start w-full">
-                    <ContactUs />
+                    <ContactUs lang='ar' />
                 </div>
             </div>
 

@@ -1,8 +1,8 @@
-import PrimaryLine from "@/components/assets/primary-line";
-import PostBody from "@/components/post/post-body";
-import PostCover from "@/components/post/post-cover";
-import PostHeading from "@/components/post/post-heading";
-import PostSuggestions from "@/components/post/post-suggestions";
+import PrimaryLine from "@/src/components/assets/primary-line";
+import PostBody from "@/src/components/post/post-body";
+import PostCover from "@/src/components/post/post-cover";
+import PostHeading from "@/src/components/post/post-heading";
+import PostSuggestions from "@/src/components/post/post-suggestions";
 import blogsData from "@/src/data/blogs.json";
 
 async function getRandomPostsWithImages(posts: typeof blogsData, count: number) {

@@ -3,12 +3,20 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function Heading() {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref); 
+type HeadingProps = {
+  headingContent: {
+    title: string;
+    description: string;
+  };
+};
 
-  const headingText = "حل شامل لإدارة وتبسيط\nجميع جوانب مطعمك.";
-  const words = headingText.split(/(\s|\n)/);
+export default function Heading({ headingContent }: HeadingProps) {
+  const { title, description } = headingContent;
+
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref);
+
+  const words = title.split(/(\s|\n)/);
 
   const wordAnimation = {
     hidden: { opacity: 0, y: 25 },
@@ -28,7 +36,7 @@ export default function Heading() {
     visible: {
       opacity: 1,
       transition: {
-        delay: words.length * 0.05, 
+        delay: words.length * 0.05,
         duration: 0.5,
         ease: "easeOut",
       },
@@ -60,8 +68,7 @@ export default function Heading() {
         animate={isInView ? "visible" : "hidden"}
         variants={paragraphAnimation}
       >
-        نظام أمرك يقدم حلاً متكاملاً لتسهيل إدارة عمليات مطعمك بمرونة وكفاءة. من
-        استلام الطلبات إلى إدارة المخزون والمدفوعات، كل ما تحتاجه في مكان واحد.
+        {description}
       </motion.p>
     </>
   );

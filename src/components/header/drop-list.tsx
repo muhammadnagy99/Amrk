@@ -2,14 +2,15 @@
 
 import { useState, useEffect, useRef } from 'react';
 
-const menuItems = [
-    { text: "قصص نجاح", url: "/success-stories" },
-    { text: "المدونة", url: "/blog" },
-    { text: "الاعتمادات", url: "/certifications" },
-    { text: "تحديثات أمرك", url: "/updates" }
-];
+interface DropListProps {
+    data: {
+        title: string;
+        menuItems: { text: string; url: string }[];
+    };
+}
 
-export default function DropList() {
+export default function DropList({ data }: DropListProps) {
+    const { title, menuItems } = data;
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
     let timeoutId: ReturnType<typeof setTimeout>;
@@ -34,7 +35,7 @@ export default function DropList() {
         >
             <div className="flex w-auto items-center mx-2 gap-[8px] relative">
                 <label className="flex items-center text-primText cursor-pointer relative">
-                    الموارد
+                    {title}
                 </label>
 
                 <svg

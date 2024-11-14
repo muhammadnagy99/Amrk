@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-rubik: 'Rubik', sans-serif;
+}
+
+body {
+  font-family: var(--font-rubik);
+}
+
+h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 24px;
+  }
+  p{
+    font-size: 12px;
+  }
+  h2{
+    font-size: 20px;
+  }
+}
+
+.p-secondary{
+  font-size: 16px;
+}
+
+.header-shadow{
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.primary-btn-padding{
+  padding: 15px 22px 16px 23px;
+}
+
+.secondary-btn-padding{
+  padding: 15px 22px 16px 23px;
+}
+
+.secondary-btn-border{
+  border: solid 2px #23314c;
+}
+
+.secondary-btn-border-2{
+  border: solid 2px #b0438a;
+}
+
+.social-media-padding{
+    padding: 40px 0;
+}
+
+.site-links-padding{
+  padding: 56px 0 64px 0;
+}
+
+.copy-right-padding{
+  padding: 39px 0 32px 0;
+}
+
+.w-special{
+  max-width: 1200px;
+}
+
+.w-special-nav{
+  width: 460px;  
+}
+
+.w-btn-group{
+  width: 478px;
+}
+
+.w-logo{
+  width: 110px;
+}
+
+.nav-button-checked{
+  padding: 20px 16px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #fefbd9;
+}
+
+.nav-article{
+  padding: 32px 32px;
+}
+
+.m-special{
+  margin: 8px 8px 4px 0;
+}
+
+.section-bar{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.screen-card{
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+.background-1{
+  background-color:#FEFBD980;
+  ;
+}
+
+.form-shadow{
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input-border{
+  border: solid 1px rgba(35, 49, 76, 0.3);
+}
+
+.submit-btn{
+  padding: 15px 52px 16px 51px;
+}
+
+.package-card{
+  border: solid 1px rgba(35, 49, 76, 0.2);
+}
+
+.package-card-highlight{
+  box-shadow: 0 0 10px 3px rgba(110, 99, 165, 0.2);
+  border: solid 1px #6e63a5;
+}
+
+.post-info{
+  border-left: 1px solid #23314c80;
+}
+
+.post-card{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.custom-list-item::marker {
+  color: #b0438a;
+}
+
+.p-special{
+  padding: 60px 40px;
+}
+
+.mx-h-special{
+  max-height: 1100px;
+}
+
+.border-bottom{
+  border-bottom: 1px solid #23314c33 ;
+}
+
+.nav-border-b{
+  border-bottom: 2px solid #b0438a;
+}
+
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: currentColor; 
+  transform: scaleX(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-out;
+  color: #b0438a;
+}
+
+.hover-underline2{
+  position: relative;
+}
+
+.hover-underline2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: currentColor; 
+  transform: scaleX(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-out;
+  color: white;
+}
+
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+}
+
+
+.button {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #B0438A; /* Original button color */
+  color: white;
+  z-index: 1; /* Ensures the button content is above the pseudo-element */
+  transition: color 0.3s ease-in-out;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #B0438A 0%, #DC5AAF 100%);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 0; /* Keeps the pseudo-element behind the text */
+}
+
+.button:hover::before {
+  opacity: 1;
+}
+
+.button > * {
+  position: relative;
+  z-index: 2; /* Ensures the button content is above the pseudo-element */
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines before truncating */
+  -webkit-box-orient: vertical;
+}
+
+/* Hide scrollbars for webkit-based browsers */
+.section-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars for other browsers */
+.section-bar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+.customList {
+  counter-reset: section;
+}
+
+.customList li {
+  position: relative;
+  counter-increment: section;
+}
+
+.customList li::marker {
+  color:#b0438a /* Replace with your actual color code or CSS variable */
+}

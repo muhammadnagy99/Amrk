@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RightIcon2 from "../assets/right-check-icon2";
+import RightIcon2 from "@/src/components/assets/right-check-icon2";
 import { ServiceSummaryProps } from "@/src/types/interfaces";
 
 export default function ServiceSummary({ imageSrc, heading, listItems }: ServiceSummaryProps) {

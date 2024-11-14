@@ -2,33 +2,49 @@ import PrimaryBtn from "../../buttons/primary-button";
 import SecondaryBtn from "../../buttons/secondary-button";
 import HeroHeading from "./hero-heading";
 
-export default function HeroDetails() {
+type HeroDetailsProps = {
+  heroText: string[];
+  headingText: string;
+  links: {
+    primaryLink: string;
+    secondaryLink: string;
+    footerLink: string;
+  };
+};
+
+export default function HeroDetails({
+  heroText,
+  headingText,
+  links,
+}: HeroDetailsProps) {
   return (
     <div className="flex flex-col justify-center align-baseline text-primText gap-[64px] h-full md:h-full mt-[72px] md:mt-0">
       <div className="flex flex-col gap-4">
-        
-        <HeroHeading />
-        <p className="">
-          نظام
-          <strong className="font-bold">&nbsp; أمـركـ &nbsp;</strong>
-          الشامل. تبسيط العمليات. زيادة تفاعل العملاء.
+        <HeroHeading headingText={headingText} />
+        <p>
+          {heroText[0]}
+          <strong className="font-bold">&nbsp;{heroText[1]}&nbsp;</strong>
+          {heroText[2]}
         </p>
       </div>
 
       <div className="flex flex-col align-baseline w-full mb-[32px] gap-[24px] h-1/2 md:h-auto">
-        <div className="flex flex-col md:flex-row gap-[24px]" >
-          <a href="/demo-schedule" className="w-full md:w-[156px]">
-            <PrimaryBtn text={`احجز موعد للتجربة`} />
+        <div className="flex flex-col md:flex-row gap-[24px]">
+          <a href={links.primaryLink} className="w-full md:w-[156px]">
+            <PrimaryBtn text={heroText[3]} />
           </a>
 
-          <a href="/" className="w-full md:w-[131px]">
-            <SecondaryBtn text={`أمـركـ أونلاين`} />
+          <a href={links.secondaryLink} className="w-full md:w-[131px]">
+            <SecondaryBtn text={heroText[4]} />
           </a>
         </div>
 
-        <div className="hidden md:flex flex-row align-baseline items-center gap-[16px]">
-          <p className=" text-transparent bg-gradient-to-r from-[#b0438a] to-[#dc87be] font-rubik text-[12px] font-medium text-right bg-clip-text">
-            تسجيل الدخول
+        <a
+          href={links.footerLink}
+          className="hidden md:flex flex-row align-baseline items-center gap-[16px]"
+        >
+          <p className="text-transparent bg-gradient-to-r from-[#b0438a] to-[#dc87be] font-rubik text-[12px] font-medium text-right bg-clip-text">
+            {heroText[5]}
           </p>
 
           <svg
@@ -56,7 +72,7 @@ export default function HeroDetails() {
               </linearGradient>
             </defs>
           </svg>
-        </div>
+        </a>
       </div>
     </div>
   );

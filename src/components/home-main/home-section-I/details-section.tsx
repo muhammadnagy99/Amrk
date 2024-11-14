@@ -11,9 +11,12 @@ interface DetailsSectionProps {
     width: number;
     height: number;
     priority: boolean
+    url:string
+    more: string
+    dir:number
 }
 
-const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, imgSrc, imgAlt, width, height, priority }) => {
+const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, imgSrc, imgAlt, width, height, priority, url, more, dir }) => {
     const isKitchenScreen = title === "شاشة المطبخ";
 
     return (
@@ -23,10 +26,10 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
                     <h2 className="text-primText">{title}</h2>
                     <p className="text-base text-primText w-full">{description}</p>
 
-                    <a href='/' className="flex flex-row items-center content-center text-PrimBtn hover-underline w-[115px]">
-                        <span className="text-base font-medium">معرفة المزيد</span>
+                    <a href={url} className="flex flex-row items-center justify-between content-center text-PrimBtn hover-underline w-[118px]">
+                        <span className="text-base font-medium">{more}</span>
                         <svg
-                            className="m-special"
+                            className={`${dir == 0 ? 'm-special rotate-0' : 'rotate-180'}`}
                             width="20"
                             height="12"
                             viewBox="0 0 20 12"

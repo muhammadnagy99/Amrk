@@ -1,22 +1,32 @@
-import Image from "next/image";
-import C1 from '@/public/certifications/p1.png'
-export default function SectionI() {
-    return(
+import Image, {StaticImageData} from "next/image";
+
+interface SectionIProps {
+    content: {
+        image: {
+            src: StaticImageData;
+            alt: string;
+        };
+        text: string;
+    };
+}
+
+export default function SectionI({ content }: SectionIProps) {
+    return (
         <div className="flex flex-col md:flex-row w-full justify-between gap-4 md:h-[193px]">
             <div className="w-full md:w-[30%] flex justify-center">
                 <Image
-                    src={C1}
+                    src={content.image.src}
                     width={384}
                     height={193}
-                    alt={`This is alt text`}
+                    alt={content.image.alt}
                     placeholder="blur"
                     priority={false}
                 />
             </div>
-            
+
             <div className="flex justify-center items-center w-full md:w-[55%] h-full">
                 <p className="text-base md:text-xl text-primText font-normal">
-                    يُعد نظام أمـركـ مزود خدمة مؤهل ومعتمد من هيئة الزكاة والضريبة والجمارك السعودية، وذلك لتقديم خدمات الفوترة الإلكترونية للمرحلتين الأولى والثانية من الفوترة الإلكترونية.
+                    {content.text}
                 </p>
             </div>
         </div>

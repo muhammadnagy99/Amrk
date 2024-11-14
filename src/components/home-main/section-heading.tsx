@@ -6,19 +6,17 @@ import { useRef } from "react";
 interface SectionHeaderProps {
   heading: string;
   paragraph: string;
-  color?: string; // Optional color prop
+  color?: string; 
 }
 
 export default function SectionHeader({ heading, paragraph, color = "inherit" }: SectionHeaderProps) {
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref);
 
-  // Split the heading into words
   const words = heading.split(" ");
 
-  // Animation variants for each word
   const variants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 2 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,

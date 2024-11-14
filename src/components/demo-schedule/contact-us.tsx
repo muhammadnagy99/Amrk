@@ -1,7 +1,13 @@
-export default function ContactUs() {
+interface props {
+  lang: "en" | "ar"
+}
+
+export default function ContactUs({ lang }: props) {
+  
+  const text = `${lang == "en"? 'Contact us' : 'تواصل معنا'}`; 
   return (
     <article className="flex flex-col gap-4">
-      <h3 className="text-primText font-semibold text-xl">تواصل معنا</h3>
+      <h3 className="text-primText font-semibold text-xl"> {text} </h3>
       <p className="flex flex-row items-center text-base gap-4">
         <svg
           width="18"

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import PrimaryBtn from "../buttons/primary-button";
 import { ServiceHeroProps } from "@/src/types/interfaces";
 import HeroDetails from "./hero-details";
 

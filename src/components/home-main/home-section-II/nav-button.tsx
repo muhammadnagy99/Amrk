@@ -12,7 +12,7 @@ const NavButton: React.FC<NavButtonProps> = ({ id, label, isActive, onClick }) =
         <button
             id={id}
             onClick={() => onClick(id)}
-            className={`w-[180px] h-[48px] text-base md:text-xl font-medium rounded-[40px] flex-shrink-0 ${
+            className={`w-[180px] h-[55px] text-base md:text-xl font-medium rounded-[40px] flex-shrink-0 ${
                 isActive ? 'text-SecTextV2 bg-primText' : 'text-gray-500 bg-white'
             } cursor-pointer transition-colors duration-200 `}
             aria-pressed={isActive}

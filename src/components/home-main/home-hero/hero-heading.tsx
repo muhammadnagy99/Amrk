@@ -2,13 +2,15 @@
 
 import { motion } from "framer-motion";
 
-export default function HeroHeading() {
-  const headingText = "تكنولوجيا متقدمة\nلتبسيط عمليات مطعمك";
+type HeroHeadingProps = {
+  headingText: string;
+};
 
+export default function HeroHeading({ headingText }: HeroHeadingProps) {
   const words = headingText.split(/(\s|\n)/);
 
   const wordAnimation = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 1 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,

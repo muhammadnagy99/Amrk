@@ -1,22 +1,31 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
-import { sectionData, sectionHeading } from "./section-data";
 import NavButton from "./nav-button";
 import DetailsSection from "./details-section";
 import SectionHeader from "../section-heading";
+import { Section, heading } from "@/src/types/interfaces";
 
-export default function HomeSectionI() {
+type HomeSectionIProps = {
+    sectionContent: {
+        sectionData: Section[];
+        sectionHeading: heading;
+    };
+};
+
+export default function HomeSectionI({ sectionContent }: HomeSectionIProps) {
+    const { sectionData, sectionHeading } = sectionContent;
+
     const [activeId, setActiveId] = useState<number | null>(sectionData[0]?.id || null);
     const [visibleId, setVisibleId] = useState<number | null>(sectionData[0]?.id || null);
     const [isFading, setIsFading] = useState<boolean>(false);
 
     const handleButtonClick = (id: number) => {
         if (id !== activeId) {
-            setIsFading(true); 
+            setIsFading(true);
             setTimeout(() => {
                 setActiveId(id);
-                setIsFading(false); 
+                setIsFading(false);
                 setVisibleId(id);
             }, 300);
         }
@@ -68,6 +77,9 @@ export default function HomeSectionI() {
                                 width={section.article.width}
                                 height={section.article.height}
                                 priority={section.article.priority}
+                                url={section.url}
+                                more={section.more}
+                                dir={section.dir}
                             />
                         </div>
                     ))}

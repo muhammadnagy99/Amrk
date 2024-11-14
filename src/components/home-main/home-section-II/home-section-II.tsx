@@ -1,23 +1,26 @@
 "use client";
 
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { sectionData, sectionHeading } from "./section-data";
 import NavButton from "./nav-button";
 import ScreenContent from "./screen-content";
 import BG from "@/public/bg/BG.png";
 import BG2 from "@/public/bg/BG(1).png";
-
 import SectionHeader from "../section-heading";
+import { ScreensSection, heading } from "@/src/types/interfaces";
 
-export default function HomeSectionII() {
-  const [activeId, setActiveId] = useState<number | null>(
-    sectionData[0]?.id || null
-  );
-  const [visibleId, setVisibleId] = useState<number | null>(
-    sectionData[0]?.id || null
-  );
+type HomeSectionIIProps = {
+  sectionContent: {
+    sections: ScreensSection[];
+    headerInfo: heading;
+  };
+};
+
+export default function HomeSectionII({ sectionContent }: HomeSectionIIProps) {
+  const { sections, headerInfo } = sectionContent;
+
+  const [activeId, setActiveId] = useState<number | null>(sections[0]?.id || null);
+  const [visibleId, setVisibleId] = useState<number | null>(sections[0]?.id || null);
   const [isFading, setIsFading] = useState<boolean>(false);
 
   const handleButtonClick = (id: number) => {
@@ -47,17 +50,17 @@ export default function HomeSectionII() {
       aria-labelledby="Amrk-Served-Sectors"
     >
       <SectionHeader
-        heading={sectionHeading.primary}
-        paragraph={sectionHeading.secondary}
+        heading={headerInfo.primary}
+        paragraph={headerInfo.secondary}
         color="#23314c"
       />
 
       <div className="flex flex-col w-full gap-6 lg:gap-[80px]">
         <nav className="section-bar flex flex-row items-center lg:w-full overflow-x-auto overflow-y-hidden h-[64px] lg:h-[80px] rounded-[80px] p-4 gap-2 md:gap-[16px]">
-          {sectionData.map((section) => (
+          {sections.map((section) => (
             <NavButton
               key={section.id}
-              id={`nav-button-${section.id}`} 
+              id={`nav-button-${section.id}`}
               label={section.button.label}
               isActive={activeId === section.id}
               onClick={() => handleButtonClick(section.id)}
@@ -89,7 +92,7 @@ export default function HomeSectionII() {
           </div>
 
           <div className="h-[530px] lg:h-full relative overflow-hidden">
-            {sectionData.map((section) => (
+            {sections.map((section) => (
               <div
                 key={section.id}
                 className={`absolute inset-0 transition-opacity duration-300 ${
@@ -111,6 +114,9 @@ export default function HomeSectionII() {
                   imgSrc={section.article.imgSrc}
                   imgAlt={section.article.imgAlt}
                   priority={section.article.priority}
+                  dir={section.article.dir}
+                  more={section.article.more}
+                  url={section.article.url}
                 />
               </div>
             ))}

@@ -1,24 +1,18 @@
 import React from "react";
-import PrimaryLine from "../assets/primary-line";
+import PrimaryLine from "@/src/components/assets/primary-line";
 
-export default function SectionII() {
-    // Example array of article data
-    const articles = [
-        {
-            id: 1,
-            title: "المرحلة الأولى",
-            content: "استوفت شركة أمـركـ المعايير المحددة التي تنطبق مع متطلبات الفوترة الإلكترونية للمرحلة الأولى."
-        },
-        {
-            id: 2,
-            title: "المرحلة الثانية",
-            content: "استوفت شركة أمـركـ المعايير المحددة التي تنطبق مع متطلبات الفوترة الإلكترونية للمرحلة الثانية (الربط والتكامل) والمرحلة الأولى (الإصدار والحفظ)."
-        },
-    ];
+interface SectionIIProps {
+    content: {
+        id: number;
+        title: string;
+        content: string;
+    }[];
+}
 
+export default function SectionII({ content }: SectionIIProps) {
     return (
         <div className="flex flex-col gap-[24px]">
-            {articles.map(article => (
+            {content.map(article => (
                 <React.Fragment key={article.id}>
                     <article className="flex flex-col md:flex-row w-full justify-between gap-4 md:h-[32]">
                         <div className="flex flex-row items-center gap-[24px] w-full md:w-1/5 h-full">

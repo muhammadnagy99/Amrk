@@ -2,63 +2,22 @@
 
 import { useState, useEffect, useRef } from 'react';
 
-import { Icon1, Icon2, Icon3, Icon4 } from './icons';
-const sections = [
-    {
-        heading: "نظام إدارة المطاعم",
-        icon: <Icon1 />, 
-        links: [
-            { text: "نظام نقاط البيع", url: "/pos-system" },
-            { text: "شاشة المطبخ", url: "/kitchen-screen" },
-            { text: "شاشة الخدمات", url: "/service-screen" },
-            { text: "إدارة الطاولات", url: "/table-management" },
-            { text: "ووك توكي مدمج", url: "/integrated-walkie-talkie" },
-            { text: "وضع عدم الاتصال", url: "/offline-mode" },
-            { text: "إدارة علاقات العملاء وعمل حملات تسويقية", url: "/crm-marketing" },
-            { text: "الربط مع تطبيقات التوصيل", url: "/delivery-app-integration" }
-        ]
-    },
-    {
-        heading: "حلول أمرك أون لاين",
-        icon: <Icon2 />, 
-        links: [
-            { text: "توصيل الطلبات", url: "/order-delivery" },
-            { text: "طلبات الاستلام", url: "/pickup-orders" },
-            { text: "الطلب والدفع عبر (QR)", url: "/qr-order-payment" },
-            { text: "الطلب عبر وسائل التواصل الاجتماعي", url: "/social-media-orders" },
-            { text: "برامج الولاء", url: "/loyalty-programs" },
-            { text: "حجز الطاولات", url: "/table-reservation" }
-        ]
-    },
-    {
-        heading: "إدارة متطورة للمخزون",
-        icon: <Icon3 />, 
-        links: [
-            { text: "إدارة المشتريات والموارد", url: "/purchasing-management" },
-            { text: "إدارة المينو والوصفات", url: "/menu-recipe-management" },
-            { text: "التحكم الشامل في المخزون", url: "/inventory-control" },
-            { text: "إدارة المستودعات، المطابخ المركزية، والمطابخ السحابية", url: "/warehouse-central-kitchens" },
-            { text: "صلاحيات الموافقات الإلكترونية", url: "/electronic-approvals" }
-        ]
-    },
-    {
-        heading: "تشغيل المطابخ السحابية",
-        icon: <Icon4 />,
-        links: [
-            { text: "علامات متعددة في مطبخك", url: "/multiple-kitchen-brands" },
-            { text: "شاشة واحدة لمطبخك", url: "/single-kitchen-screen" },
-            { text: "مخزون مطبخك", url: "/kitchen-inventory" },
-            { text: "قوائم طعام مطبخك", url: "/kitchen-menus" },
-            { text: "نظام نقاط بيع مطبخك", url: "/kitchen-pos-system" },
-            { text: "دليل تعليمي لمطبخك", url: "/kitchen-guide" },
-            { text: "مراقبة مطبخك", url: "/kitchen-monitoring" },
-            { text: "ربط تطبيقات التوصيل بمطبخك", url: "/kitchen-delivery-integration" }
-        ]
-    },
-];
+interface MegaMenuData {
+    title: string;
+    sections: {
+        icon: React.ReactNode;
+        heading: string;
+        links: { text: string; url: string }[];
+    }[];
+}
+
+interface MegaMenuProps {
+    data: MegaMenuData;
+}
 
 
-export default function MegaMenu() {
+export default function MegaMenu({ data } : MegaMenuProps) {
+    const { title, sections } = data ;
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
     let timeoutId: ReturnType<typeof setTimeout>;
@@ -74,7 +33,6 @@ export default function MegaMenu() {
         }, 200);
     };
 
-
     return (
         <div 
             ref={menuRef} 
@@ -84,7 +42,7 @@ export default function MegaMenu() {
         >
             <div className={`flex w-auto items-center justify-center mx-2 gap-[8px] relative`}>
                 <label className="flex items-center text-primText cursor-pointer relative">
-                    الخدمات
+                    {title}
                 </label>
 
                 <svg
@@ -100,7 +58,6 @@ export default function MegaMenu() {
                     isOpen ? 'scale-x-100' : 'scale-x-0'
                 }`}
             ></span>
-
 
             <div
                 className={`fixed left-1/2 transform -translate-x-1/2 w-[95%] h-[370px] xl:w-[1200px] mt-[64px] z-10 p-1 bg-white shadow-lg rounded-lg transition-all duration-300 

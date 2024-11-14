@@ -1,13 +1,19 @@
-export default function LoginBtn() {
+interface props {
+  text: string
+  flag: number
+}
+
+export default function LoginBtn({text, flag}: props) {
     return(
         <div
         className="flex w-full flex-row justify-center items-center gap-[16px]"
         >
         <p className=" text-transparent bg-gradient-to-r from-[#b0438a] to-[#dc87be] font-rubik text-[14px] font-medium text-right bg-clip-text">
-          تسجيل الدخول
-        </p>
+          {text}
+=        </p>
 
         <svg
+        className={flag==0? `rotate-0` : `rotate-180`}
           width="16"
           height="16"
           viewBox="0 0 12 12"

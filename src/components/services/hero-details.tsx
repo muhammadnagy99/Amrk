@@ -1,4 +1,4 @@
-import PrimaryBtn from "../buttons/primary-button";
+import PrimaryBtn from "@/src/components/buttons/primary-button";
 import HeroDescription from "./hero-heading";
 
 interface HeroDetails {
@@ -7,18 +7,6 @@ interface HeroDetails {
 }
 
 export default function HeroDetails({ heading, description }: HeroDetails) {
-  const variants = {
-    hidden: { opacity: 0, y: 25 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.1,
-        duration: 0.3,
-        ease: "easeOut",
-      },
-    }),
-  };
 
   return (
     <div className="flex flex-col justify-center h-auto w-full md:w-1/2 gap-10 md:gap-[64px]">

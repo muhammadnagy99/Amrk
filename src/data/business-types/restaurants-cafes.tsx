@@ -1,5 +1,5 @@
 import RACHero from '@/public/business-types/restaurants-cafes/rac-hero.png'
-import { BusinessContentType } from "@/src/types/interfaces";
+import { BusinessContentType } from "@/src/types/interfaces"
 
 export const contentData: BusinessContentType[] = [
     {
@@ -7,6 +7,7 @@ export const contentData: BusinessContentType[] = [
         props: {
             heading: "مطاعم ومقاهي",
             description: "قم بتشغيل مطعمك بكفاءة ورفع مستوى رضا العملاء",
+            btnText:"احجز موعد للتجربة",
             image: {
                 src: RACHero,
                 alt: "Amrk Restaurant Systems"

@@ -86,7 +86,7 @@ export type ServicesContentType =
   | { type: "ServiceSummary"; props: ServiceSummaryProps };
 
 export type BusinessContentType =
-  | { type: "ServiceHero"; props: ServiceHeroProps }
+  | { type: "ServiceHero"; props: ServiceHeroPropsModified }
   | { type: "BulletPoints"; props: BusinessBulletPointsProps }
   | { type: "ServiceDetails"; props: ServiceDetailsProps };
 

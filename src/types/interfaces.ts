@@ -32,6 +32,16 @@ export interface ServiceHeroProps {
     src: StaticImageData;
     alt: string;
   };
+
+}
+export interface ServiceHeroPropsModified {
+  heading: string;
+  description: string;
+  btnText: string
+  image: {
+    src: StaticImageData;
+    alt: string;
+  };
 }
 
 // Props for BulletPoints
@@ -71,7 +81,7 @@ export interface ServiceDetailsProps {
 
 // Union type for contentData
 export type ServicesContentType =
-  | { type: "ServiceHero"; props: ServiceHeroProps }
+  | { type: "ServiceHero"; props: ServiceHeroPropsModified }
   | { type: "BulletPoints"; props: BulletPointsProps }
   | { type: "ServiceSummary"; props: ServiceSummaryProps };
 

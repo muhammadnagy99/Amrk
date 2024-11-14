@@ -53,7 +53,7 @@ export const contentData_en: ServicesContentType[] = [
             description: "Optimize Seating and Service",
             btnText: "Book a Demo",
             image: {
-                src: Hero, // Replace with actual image variable
+                src: Hero, 
                 alt: "Table Management Screen"
             }
         }

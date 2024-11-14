@@ -1,6 +1,6 @@
 import { Row } from "@/src/types/interfaces";
 
-const strory1: Row[] = [
+ const strory1: Row[] = [
   {
     type: "normalRow",
     props: {
@@ -41,6 +41,9 @@ const strory1: Row[] = [
 ];
 
 export default strory1;
+
+
+
 
 export const quote = {
     qoute: "أمرك قامت بتحويل عملياتنا، حيث خفضت تكاليفنا بنسبة 80٪ وساعدتنا على التوسع بشكل أسرع من أي وقت مضى. دعمهم المباشر ومنصتهم الموفرة للتكلفة جعلتهم شريكًا لا يقدر بثمن في رحلتنا.", 

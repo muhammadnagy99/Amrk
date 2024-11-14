@@ -8,7 +8,7 @@ export default function Row({ title, text }: NormalRow) {
           {title}
         </h2>
       </div>
-      <p className="w-full md:w-1/2 text-primText text-base md:font-light">
+      <p className="w-full md:w-1/2 text-primText text-base md:font-normal">
         {text}
       </p>
     </article>

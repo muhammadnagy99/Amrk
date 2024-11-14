@@ -11,6 +11,9 @@ export interface StoryGridProps {
     paragraph: string;
     content: string;
     searchKey: string;
+    more: string
+    flag: number
+    name: string
   }[];
 }
 
@@ -19,6 +22,9 @@ export interface StoryCardProps {
   heading: string;
   paragraph: string;
   searchKey: string;
+  more: string;
+  flag: number;
+  name: string;
 }
 
 // Services Interfaces

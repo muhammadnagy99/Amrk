@@ -486,7 +486,7 @@ export const sidebarData_en = {
       { label: "Success Stories", url: "/success-stories" },
       { label: "Blog", url: "/blog" },
       { label: "Accreditation", url: "/certifications" },
-      { label: "Amrk Updates", url: "/updates" },
+      { label: "Amrk Updates", url: "/" },
     ],
   },
   navLinks: [

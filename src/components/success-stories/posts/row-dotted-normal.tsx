@@ -16,20 +16,20 @@ export default function RowDottedWithIntro({
       </div>
       <ul className="list-disc list-inside w-full md:w-1/2 text-primText">
         {quoteBefore && (
-          <blockquote className="text-base font-light text-primText mb-4">
+          <blockquote className="text-base font-normal text-primText mb-4">
             {quoteBefore}
           </blockquote>
         )}
         {introText && (
-          <p className="text-base font-light text-primText mb-4">{introText}</p>
+          <p className="text-base font-normal text-primText mb-4">{introText}</p>
         )}
         {content.map((text, index) => (
-          <li key={index} className="text-base font-light mb-2">
+          <li key={index} className="text-base font-medium mb-2">
             {text}
           </li>
         ))}
         {quoteAfter && (
-          <blockquote className="text-base font-light text-primText mt-4">
+          <blockquote className="text-base font-normal text-primText mt-4">
             {quoteAfter}
           </blockquote>
         )}

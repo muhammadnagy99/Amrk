@@ -12,6 +12,9 @@ export default function StoryGrid({ StoryGridProps }: StoryGridProps) {
                     heading={story.heading}
                     paragraph={story.paragraph}
                     searchKey={story.searchKey}
+                    more={story.more}
+                    flag={story.flag}
+                    name={story.name}
                 />
             ))}
         </div>

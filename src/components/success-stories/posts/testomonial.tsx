@@ -4,12 +4,13 @@ import Bg from "@/public/bg/testomonial.png"
 interface props {
   qoute: string;
   person: string;
+  lang: string
 }
 
-export default function Testmonial({ qoute, person }: props) {
+export default function Testmonial({ qoute, person, lang }: props) {
   return (
     <div className="relative w-full h-[134px] md:h-[213px]">
-      <div className="absolute w-full z-0 h-full">
+      <div className={`absolute w-full z-0 h-full ${lang == 'en' ? 'transform scale-x-[-1]' : 'none'}`}>
         <Image
           src={Bg}
           fill

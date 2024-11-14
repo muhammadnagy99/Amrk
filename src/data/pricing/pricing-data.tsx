@@ -9,6 +9,7 @@ export const heading = {
     }
 
 }
+
 export const packagesData: Package[] = [
     {
         title: 'مطعمك الإلكتروني',
@@ -297,3 +298,312 @@ export const accordionData: AccordionData[] = [
       },
   ];
   
+
+  export const heading_en = {
+    title: "Flexible packages for your kitchen's future",
+    description: "Start free with add-on tools as needed, or choose from our comprehensive plans to meet all your kitchen's needs from the start.",
+    show: {
+        more: "Show More",
+        less: "Show Less"
+    }
+}
+
+export const packagesData_en: Package[] = [
+    {
+        title: 'Online Store',
+        description: 'Convenient for expanding your online presence, offering online sales, orders management, online payments, and delivery.',
+        buttonText: 'Free',
+        buttonVariant: 'primary',
+        highlight: false,
+    },
+    {
+        title: 'On-the-Go Service',
+        description: 'Convenient for mobile businesses like food trucks, pop-ups, or home-based ventures, offering mobile order and payment solutions.',
+        buttonText: 'Contact Sales',
+        buttonVariant: 'outline',
+        highlight: false,
+    },
+    {
+        title: 'Quick Service',
+        description: 'Perfect for busy coffee shops, bakeries, and quick-service restaurants, enhancing speed and efficiency in customer service, order customization, and tracking.',
+        buttonText: 'Contact Sales',
+        buttonVariant: 'outline',
+        highlight: false,
+    },
+    {
+        title: 'Dine-In Service',
+        description: 'Ideal for full-service restaurants, providing advanced solutions to streamline operations, simplify order processing, and enhance the dining experience.',
+        buttonText: 'Contact Sales',
+        buttonVariant: 'outline',
+        highlight: false,
+    },
+    {
+        title: 'Cloud Kitchens',
+        description: 'Convenient for Cloud or Central Kitchens, managing multiple brands from one location, optimizing online orders, kitchen workflows, and delivery.',
+        buttonText: 'Contact Sales',
+        buttonVariant: 'outline',
+        highlight: true,
+    },
+];
+
+export const accordionData_en: AccordionData[] = [
+  {
+    type: "accordion",
+    title: "Amrk Online",
+    rows: [
+      {
+        rowTitle: "QR Order and Pay",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Pickup Orders",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Social Media Ordering",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Home Delivery",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Delivery Area Mapping",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Online Payment",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Loyalty Programs",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Digital Menu",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Order Management Screen",
+        iconStates: [true, true, true, true, true]
+      }
+    ]
+  },
+  {
+    type: "accordion",
+    title: "POS System",
+    rows: [
+      {
+        rowTitle: "Mobile POS",
+        iconStates: [false, true, true, true, true]
+      },
+      {
+        rowTitle: "Tablet POS",
+        iconStates: [false, true, true, true, true]
+      },
+      {
+        rowTitle: "Web POS",
+        iconStates: [false, true, true, true, true]
+      }
+    ]
+  },
+  {
+    type: "accordion",
+    title: "Menu Management",
+    rows: [
+      {
+        rowTitle: "Multi-brand Menu",
+        iconStates: [false, false, true, true, true]
+      },
+      {
+        rowTitle: "Menu Editing",
+        iconStates: [false, false, true, true, true]
+      },
+      {
+        rowTitle: "Add Menu Options",
+        iconStates: [false, true, true, true, true]
+      },
+      {
+        rowTitle: "Combo Meal Creation",
+        iconStates: [false, true, true, true, true]
+      },
+      {
+        rowTitle: "Menu Promotions",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Digital Menu",
+        iconStates: [true, true, true, true, true]
+      }
+    ]
+  },
+  {
+    type: "accordion",
+    title: "Table Management",
+    rows: [
+      {
+        rowTitle: "Table Management App",
+        iconStates: [false, false, false, true, true]
+      },
+      {
+        rowTitle: "Table Reservations",
+        iconStates: [false, false, false, true, true]
+      },
+      {
+        rowTitle: "Customer Waitlist",
+        iconStates: [false, false, true, true, true]
+      },
+      {
+        rowTitle: "QR Ordering at Table",
+        iconStates: [false, false, false, true, true]
+      },
+      {
+        rowTitle: "QR Split Bill at Table",
+        iconStates: [false, false, false, true, true]
+      },
+      {
+        rowTitle: "QR Pay at Table",
+        iconStates: [false, false, false, true, true]
+      },
+      {
+        rowTitle: "Table Occupancy Analytics",
+        iconStates: [false, false, false, true, true]
+      }
+    ]
+  },
+  {
+    type: "accordion",
+    title: "Advanced Inventory Management",
+    rows: [
+      {
+        rowTitle: "Warehouse and Supplier Management",
+        iconStates: [false, false, true, true, true]
+      },
+      {
+        rowTitle: "Menu and Recipe Management",
+        iconStates: [false, false, true, true, true]
+      },
+      {
+        rowTitle: "Comprehensive Stock Control",
+        iconStates: [false, false, true, true, true]
+      },
+      {
+        rowTitle: "Warehouse, Central Kitchen, and Cloud Kitchen Management",
+        iconStates: [false, false, false, true, true]
+      },
+      {
+        rowTitle: "Electronic Approval Process",
+        iconStates: [false, false, false, true, true]
+      }
+    ]
+  },
+  {
+    type: "accordion",
+    title: "SMS Alerts for Customers",
+    rows: [
+      {
+        rowTitle: "Order Ready SMS Alerts",
+        iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "SMS Digital Receipts",
+        iconStates: [true, true, true, true, true]
+      }
+    ]
+  },
+  {
+    type: "simpleRow",
+    rows: [
+      {
+          rowTitle: "CRM and Marketing Campaigns",
+          iconStates: [true, true, true, true, true]
+      },
+      {
+        rowTitle: "Data Analytics Dashboard",
+        iconStates: [true, true, true, true, true]
+      }
+    ]
+  },
+  {
+    type: "accordion",
+    title: "Users",
+    rows: [
+      {
+        rowTitle: "Two Users",
+        iconStates: [false, true, true, true, true]
+      },
+      {
+        rowTitle: "Unlimited",
+        iconStates: [false, false, true, true, true]
+      }
+    ]
+  },
+  {
+    type: "simpleRow",
+    rows: [
+      {
+          rowTitle: "Delivery App Integrations",
+          iconStates: [false, true, true, true, true]
+      },
+      {
+        rowTitle: "API Integration",
+        iconStates: [false, true, true, true, true]
+      },
+      {
+        rowTitle: "Support and Training",
+        iconStates: [false, true, true, true, true]
+      }
+    ]
+  },
+  {
+      type: "accordion",
+      title: "Cloud Kitchen System",
+      rows: [
+        {
+          rowTitle: "Multi-brand Management",
+          iconStates: [false, false, false, false, true]
+        },
+        {
+          rowTitle: "Unified Kitchen Display",
+          iconStates: [false, false, false, false, true]
+        },
+        {
+          rowTitle: "Kitchen Inventory Management",
+          iconStates: [false, false, false, false, true]
+        },
+        {
+          rowTitle: "Kitchen Menu Management",
+          iconStates: [false, false, false, false, true]
+        },
+        {
+          rowTitle: "Kitchen POS System",
+          iconStates: [false, false, false, false, true]
+        },
+        {
+          rowTitle: "Kitchen Training Guide",
+          iconStates: [false, false, false, false, true]
+        },
+        {
+          rowTitle: "Kitchen Monitoring",
+          iconStates: [false, false, false, false, true]
+        },
+        {
+          rowTitle: "Delivery App Integrations for Kitchen",
+          iconStates: [false, false, false, false, true]
+        },
+      ]
+    },
+];
+
+
+export const PricingData = {
+  heading: heading,
+  packages: packagesData,
+  accordion: accordionData
+}
+
+export const PricingData_en = {
+  heading: heading_en,
+  packages: packagesData_en,
+  accordion: accordionData_en
+}

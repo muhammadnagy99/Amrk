@@ -16,7 +16,7 @@ import blogs_ar from "@/src/data/blogs_ar.json";
 import blogs_en from "@/src/data/blogs_en.json";
 
 export default async function BlogPage({ params }: { params: { lang: Locale } }) {
-    const { lang } = await params;
+    const { lang } = params;
     const isEnglish = lang === 'en';
 
     const blogsData = isEnglish ? blogs_en : blogs_ar;
@@ -46,7 +46,7 @@ export default async function BlogPage({ params }: { params: { lang: Locale } })
 
     return (
         <section className="flex flex-col justify-center items-center w-full" aria-labelledby="Amrk-Business-Types">
-            <div className="flex flex-col w-[88%] md:max-w-[1200px] justify-between gap-14 md:gap-[120px] mt-[120px] mb-[80px]">
+            <div className="flex flex-col w-[88%] md:max-w-[1200px] justify-between gap-14 mt-12 mb-12 md:gap-[120px] md:mt-[120px] md:mb-[80px]">
                 <BlogHeading headingContent={heading}/>
                 <BlogHero 
                     imageSrc={heroPost.imageSrc} 

@@ -1,7 +1,9 @@
 import Image, { StaticImageData } from 'next/image';
 import { StoryCardProps } from "@/src/types/interfaces";
 
-export default function StroryCard({ imageSrc, heading, paragraph, searchKey }: StoryCardProps) {
+export default function StroryCard({ imageSrc, heading, paragraph, searchKey, more, flag, name }: StoryCardProps) {
+
+    const text = more ;
     return (
         <a href={`/success-stories/${searchKey}`} className="flex flex-col gap-[24px] h-[395px] post-card rounded-[16px] border border-textInfo">
             <Image
@@ -25,9 +27,9 @@ export default function StroryCard({ imageSrc, heading, paragraph, searchKey }: 
 
                 <div className="flex flex-row items-center content-center text-PrimBtn z-10 gap-2 h-6">
                     <span className="h-full text-base font-medium">
-                        قراءة المزيد 
+                        {text}
                     </span>
-                    <span className="flex items-end h-full">
+                    <span className={`flex items-end h-full ${flag==0? 'rotate-0': 'rotate-180'}`}>
                         <svg
                             className="m-special"
                             width="20"

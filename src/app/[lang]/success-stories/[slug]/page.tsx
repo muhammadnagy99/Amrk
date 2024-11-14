@@ -4,7 +4,10 @@ import RowDotted from "@/src/components/success-stories/posts/row-dotted";
 import RowDottedWithIntro from "@/src/components/success-stories/posts/row-dotted-normal";
 import RowNumbered from "@/src/components/success-stories/posts/row-numbered";
 import RowHighlited from "@/src/components/success-stories/posts/row-highlited";
-import StoriessData from "@/src/data/success-stories/success-stories.json";
+import { Locale } from "@/src/i18n-config";
+import stories_ar from "@/src/data/success-stories/success-stories_ar.json";
+import stories_en from "@/src/data/success-stories/success-stories_en.json";
+
 import Row from "@/src/components/success-stories/posts/row";
 import Testmonial from "@/src/components/success-stories/posts/testomonial";
 interface PageProps {
@@ -20,11 +23,13 @@ interface heroDetails {
   };
 }
 
-export default async function PostPage({ params }: PageProps) {
-  const { slug } = await params;
+type Params = Promise<{ lang: Locale, slug: string }>
 
-  console.log(slug);
+export default async function PostPage({ params }: { params: Params}) {
+  const { lang, slug } = await params;
+  const isEnglish = lang === 'en';
 
+  const StoriessData = isEnglish ? stories_en : stories_ar;
   const currentStory = StoriessData.find((story) => story.searchKey === slug);
 
   if (!currentStory) {
@@ -32,13 +37,13 @@ export default async function PostPage({ params }: PageProps) {
   }
 
   const storyData = (
-    await import(`@/src/data/success-stories/s${currentStory.id}.tsx`)
+    await import(`@/src/data/success-stories/s${currentStory.id}_${lang}.tsx`)
   ).default;
 
   let testmonial;
   try {
     testmonial = (
-      await import(`@/src/data/success-stories/s${currentStory.id}.tsx`)
+      await import(`@/src/data/success-stories/s${currentStory.id}_${lang}.tsx`)
     ).quote;
   } catch (error) {
     console.error("Testimonial not found:", error);
@@ -81,7 +86,7 @@ export default async function PostPage({ params }: PageProps) {
           })}
         </div>
         {testmonial && (
-          <Testmonial qoute={testmonial.qoute} person={testmonial.person} />
+          <Testmonial qoute={testmonial.qoute} person={testmonial.person} lang={lang} />
         )}
       </div>
     </section>

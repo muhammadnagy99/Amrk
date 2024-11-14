@@ -6,6 +6,7 @@ interface ImageCardProps {
   description: string;
   more: string;
   key: number;
+  url: string;
 }
 
 interface ImagesGridProps {
@@ -31,6 +32,7 @@ export default function ImagesGrid({ content }: ImagesGridProps) {
                       description={card.description}
                       more={card.more}
                       flag={card.key}
+                      url={card.url}
                   />
               ))}
           </div>
@@ -44,6 +46,7 @@ export default function ImagesGrid({ content }: ImagesGridProps) {
                       description={card.description}
                       more={card.more}
                       flag={card.key}
+                      url={card.url}
                   />
               ))}
           </div>
@@ -57,6 +60,7 @@ export default function ImagesGrid({ content }: ImagesGridProps) {
                       description={card.description}
                       more={card.more}
                       flag={card.key}
+                      url={card.url}
                   />
               ))}
           </div>

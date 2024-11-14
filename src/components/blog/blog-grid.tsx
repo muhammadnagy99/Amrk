@@ -10,9 +10,10 @@ interface BlogGridProps {
         content: string;
         searchKey: string;
     }[];
+    lang: string;
 }
 
-export default function BlogGrid({ postCardsData }: BlogGridProps) {
+export default function BlogGrid({ postCardsData, lang }: BlogGridProps) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-[24px] w-full">
             {postCardsData.map((post) => (
@@ -23,6 +24,7 @@ export default function BlogGrid({ postCardsData }: BlogGridProps) {
                     paragraph={post.paragraph}
                     searchKey={post.searchKey}
                     index={post.id}
+                    lang={lang}
                 />
             ))}
         </div>

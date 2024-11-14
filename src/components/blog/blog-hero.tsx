@@ -6,9 +6,12 @@ interface BlogHeroProps {
     heading: string;
     paragraph: string;
     searchKey: string
+    lang: string;
 }
 
-export default function BlogHero({ imageSrc, heading, paragraph, searchKey }: BlogHeroProps) {
+export default function BlogHero({ imageSrc, heading, paragraph, searchKey, lang }: BlogHeroProps) {
+    const text = lang == "en" ? "Read the full article" : "قراءة المقال كاملاً";
+
     return (
         <div className="hidden md:flex flex-col md:flex-row w-full md:h-[478px] gap-4 md:gap-8 xl:gap-32">
             <Image
@@ -27,13 +30,13 @@ export default function BlogHero({ imageSrc, heading, paragraph, searchKey }: Bl
                     <p className="text-primText text-lg xl:text-xl font-normal">
                         {paragraph}
                     </p>
-                    <a href={`/blog/${searchKey}`} className="flex flex-row items-center content-center text-PrimBtn z-10 gap-2 h-6">
+                    <a href={`/blog/${searchKey}`} className="flex flex-row items-center content-center text-PrimBtn z-10 gap-4 h-6">
                         <span className="h-full text-base font-medium">
-                            قراءة المقال كاملاً
+                            {text}
                         </span>
-                        <span className="flex items-end h-full">
+                        <span className="flex items-center h-full">
                             <svg
-                                className="m-special"
+                                className={`${lang == "en" ? 'rotate-180' : 'rotate-0'}`}
                                 width="20"
                                 height="12"
                                 viewBox="0 0 20 12"
@@ -48,7 +51,7 @@ export default function BlogHero({ imageSrc, heading, paragraph, searchKey }: Bl
                         </span>
                     </a>
                 </div>
-                <PostProps />
+                <PostProps lang={lang} />
             </div>
         </div>
     );

@@ -25,7 +25,7 @@ export default function NavBar({ data }: NavBarProps) {
 
     return (
         <div className="flex justify-center w-7/12">
-            <nav className="hidden lg:flex w-special-nav justify-around">
+            <nav className="hidden lg:flex w-[510px] justify-around">
                 <MegaMenu data={megaMenuData} />
 
                 <Link href={links[0].url} className="flex items-center mx-2 text-primText hover-underline">

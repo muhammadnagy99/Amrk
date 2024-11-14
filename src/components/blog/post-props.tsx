@@ -1,4 +1,11 @@
-export default function PostProps() {
+interface props{
+    lang: string
+}
+
+export default function PostProps({lang}: props) {
+
+    const text = lang == "en" ? '4 minutes' : ' 4 دقائق قراءة';
+
     return(
         <div className="flex justify-start w-full gap-[24px] text-[16px]">
             <p className="text-textInfo text-[16px] font-normal">
@@ -8,7 +15,7 @@ export default function PostProps() {
                 |
             </p>
             <p className="text-textInfo text-[16px] font-normal">
-                4 دقائق قراءة
+               {text}
             </p>
         </div>
     );

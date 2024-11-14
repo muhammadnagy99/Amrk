@@ -21,6 +21,12 @@ import SAP from '@/public/certifications/field-lists/sap.png';
 import Oracle from '@/public/certifications/field-lists/oracle.png';
 import Ministry from '@/public/certifications/field-lists/ministry.png';
 
+
+export const certificationHeadingContent = {
+    title: "اكتشف سر الثقة بنا مع شركائنا في النجاح",
+    description: "قصتنا تبدأ بثقة شركائنا واعتماداتهم، حيث نبني النجاح معًا من خلال شراكات موثوقة واعتمادات تدعم كل خطوة في رحلتك نحو الأفضل."
+};
+
 export const sectionIContent = {
     image: {
         src: C1,
@@ -167,3 +173,185 @@ export const sectionVIIContent = {
         }
     ]
 };
+
+
+export const certficatoinData = {
+    heading: certificationHeadingContent,
+    section1: sectionIContent,
+    section2: sectionIIContent,
+    section3: sectionIIIContent,
+    section4: sectionIVContent,
+    section5: sectionVContent,
+    section6: sectionVIContent,
+    section7: sectionVIIContent,
+}
+
+
+////////////////////////////////////////////////////////////////////
+
+export const certificationHeadingContent_en = {
+    title: "Discover Why Our Partners Trust Us for Success.",
+    description: "Discover Why Our Partners Trust Us for Success."
+}
+
+
+
+export const sectionIContent_en = {
+    image: {
+        src: C1,
+        alt: "Amrk Certifications",
+    },
+    text: "Amrk is a qualified and certified service provider by the Saudi Zakat, Tax and Customs Authority (ZATCA) to provide E-Invoicing services for both the First and Second phases of E-Invoicing (FATOORAH)."
+}
+
+export const sectionIIContent_en = [
+    {
+        id: 1,
+        title: "Phase One",
+        content: "Amrk has met the specific criteria that align with the requirements of the first phase of electronic invoicing."
+    },
+    {
+        id: 2,
+        title: "Phase Two",
+        content: "Amrk has met the specific criteria of electronic invoicing (integration and linking) and the first phase (issuance and storage)."
+    },
+];
+
+export const sectionIIIContent_en = {
+    heading: "E-invoicing support to aid your digital transformation.",
+    paragraph1: `ZATCA offers 
+    <strong class="text-PrimBtn font-medium">
+        E-Invoicing support program
+     </strong>
+    , which is a financial support for small and medium-sized enterprises subject to the E-Invoicing regulations. The financial support reaches SAR 2,500 for each establishment, to encourage enterprises to switch to digital invoicing.`,
+    paragraph2: "Establishments can apply for the support through the ZATCA portal."
+};
+
+
+export const sectionIVContent_en = {
+    text: "Amrk is registered as a local technology product according to the classification of the Saudi Communications, Space and Technology Commission (CST). Amrk is proud to be a Saudi Company that has designed and developed its technology locally. It has been included in the directory of local technology products by CST.",
+    image: {
+        src: C2,
+        alt: "Amrk Certifications"
+    }
+};
+
+
+export const sectionVContent_en = {
+    heading: "The systems used to develop Amrk rely on Google Cloud technologies, providing:",
+    image: {
+        src: C3,
+        alt: "This is alt text"
+    },
+    items: [
+        {
+            name: "Reliability:",
+            content: "Leveraging Google's data centers and infrastructure ensures maximum uptime and performance."
+        },
+        {
+            name: "Scalability:",
+            content: " Solid handling of sudden increases in demand, utilizing Google Cloud's ability to dynamically adjust resources."
+        },
+        {
+            name: "Security:",
+            content: "Protecting our data with Google's advanced security measures, including encryption, access controls, and regular audits."
+        },
+        {
+            name: "Speed:",
+            content: " Amrk's cloud system benefits from Google Cloud's high-performance network for rapid speed."
+        },
+        {
+            name: "Innovation:",
+            content: " Google Cloud enables us to quickly launch new and innovative services through Google Cloud's developer services for innovators"
+        }
+    ]
+};
+
+export const sectionVIContent_en = {
+    heading: "Reliable tech for a seamless experience",
+    subheading: "Our solutions leverage the latest technology for high performance and advanced security",
+    fieldLists: [
+        {
+            legendText: 'Infrastructure & Hosting',
+            images: [
+                { src: GCloud, alt: 'Google Cloud', width: 262, height: 40 }
+            ]
+        },
+        {
+            legendText: 'Database',
+            images: [
+                { src: Firebase, alt: 'Firebase', width: 151, height: 40 }
+            ]
+        },
+        {
+            legendText: 'Programming',
+            images: [
+                { src: Flutter, alt: 'Flutter', width: 138, height: 40 },
+                { src: NextJs, alt: 'NextJs', width: 138, height: 40 },
+                { src: Angular, alt: 'Angular', width: 128, height: 40 }
+            ]
+        }
+    ]
+};
+
+
+export const sectionVIIContent_en = {
+    heading: "Our Ecosystem Partners",
+    subheading: "We collaborate with industry leaders to deliver comprehensive solutions that effectively meet your needs",
+    fieldLists: [
+        {
+            legendText: 'Online Payment',
+            images: [
+                { src: Telr, alt: 'Telr', width: 88, height: 40 },
+                { src: AmazonPay, alt: 'Amazon Pay', width: 211, height: 40 },
+                { src: Stripe, alt: 'Stripe', width: 97, height: 40 }
+            ]
+        },
+        {
+            legendText: 'Payment Terminals',
+            images: [
+                { src: Nami, alt: 'Nami', width: 162, height: 40 },
+                { src: AU, alt: 'AU', width: 64, height: 40 }
+            ]
+        },
+        {
+            legendText: 'Accounting',
+            images: [
+                { src: Xero, alt: 'Xero', width: 64, height: 64 }
+            ]
+        },
+        {
+            legendText: 'Logistics',
+            images: [
+                { src: Armada, alt: 'Armada', width: 168, height: 40 }
+            ]
+        },
+        {
+            legendText: 'ERP',
+            images: [
+                { src: Oracle, alt: 'Oracle', width: 182, height: 40 },
+                { src: SAP, alt: 'SAP', width: 98, height: 40 }
+            ]
+        },
+        {
+            legendText: 'Invoicing',
+            images: [
+                { src: Zakat, alt: 'Zakat, Tax and Customs Authority', width: 220, height: 40 },
+                { src: Ministry, alt: 'Ministry of Tax and Customs Authority', width: 64, height: 64 }
+            ]
+        }
+    ]
+};
+
+
+
+export const certficatoinData_en = {
+    heading: certificationHeadingContent_en,
+    section1: sectionIContent_en,
+    section2: sectionIIContent_en,
+    section3: sectionIIIContent_en,
+    section4: sectionIVContent_en,
+    section5: sectionVContent_en,
+    section6: sectionVIContent_en,
+    section7: sectionVIIContent_en,
+}

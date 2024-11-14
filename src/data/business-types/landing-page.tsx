@@ -19,6 +19,7 @@ export const imagesGridContent = {
             title: "مطاعم ومقاهي",
             description: "قم بتشغيل مطعمك بكفاءة ورفع مستوى رضا العملاء",
             more: "معرفة المزيد",
+            url: '/restaurants-cafes',
             key: 0
         },
         {
@@ -26,6 +27,7 @@ export const imagesGridContent = {
             title: "مطابخ سحابية",
             description: "تبسيط عمليات العلامات التجارية المتعددة مع تكامل تطبيقات التوصيل",
             more: "معرفة المزيد",
+            url: '/cloud-kitchens',
             key: 0
         },
         {
@@ -33,6 +35,7 @@ export const imagesGridContent = {
             title: "عربات الطعام",
             description: "تسهيل عمليات الطلب والدفع عبر نقاط بيع متوافقة مع الهواتف المحمولة",
             more: "معرفة المزيد",
+            url: '/food-trucks',
             key: 0
         },
     ],
@@ -42,6 +45,7 @@ export const imagesGridContent = {
             title: "الخدمة السريعة",
             description: "تسريع الخدمة وتبسيط العمليات لتحقيق كفاءة أفضل وتجربة عملاء محسنة",
             more: "معرفة المزيد",
+            url: '/quick-service',
             key: 0
         },
         {
@@ -49,6 +53,7 @@ export const imagesGridContent = {
             title: "الخدمة على الطاولة",
             description: "تحسين تجربة الضيوف من خلال خدمة طاولات سلسة",
             more: "معرفة المزيد",
+            url: '/table-service',
             key: 0
         },
     ],
@@ -58,6 +63,7 @@ export const imagesGridContent = {
             title: "توريد الطعام",
             description: "تنظيم الفعاليات بدقة وموثوقية لضمان تجربة سلسة واحترافية",
             more: "معرفة المزيد",
+            url: '/catering',
             key: 0
         },
         {
@@ -65,6 +71,7 @@ export const imagesGridContent = {
             title: "مانحي الامتياز",
             description: "التوحيد والتوسع عبر المواقع المتعددة لضمان اتساق العمليات وجودة الخدمة",
             more: "معرفة المزيد",
+            url: '/franchise',
             key: 0
         },
         {
@@ -72,7 +79,86 @@ export const imagesGridContent = {
             title: "قطاعات التجزئة",
             description: "تحسين عمليات البيع بالتجزئة عبر نقاط البيع المتكاملة وإدارة المخزون",
             more: "معرفة المزيد",
+            url: '/retail-sectors',
             key: 0
+        },
+    ],
+};
+
+export const pageHeading_en = {
+    title: "Tailored Solutions for Your Restaurant",
+    description: "Explore a wide range of diverse and specialized solutions that meet the needs of various types of businesses, enabling you to improve efficiency, meet increasing demands, and achieve smooth and sustainable growth."
+};
+
+export const imagesGridContent_en = {
+    section1: [
+        {
+            imgSrc: R1Image,
+            title: "Restaurants & Cafes",
+            description: "Run your restaurant efficiently and enhance satisfaction",
+            more: "Learn More",
+            url: '/restaurants-cafes',
+            key: 1
+        },
+        {
+            imgSrc: R2Image,
+            title: "Cloud Kitchens",
+            description: "Simplifying multi-brand operations with delivery app integration",
+            more: "Learn More",
+            url: '/cloud-kitchens',
+            key: 1
+        },
+        {
+            imgSrc: R3Image,
+            title: "Food Trucks",
+            description: "Streamlining ordering and payment with mobile-compatible POS systems",
+            more: "Learn More",
+            url: '/food-trucks',
+            key: 1
+        },
+    ],
+    section2: [
+        {
+            imgSrc: R4Image,
+            title: "Dine-In Service",
+            description: "Enhancing guest experience with seamless table service",
+            more: "Learn More",
+            url: '/table-service',
+            key: 1
+        },
+        {
+            imgSrc: R5Image,
+            title: "Quick Service",
+            description: "Streamlining service for better efficiency and customer experience",
+            more: "Learn More",
+            url: '/quick-service',
+            key: 1
+        },
+    ],
+    section3: [
+        {
+            imgSrc: R6Image,
+            title: "Catering",
+            description: "Organizing events with precision and reliability for a seamless, professional experience",
+            more: "Learn More",
+            url: '/catering',
+            key: 1
+        },
+        {
+            imgSrc: R7Image,
+            title: "Franchisors",
+            description: "Standardizing and expanding across locations for consistent operations and quality",
+            more: "Learn More",
+            url: '/franchise',
+            key: 1
+        },
+        {
+            imgSrc: R8Image,
+            title: "Retail",
+            description: "Enhancing retail operations through integrated POS and inventory management",
+            more: "Learn More",
+            url: '/retail-sectors',
+            key: 1
         },
     ],
 };

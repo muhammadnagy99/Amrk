@@ -6,10 +6,11 @@ interface PostCardProps {
     heading: string;
     paragraph: string;
     searchKey: string
-    index?: number
+    index?: number;
+    lang:string;
 }
 
-export default function PostCard({ imageSrc, heading, paragraph, searchKey, index }: PostCardProps) {
+export default function PostCard({ imageSrc, heading, paragraph, searchKey, index, lang }: PostCardProps) {
     return (
         <a href={`/blog/${searchKey}`} className={`flex-col w-full gap-3 md:gap-[24px] md:h-[460px] post-card rounded-[16px] ${index == 1 ? 'flex md:hidden' : 'flex'}`}
 >
@@ -31,7 +32,7 @@ export default function PostCard({ imageSrc, heading, paragraph, searchKey, inde
                         {paragraph}
                     </p>
                 </div>
-                <PostProps />
+                <PostProps lang={lang} />
             </div>
         </a>
     );

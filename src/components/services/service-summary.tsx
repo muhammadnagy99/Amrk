@@ -5,7 +5,7 @@ import { ServiceSummaryProps } from "@/src/types/interfaces";
 export default function ServiceSummary({ imageSrc, heading, listItems }: ServiceSummaryProps) {
     return (
         <div className="flex flex-col-reverse md:flex-row justify-between bg-primText rounded-[24px] p-6 md:p-special" aria-labelledby="Features-Bullets-List">
-            <div className="relative flex flex-col gap-[24px] h-[480px] md:w-[50%] justify-center items-center">
+            <div className="relative flex flex-col gap-[24px] h-[200px] md:h-[480px] md:w-[50%] justify-center items-center">
                 <Image
                 className="h-full object-contain"
                     src={imageSrc}

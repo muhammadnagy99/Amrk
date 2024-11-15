@@ -11,9 +11,25 @@ import thumbnail4 from '@/public/blog/thumbnails/bp4.png';
 import thumbnail5 from '@/public/blog/thumbnails/bp5.png';
 import thumbnail6 from '@/public/blog/thumbnails/bp6.png';
 
+
 import { blogHeadingContent, blogHeadingContent_en } from "@/src/data/blog/blog-data";
 import blogs_ar from "@/src/data/blogs_ar.json";
 import blogs_en from "@/src/data/blogs_en.json";
+
+
+export async function generateMetadata(props: {
+    params: Promise<{ lang: Locale }>;
+}) {
+    const params = await props.params;
+    const isEnglish = params.lang === 'en';
+
+    const heading = isEnglish ? blogHeadingContent_en : blogHeadingContent;
+
+    return {
+        title: heading.pageTitle,
+        description: heading.subtitle
+    }
+}
 
 export default async function BlogPage({ params }: { params: { lang: Locale } }) {
     const { lang } = params;

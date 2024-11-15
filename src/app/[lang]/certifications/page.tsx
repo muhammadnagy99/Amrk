@@ -9,8 +9,24 @@ import SectionV from "@/src/components/certifications/section-5";
 import SectionVII from "@/src/components/certifications/section-7";
 import SectionVI from "@/src/components/certifications/section-6";
 import PromoSection from "@/src/components/promotion-section/promotion-section";
-import { certficatoinData, certficatoinData_en } from "@/src/data/certifications/cert-data";
+import { certficatoinData, certficatoinData_en, metadata } from "@/src/data/certifications/cert-data";
 import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
+
+export async function generateMetadata(props: {
+    params: Promise<{ lang: Locale }>;
+}) {
+    const params = await props.params;
+    const isEnglish = params.lang === 'en';
+
+    const cerData = isEnglish ? certficatoinData_en : certficatoinData;
+    const title = isEnglish ? metadata.title_en : metadata.title_ar;
+    const description = cerData.heading.description;
+
+    return {
+        title: title,
+        description: description
+    }
+}
 
 export default async function CertificationsPage(props: {
     params: Promise<{ lang: Locale }>;

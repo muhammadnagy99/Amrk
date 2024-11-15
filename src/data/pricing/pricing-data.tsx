@@ -607,3 +607,8 @@ export const PricingData_en = {
   packages: packagesData_en,
   accordion: accordionData_en
 }
+
+export const metadata = {
+  title_ar: "الباقات",
+  title_en: "pricing"
+}

@@ -7,6 +7,11 @@ import R6Image from '@/public/business-types/image-6.png';
 import R7Image from '@/public/business-types/image-7.png';
 import R8Image from '@/public/business-types/image-8.png';
 
+export const metedate = {
+    title_ar: "قطاعات نخدمها",
+    title_en: "Sectors We Serve"
+}
+
 export const pageHeading = {
     title: "حلول مصممة خصيصاً لمطعمك",
     description: "استكشف مجموعة واسعة من الحلول المتنوعة والمتخصصة التي تلبي احتياجات مختلف أنواع الأعمال، مما يمكّنك من تحسين الكفاءة، وتلبية المتطلبات المتزايدة، وتحقيق نمو سلس ومستدام."

@@ -355,3 +355,9 @@ export const certficatoinData_en = {
     section6: sectionVIContent_en,
     section7: sectionVIIContent_en,
 }
+
+
+export const metadata = {
+    title_ar: "الاعتمادات",
+    title_en: "Certifications"
+}

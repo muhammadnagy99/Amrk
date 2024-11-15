@@ -4,6 +4,21 @@ import ServiceHero from "@/src/components/services/hero";
 import ServiceSummary from "@/src/components/services/service-summary";
 import { Locale } from "@/src/i18n-config";
 
+export async function generateMetadata(props: {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const params = await props.params;
+  const isEnglish = params.lang === 'en';
+
+  const metaData = isEnglish ? contentData_en.find(item => item.type === "ServiceHero") : contentData.find(item => item.type === "ServiceHero");
+
+  return {
+      title: metaData?.props.heading,
+      description: metaData?.props.description
+  }
+}
+
+
 import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
 import {
   contentData,

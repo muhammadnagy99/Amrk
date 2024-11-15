@@ -10,6 +10,20 @@ import {
   contentData_en,
 } from "@/src/data/inventory-management/stock-control";
 
+export async function generateMetadata(props: {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const params = await props.params;
+  const isEnglish = params.lang === 'en';
+
+  const metaData = isEnglish ? contentData_en.find(item => item.type === "ServiceHero") : contentData.find(item => item.type === "ServiceHero");
+
+  return {
+      title: metaData?.props.heading,
+      description: metaData?.props.description
+  }
+}
+
 export default async function StockControlPage(props: {
   params: Promise<{ lang: Locale }>;
 }) {

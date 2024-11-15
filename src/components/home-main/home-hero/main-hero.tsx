@@ -32,7 +32,7 @@ export default function MainHero({ heroContent }: MainHeroProps) {
                 />
             </div>
 
-            <div className="block md:hidden">
+            <div className="flex justify-center md:hidden">
                 <Image
                     src={heroImageMobile}
                     alt="Amrk Restaurant Systems"

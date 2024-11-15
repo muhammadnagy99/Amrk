@@ -74,7 +74,7 @@ export const megaMenuData = {
           text: "إدارة علاقات العملاء وعمل حملات تسويقية",
           url: "/crm-marketing",
         },
-        { text: "الربط مع تطبيقات التوصيل", url: "/delivery-app-integration" },
+        { text: "الربط مع تطبيقات التوصيل", url: "/delivery-integration" },
       ],
     },
     {

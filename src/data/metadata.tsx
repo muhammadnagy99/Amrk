@@ -17,6 +17,7 @@ export const siteMetadata_en: Metadata = {
   creator: "Muhammad Nagy",
   publisher: "Amrk Co",
   openGraph: {
+    siteName: "Amrk Restaurant Management System (RMS)",
     title: "Amrk Restaurant Management System",
     description: "Transform your restaurant's operations with Amrk RMS, an innovative management solution built to enhance productivity and customer satisfaction.",
     url: "https://amrk.vercel.app",
@@ -57,6 +58,7 @@ export const siteMetadata_ar: Metadata = {
   creator: "Muhammad Nagy",
   publisher: "أمرك لإدارة المطاعم",
   openGraph: {
+    siteName: "Amrk Restaurant Management System (RMS)",
     title: "نظام إدارة المطاعم Amrk",
     description: "حوّل عمليات مطعمك مع Amrk RMS، الحل الإداري المبتكر لتعزيز الإنتاجية ورضا العملاء.",
     url: "https://amrk.vercel.app",

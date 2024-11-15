@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export const siteMetadata_en: Metadata = {
   title: "Amrk Restaurant Management System (RMS)",
   description: "Amrk RMS is a powerful and comprehensive platform designed to streamline restaurant operations, improve efficiency, and optimize resource management. Tailored for modern restaurants, it provides an all-in-one solution for inventory, order management, and customer service.",
-  authors: [{ name: "Bahaa Mohamed Akl" }],
+  authors: [{ name: "'Amrk co" }],
   keywords: [
     "Restaurant Management System",
     "Amrk RMS",
@@ -14,8 +14,8 @@ export const siteMetadata_en: Metadata = {
     "Restaurant Automation"
   ],
   applicationName: "Amrk Restaurant Management System",
-  creator: "Amrk Co",
-  publisher: "Muhammad Nagy",
+  creator: "Muhammad Nagy",
+  publisher: "Amrk Co",
   openGraph: {
     title: "Amrk Restaurant Management System",
     description: "Transform your restaurant's operations with Amrk RMS, an innovative management solution built to enhance productivity and customer satisfaction.",
@@ -43,7 +43,7 @@ export const siteMetadata_en: Metadata = {
 export const siteMetadata_ar: Metadata = {
   title: "نظام إدارة المطاعم Amrk (RMS)",
   description: "Amrk RMS هو منصة قوية وشاملة مصممة لتبسيط عمليات المطاعم، وتحسين الكفاءة، وتحسين إدارة الموارد. تم تصميمه خصيصًا للمطاعم الحديثة، ويقدم حلاً متكاملاً لإدارة المخزون والطلبات وخدمة العملاء.",
-  authors: [{ name: "بهاء محمد عقل" }],
+  authors: [{ name: "أمرك لإدارة المطاعم" }],
   keywords: [
     "نظام إدارة المطاعم",
     "Amrk RMS",
@@ -54,8 +54,8 @@ export const siteMetadata_ar: Metadata = {
     "أتمتة المطاعم"
   ],
   applicationName: "نظام إدارة المطاعم Amrk",
-  creator: "شركة Amrk",
-  publisher: "محمد ناجي",
+  creator: "Muhammad Nagy",
+  publisher: "أمرك لإدارة المطاعم",
   openGraph: {
     title: "نظام إدارة المطاعم Amrk",
     description: "حوّل عمليات مطعمك مع Amrk RMS، الحل الإداري المبتكر لتعزيز الإنتاجية ورضا العملاء.",

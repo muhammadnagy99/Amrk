@@ -2,16 +2,16 @@ import type { MetadataRoute } from 'next';
 
 const DOMAIN = 'https://amrk.vercel.app'; 
 
-import { footerNavLinks_en } from '../data/footer/footer-data';
+import { weblinks } from '../data/sitemap';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const urls = footerNavLinks_en.flatMap(section => 
+  const urls = weblinks.flatMap(section => 
     section.items.map(item => ({
       url: `${DOMAIN}${item.url}`,
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: `${DOMAIN}${item.url}`,
+          en: `${DOMAIN}/en${item.url}`,
           ar: `${DOMAIN}/ar${item.url}`,
         },
       },

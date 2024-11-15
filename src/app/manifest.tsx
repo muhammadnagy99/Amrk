@@ -6,6 +6,7 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
     short_name: "Amrk",
     start_url: '/',
     display: 'standalone',
+    display_override: ["fullscreen","standalone" ],
     background_color: '#ffffff',
     theme_color: '#23314c',
     description: 'Amrk Restaurants Managmenets Systems',

@@ -30,7 +30,7 @@ const strory1_en: Row[] = [
           "Amrk successfully transformed Dhahia Juice within one month, with no disruption to operations.",
         introText: "Since adopting Amrk, Dhahia Juice has achieved the following results:",
         content: [
-          "Reduced SaaS Opex by 80%",
+          "Reduced SaaS Opex by 5%",
           "Enhanced inventory management and cost control",
           "Introduction of a new loyalty program and online services",
         ],

@@ -115,7 +115,7 @@ export const sectionData: Section[] = [
     {
         id: 5,
         button: {
-            label: "تشغيل المطابخ السحابية",
+            label: "نظام المطابخ السحابية",
             iconLight: <CloudKitchenIconLight />,
             iconDark: <CloudKitchenIconDark />, 
         },

@@ -40,11 +40,13 @@ const rubik = localFont({
   variable: "--font-rubik",
 });
 
+export async function generateMetadata({ params }: { params: { lang: Locale } }) {
+  return getMetadata(params.lang);
+}
+
 function getMetadata(lang: Locale): Metadata {
   return lang === 'en' ? siteMetadata_en : siteMetadata_ar;
 }
-
-export const metadata: Metadata = getMetadata('ar');
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -52,15 +54,15 @@ export async function generateStaticParams() {
 
 export default async function RootLayout(props: {
   children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
+  params: { lang: Locale };
 }) {
-  const params = await props.params;
+  const { lang } = props.params;
   let dir = 'rtl';
 
   let HeaderData = mainHeaderData_ar;
   let FooterData = footerData_ar;
 
-  if (params.lang === 'en') {
+  if (lang === 'en') {
     dir = 'ltr';
     HeaderData = mainHeaderData_en;
     FooterData = footerData_en;
@@ -69,7 +71,7 @@ export default async function RootLayout(props: {
   const { children } = props;
 
   return (
-    <html lang={params.lang} dir={dir}>
+    <html lang={lang} dir={dir}>
       <body
         className={`flex flex-col justify-center ${rubik.variable} antialiased bg-white`}
       >

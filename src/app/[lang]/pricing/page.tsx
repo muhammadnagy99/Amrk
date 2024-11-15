@@ -13,6 +13,6 @@ export default async function Pricing(props: {
 
 
     return(
-        <Main heading={pageData.heading} packagesData={pageData.packages} accordionData={pageData.accordion} promoContent={promoData} />
+        <Main heading={pageData.heading} packagesData={pageData.packages} accordionData={pageData.accordion} promoContent={promoData} lang={params.lang} />
     );
 }

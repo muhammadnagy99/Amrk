@@ -1,5 +1,5 @@
 interface props {
-  lang: "en" | "ar"
+  lang: string
 }
 
 export default function ContactUs({ lang }: props) {

@@ -21,9 +21,10 @@ interface MainProps {
     packagesData: Array<any>;
     accordionData: Array<any>;
     promoContent: any;
+    lang: string
 }
 
-export default function Main({ heading, packagesData, accordionData, promoContent }: MainProps) {
+export default function Main({ heading, packagesData, accordionData, promoContent, lang }: MainProps) {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const toggleCollapse = () => {
@@ -56,7 +57,7 @@ export default function Main({ heading, packagesData, accordionData, promoConten
                 </div>
 
                 <div className="flex justify-start w-full">
-                    <ContactUs lang='ar' />
+                    <ContactUs lang={lang} />
                 </div>
             </div>
 

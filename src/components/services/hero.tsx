@@ -17,13 +17,15 @@ export default function ServiceHero({ heading, description, btnText, image }: He
 
             <HeroDetails heading={heading} description={description} btnText={btnText} />
 
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 ">
                 <Image
+                    className="rounded-xl"
                     src={image.src}
                     width={588}
                     height={588}
                     alt={image.alt}
                     placeholder="blur"
+                    quality={100}
                     priority={true}
                 />
             </div>

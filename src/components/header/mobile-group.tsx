@@ -27,7 +27,7 @@ interface MobileHeaderGroupProps {
 export default function MobileHeaderGroup({ sidebarData }: MobileHeaderGroupProps) {
     const {switcher} = sidebarData;
     return(
-        <div className="flex flex-row items-center gap-4 lg:hidden">
+        <div className="flex flex-row items-center gap-4 xl:hidden">
             <a href={switcher.url}>
                 {switcher.icon}
             </a>

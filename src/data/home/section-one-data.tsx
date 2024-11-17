@@ -128,7 +128,7 @@ export const sectionData: Section[] = [
             height: 150,
             priority: false
         },
-        url: "/cloud-kitchen-operation",
+        url: "/cloud-kitchen-system",
         more:"معرفة المزيد",
         dir: 0
     },
@@ -168,7 +168,7 @@ export const sectionData: Section[] = [
             height: 215,
             priority: false
         },
-        url: "/multi-brands-kitchen",
+        url: "/kitchen-multi-brand",
         more:"معرفة المزيد",
         dir: 0
     },

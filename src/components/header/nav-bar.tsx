@@ -16,7 +16,7 @@ interface NavBarProps {
             title: string;
             menuItems: { text: string; url: string }[];
         };
-        links: { text: string; url: string }[]; // Ensure this contains only the specific links needed
+        links: { text: string; url: string }[];
     };
 }
 
@@ -25,7 +25,7 @@ export default function NavBar({ data }: NavBarProps) {
 
     return (
         <div className="flex justify-center w-7/12">
-            <nav className="hidden lg:flex w-[510px] justify-around">
+            <nav className="hidden xl:flex w-[510px] justify-around">
                 <MegaMenu data={megaMenuData} />
 
                 <Link href={links[0].url} className="flex items-center mx-2 text-primText hover-underline">

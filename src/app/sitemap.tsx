@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const DOMAIN = 'https://amrk.vercel.app'; 
+const DOMAIN = 'https://amrk.co'; 
 
 import { weblinks } from '../data/sitemap';
 

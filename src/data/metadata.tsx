@@ -20,7 +20,7 @@ export const siteMetadata_en: Metadata = {
     siteName: "Amrk Restaurant Management System (RMS)",
     title: "Amrk Restaurant Management System",
     description: "Transform your restaurant's operations with Amrk RMS, an innovative management solution built to enhance productivity and customer satisfaction.",
-    url: "https://amrk.vercel.app",
+    url: "https://amrk.co/",
     type: "website",
     images: [
       {
@@ -61,11 +61,11 @@ export const siteMetadata_ar: Metadata = {
     siteName: "Amrk Restaurant Management System (RMS)",
     title: "نظام إدارة المطاعم Amrk",
     description: "حوّل عمليات مطعمك مع Amrk RMS، الحل الإداري المبتكر لتعزيز الإنتاجية ورضا العملاء.",
-    url: "https://amrk.vercel.app",
+    url: "https://amrk.co/",
     type: "website",
     images: [
       {
-        url: "/hero-full-art-1(1).webp",
+        url: "/hero.jpg",
         width: 341,
         height: 332,
         alt: "نظام إدارة المطاعم Amrk"
@@ -78,6 +78,6 @@ export const siteMetadata_ar: Metadata = {
     creator: "@MuhammadNagy",
     title: "نظام إدارة المطاعم Amrk",
     description: "ارتقِ بأداء مطعمك مع Amrk RMS — الأداة الأساسية لإدارة المطاعم الحديثة.",
-    images: ["/hero-full-art-1(1).webp"]
+    images: ["/hero.jpg"]
   }
 };

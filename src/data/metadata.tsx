@@ -24,7 +24,7 @@ export const siteMetadata_en: Metadata = {
     type: "website",
     images: [
       {
-        url: "/hero-full-art-1(1).webp",
+        url: "/hero.jpg",
         width: 341,
         height: 332,
         alt: "Amrk Restaurant Management System"

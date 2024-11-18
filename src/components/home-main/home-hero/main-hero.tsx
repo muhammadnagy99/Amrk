@@ -1,6 +1,5 @@
 import Image from "next/image";
-import heroImage from '@/public/hero-full-art-1.webp';
-import heroImageMobile from '@/public/hero-full-art-1(1).webp';
+import heroImage from '@/public/hero.jpg';
 import HeroDetails from "./hero-details";
 
 type HeroContent = {
@@ -28,20 +27,11 @@ export default function MainHero({ heroContent }: MainHeroProps) {
                     placeholder="blur"
                     priority={true}
                     width={690}
-                    height={798}
+                    height={800}
                 />
             </div>
 
-            {/* <div className="flex justify-center md:hidden">
-                <Image
-                    src={heroImageMobile}
-                    alt="Amrk Restaurant Systems"
-                    placeholder="blur"
-                    priority={true}
-                    width={341}
-                    height={332}
-                />
-            </div> */}
+            
         </div>
     );
 }

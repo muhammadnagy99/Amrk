@@ -147,7 +147,7 @@ export default function DemoForm({ content }: DemoFormProps) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-        credentials: 'include',
+        mode: 'cors',
       });
       if (!response.ok) throw new Error("Form submission failed.");
       setShowSuccessMessage(true);

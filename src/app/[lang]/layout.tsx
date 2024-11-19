@@ -8,6 +8,7 @@ import "./globals.css";
 
 import { mainHeaderData_ar, mainHeaderData_en } from "@/src/data/header/header-data";
 import { footerData_ar, footerData_en } from "@/src/data/footer/footer-data";
+import Head from "next/head";
 
 const rubik = localFont({
   src: [
@@ -72,6 +73,7 @@ export default async function RootLayout(props: {
 
   return (
     <html lang={lang} dir={dir}>
+      
       <body
         className={`flex flex-col justify-center ${rubik.variable} antialiased bg-white`}
       >

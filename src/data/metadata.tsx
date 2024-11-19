@@ -38,6 +38,9 @@ export const siteMetadata_en: Metadata = {
     title: "Amrk Restaurant Management System",
     description: "Elevate your restaurant's performance with Amrk RMS — the essential tool for modern restaurant management.",
     images: ["/hero-full-art-1(1).webp"]
+  },
+  verification:{
+    google: "OONqWMFGehGJ76WmWuEFGczsr_oL1H2bluSoFy6wugw"
   }
 };
 
@@ -79,5 +82,9 @@ export const siteMetadata_ar: Metadata = {
     title: "نظام إدارة المطاعم Amrk",
     description: "ارتقِ بأداء مطعمك مع Amrk RMS — الأداة الأساسية لإدارة المطاعم الحديثة.",
     images: ["/hero.jpg"]
+  }, 
+  verification:{
+    google: "OONqWMFGehGJ76WmWuEFGczsr_oL1H2bluSoFy6wugw"
   }
+  
 };

@@ -28,10 +28,12 @@ import {
 
 import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
 
-export default async function Home(props: { params: Promise<{ lang: Locale }> }) {
+export default async function Home(props: {
+  params: Promise<{ lang: Locale }>;
+}) {
   const params = await props.params;
 
-  const isEnglish = params.lang === 'en';
+  const isEnglish = params.lang === "en";
 
   const homeContent = {
     heroContent: isEnglish ? heroContent_en : heroContent,
@@ -44,11 +46,15 @@ export default async function Home(props: { params: Promise<{ lang: Locale }> })
       headerInfo: isEnglish ? sectionTwoHeading_en : sectionTwoHeading,
     },
     sectionThreeContent: {
-      headingContent: isEnglish ? sectionThreeHeadingContent_en : sectionThreeHeadingContent,
+      headingContent: isEnglish
+        ? sectionThreeHeadingContent_en
+        : sectionThreeHeadingContent,
       articles: isEnglish ? articlesData_en : articlesData,
-      collapseText: isEnglish ? sectionThreeCollapseText_en : sectionThreeCollapseText,
+      collapseText: isEnglish
+        ? sectionThreeCollapseText_en
+        : sectionThreeCollapseText,
     },
-    promoContent: isEnglish ? promoContent_en : promoContent, 
+    promoContent: isEnglish ? promoContent_en : promoContent,
   };
 
   return (

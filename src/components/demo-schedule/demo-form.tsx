@@ -130,17 +130,18 @@ export default function DemoForm({ content }: DemoFormProps) {
     setShowSuccessMessage(false);
 
     const formData = {
-      name,
+      firstName: name,
+      lastName: "",
       country: selectedCountry?.label || "",
-      phone: phoneNumber,
+      mobile: phoneNumber,
       email,
-      restaurantName,
-      branches,
+      restaurantName: restaurantName,
+      numberOfBranches: branches,
     };
 
+    console.log(JSON.stringify(formData));
     try {
-      const response = await fetch("/api/submitForm", {
-        //API Link Here
+      const response = await fetch("https://api.amrk.app/amrk-landing/reserve-appointment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -21,6 +21,7 @@ const rubik = localFont({
       path: "./fonts/Rubik/rubik-regular-webfont.woff",
       weight: "400",
       style: "normal",
+      
     },
     {
       path: "./fonts/Rubik/rubik-bold-webfont.woff",

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
  
-const DOMAIN = 'https://amrk.vercel.app';
+const DOMAIN = 'https://amrk.co/';
 
 export default function robots(): MetadataRoute.Robots {
   return {

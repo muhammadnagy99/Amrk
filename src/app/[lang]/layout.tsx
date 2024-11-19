@@ -13,18 +13,18 @@ import Head from "next/head";
 const rubik = localFont({
   src: [
     {
-      path: "./fonts/Rubik/Rubik-Light.ttf",
+      path: "./fonts/Rubik/rubik-light-webfont.woff",
       weight: "300",
       style: "normal",
     },
     {
-      path: "./fonts/Rubik/Rubik-Regular.ttf",
+      path: "./fonts/Rubik/rubik-regular-webfont.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./fonts/Rubik/Rubik-Bold.ttf",
-      weight: "700",
+      path: "./fonts/Rubik/rubik-bold-webfont.woff",
+      weight: "500",
       style: "normal",
     },
     {

@@ -16,7 +16,7 @@ import Screen6_en from '@/public/screens/catering_screen_en.png'
 
 
 export const sectionHeading: heading = {
-    primary: "قطاعات نخدمتها",
+    primary: "قطاعات نخدمها",
     secondary: "حلول مصممة خصيصًا لتلبية احتياجاتكم وتعزيز نجاح أعمالكم"
 }
 export const sectionData: ScreensSection[] = [

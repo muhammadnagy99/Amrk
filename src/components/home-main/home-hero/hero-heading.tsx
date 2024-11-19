@@ -10,7 +10,7 @@ export default function HeroHeading({ headingText }: HeroHeadingProps) {
   const words = headingText.split(/(\s|\n)/);
 
   const wordAnimation = {
-    hidden: { opacity: 0, y: 1 },
+    hidden: { opacity: 0, y: 0 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,

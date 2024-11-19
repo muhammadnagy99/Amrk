@@ -16,7 +16,7 @@ export default function SectionHeader({ heading, paragraph, color = "inherit" }:
   const words = heading.split(" ");
 
   const variants = {
-    hidden: { opacity: 0, y: 2 },
+    hidden: { opacity: 0, y: 0 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,

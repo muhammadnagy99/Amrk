@@ -77,6 +77,8 @@ export default function DemoForm({ content }: DemoFormProps) {
   const [isClient, setIsClient] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showfailedMessage, setShowfailedMessage] = useState(false);
+
 
   useEffect(() => {
     setIsClient(true);
@@ -154,7 +156,10 @@ export default function DemoForm({ content }: DemoFormProps) {
           mode: "cors",
         }
       );
-      if (!response.ok) throw new Error("Form submission failed.");
+      if (!response.ok){
+        throw new Error("Form submission failed.");
+        setShowfailedMessage(true);
+      } 
       setShowSuccessMessage(true);
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -327,7 +332,7 @@ export default function DemoForm({ content }: DemoFormProps) {
           <p className="text-green-500 mt-2 text-base">{content.labels.successMessage}</p>
         )}
 
-        {!showSuccessMessage && (
+        {showfailedMessage && (
           <p className="text-red-500 mt-2 text-base">{content.labels.failedMessage}</p>
         )}
       </form>

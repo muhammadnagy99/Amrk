@@ -24,6 +24,7 @@ interface DemoScheduleProps {
                 countryPlaceholder: string;
                 submit: string;
                 successMessage: string;
+                failedMessage: string;
             };
             branchOptions: {
                 value: string;

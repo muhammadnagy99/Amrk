@@ -16,25 +16,24 @@ interface CountryOption {
 }
 
 interface DemoFormProps {
-    content: {
-      labels: {
-        name: string;
-        phone: string;
-        email: string;
-        restaurantName: string;
-        branches: string;
-        countryPlaceholder: string;
-        submit: string;
-        successMessage: string;
-      };
-      branchOptions: {
-        value: string;
-        label: string;
-      }[];
-      lang: "en" | "ar"
+  content: {
+    labels: {
+      name: string;
+      phone: string;
+      email: string;
+      restaurantName: string;
+      branches: string;
+      countryPlaceholder: string;
+      submit: string;
+      successMessage: string;
     };
-  }
-  
+    branchOptions: {
+      value: string;
+      label: string;
+    }[];
+    lang: "en" | "ar";
+  };
+}
 
 const customStyles: StylesConfig<CountryOption, false> = {
   control: (provided) => ({
@@ -129,9 +128,12 @@ export default function DemoForm({ content }: DemoFormProps) {
     setIsSubmitting(true);
     setShowSuccessMessage(false);
 
+    const [firstName, ...rest] = name.split(" ");
+    const lastName = rest.join(" ");
+
     const formData = {
-      firstName: name,
-      lastName: "",
+      firstName,
+      lastName,
       country: selectedCountry?.label || "",
       mobile: phoneNumber,
       email,
@@ -141,14 +143,17 @@ export default function DemoForm({ content }: DemoFormProps) {
 
     console.log(JSON.stringify(formData));
     try {
-      const response = await fetch("https://api.amrk.app/amrk-landing/reserve-appointment", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-        mode: 'cors',
-      });
+      const response = await fetch(
+        "https://api.amrk.app/amrk-landing/reserve-appointment",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+          mode: "cors",
+        }
+      );
       if (!response.ok) throw new Error("Form submission failed.");
       setShowSuccessMessage(true);
     } catch (error) {
@@ -283,7 +288,9 @@ export default function DemoForm({ content }: DemoFormProps) {
                 ))}
               </select>
               <svg
-                className={`absolute ${content.lang == 'ar' ? 'left-3' : 'right-3'} top-1/2 transform -translate-y-1/2 pointer-events-none`}
+                className={`absolute ${
+                  content.lang == "ar" ? "left-3" : "right-3"
+                } top-1/2 transform -translate-y-1/2 pointer-events-none`}
                 width="10"
                 height="7"
                 viewBox="0 0 10 7"

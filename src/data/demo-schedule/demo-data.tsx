@@ -23,6 +23,7 @@ export const demoScheduleData: DemoData = {
       countryPlaceholder: "اختر الدولة",
       submit: "إرسال",
       successMessage: "تم الارسال بنجاح",
+      failedMessage: "خطأ في الارسال، حاول مرة أخرى",
     },
     branchOptions: [
       { value: "1", label: "1" },
@@ -57,6 +58,7 @@ export const demoScheduleData_en: DemoData = {
       countryPlaceholder: "Select Country",
       submit: "Submit",
       successMessage: "Sent successfully",
+      failedMessage: "Failed to send, Try again later"
     },
     branchOptions: [
       { value: "1", label: "1" },

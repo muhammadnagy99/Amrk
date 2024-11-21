@@ -1,5 +1,6 @@
 import PrimaryBtn from "../buttons/primary-button";
 import SecondaryBtn from "../buttons/secondary-button";
+import LanguageSwithcher from "./language-switcher";
 
 interface BtnGroupProps {
     data: {
@@ -30,9 +31,7 @@ export default function BtnGroup({ data }: BtnGroupProps) {
                 </a>
             ))}
              {icon && (
-                <a href={icon.url} className="w-[5%]" aria-label="Amrk Home Page">
-                    {icon.source}
-                </a>
+                <LanguageSwithcher icon={icon} />
             )}
         </div>
     );

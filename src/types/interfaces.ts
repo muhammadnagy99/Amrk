@@ -222,6 +222,7 @@ export interface DemoData {
         countryPlaceholder: string;
         submit: string;
         successMessage: string;
+        failedMessage: string
       };
       branchOptions: {
         value: string;

@@ -26,6 +26,7 @@ interface DemoFormProps {
       countryPlaceholder: string;
       submit: string;
       successMessage: string;
+      failedMessage: string;
     };
     branchOptions: {
       value: string;
@@ -323,7 +324,11 @@ export default function DemoForm({ content }: DemoFormProps) {
         </button>
 
         {showSuccessMessage && (
-          <p className="text-green-500 mt-2">{content.labels.successMessage}</p>
+          <p className="text-green-500 mt-2 text-base">{content.labels.successMessage}</p>
+        )}
+
+        {!showSuccessMessage && (
+          <p className="text-red-500 mt-2 text-base">{content.labels.failedMessage}</p>
         )}
       </form>
 

@@ -141,7 +141,6 @@ export default function DemoForm({ content }: DemoFormProps) {
       numberOfBranches: branches,
     };
 
-    console.log(JSON.stringify(formData));
     try {
       const response = await fetch(
         "https://api.amrk.app/amrk-landing/reserve-appointment",

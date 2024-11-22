@@ -21,7 +21,7 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ title, description, img
 
     return (
         <section className="h-full">
-            <article className={`p-4 md:p-8 flex flex-col h-full w-full lg:w-[435px] justify-between items-center ${isKitchenScreen ? 'pb-0' : ''}`}>
+            <article className={`p-4 md:p-8 flex flex-col h-full w-full lg:w-[435px] gap-12 justify-between items-center ${isKitchenScreen ? 'pb-0' : ''}`}>
                 <div className="flex flex-col h-[40%] md:h-[35%] gap-4 md:gap-[24px]">
                     <h2 className="text-primText">{title}</h2>
                     <p className="text-base text-primText w-full">{description}</p>

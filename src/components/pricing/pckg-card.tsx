@@ -6,6 +6,7 @@ interface PackageCardProps {
   buttonText: string;
   buttonVariant?: 'primary' | 'outline';
   highlight?: boolean;
+  highlightText?: string
 }
 
 const PackageCard: React.FC<PackageCardProps> = ({
@@ -14,6 +15,7 @@ const PackageCard: React.FC<PackageCardProps> = ({
   buttonText,
   buttonVariant = 'primary',
   highlight = false,
+  highlightText
 }) => {
   return (
     <div
@@ -22,8 +24,8 @@ const PackageCard: React.FC<PackageCardProps> = ({
       } flex flex-col relative justify-between items-center h-[86px] md:h-[280px] w-[67px] md:w-[185px] p-2 xl:p-4 rounded-lg xl:rounded-2xl`}
     >
       {highlight && (
-        <span className="flex justify-center items-center text-[10px] xl:text-xs font-normal text-white w-[62px] xl:w-[80px] h-4 xl:h-[24px] bg-BorderHighlight rounded-[4px] absolute -top-4 left-0 xl:left-[50px]">
-          حزمة رائدة
+        <span className="flex justify-center items-center text-[10px] xl:text-xs font-normal text-white w-[60px] xl:w-[80px] h-4 xl:h-[24px] bg-BorderHighlight rounded-[4px] absolute -top-4 left-0 xl:left-[50px]">
+          {highlightText}
         </span>
       )}
       <div className="flex flex-col gap-2">

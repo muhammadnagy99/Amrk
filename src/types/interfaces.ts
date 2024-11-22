@@ -153,6 +153,7 @@ export interface Package {
   buttonText: string;
   buttonVariant?: "primary" | "outline";
   highlight?: boolean;
+  highlightText?: string;
 }
 
 interface AccordionRowData {
@@ -192,13 +193,25 @@ export interface NormalRow extends BaseArticleContent {
 export  interface RowDottedWithIntro extends BaseArticleContent {
     content: string[];
   }
+
+  export interface HighlightedDottedRow extends BaseArticleContent {
+    content: {
+      text: string;
+      highlight: boolean;
+      description: string;
+    }[];
+  }
   
   export type Row =
     | { type: 'highlightedRow'; props: HighlightedRow }
     | { type: 'normalRow'; props: NormalRow }
-    | { type: 'rowDottedWithIntro'; props: RowDottedWithIntro };
+    | { type: 'rowDottedWithIntro'; props: RowDottedWithIntro }
+    | { type: 'rowDottedHighlited'; props: HighlightedDottedRow };
 
 
+    
+
+   
 
 
 export interface DemoData {

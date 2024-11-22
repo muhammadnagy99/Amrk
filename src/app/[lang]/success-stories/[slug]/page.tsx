@@ -7,9 +7,11 @@ import RowHighlited from "@/src/components/success-stories/posts/row-highlited";
 import { Locale } from "@/src/i18n-config";
 import stories_ar from "@/src/data/success-stories/success-stories_ar.json";
 import stories_en from "@/src/data/success-stories/success-stories_en.json";
+import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
 
 import Row from "@/src/components/success-stories/posts/row";
 import Testmonial from "@/src/components/success-stories/posts/testomonial";
+import PromoSection from "@/src/components/promotion-section/promotion-section";
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
@@ -25,12 +27,28 @@ interface heroDetails {
 
 type Params = Promise<{ lang: Locale, slug: string }>
 
+export async function generateMetadata({ params }: { params: Params}) {
+  const { lang, slug } = await params;
+  const isEnglish = lang === 'en';
+
+  const StoriessData = isEnglish ? stories_en : stories_ar;
+  const currentStory = StoriessData.find((story) => story.searchKey === slug);
+
+
+  return {
+    title: currentStory?.name,
+    description: currentStory?.heading,
+  };
+}
+
 export default async function PostPage({ params }: { params: Params}) {
   const { lang, slug } = await params;
   const isEnglish = lang === 'en';
 
   const StoriessData = isEnglish ? stories_en : stories_ar;
   const currentStory = StoriessData.find((story) => story.searchKey === slug);
+  const promoContentToUse = isEnglish ? promoContent_en : promoContent;
+
 
   if (!currentStory) {
     return <div>Post not found</div>;
@@ -71,7 +89,7 @@ export default async function PostPage({ params }: { params: Params}) {
       <div className="flex flex-col items-center w-[88%] md:max-w-[1200px] justify-between gap-[48px] mt-[64px] mb-[64px] md:gap-[68px] md:mt-[120px] md:mb-[80px]">
         <ServiceHero {...heroData} />
 
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full gap-4">
           {storyData.map((row: any, index: number) => {
             switch (row.type) {
               case "normalRow":
@@ -80,6 +98,8 @@ export default async function PostPage({ params }: { params: Params}) {
                 return <RowHighlited key={index} {...row.props} />;
               case "rowDottedWithIntro":
                 return <RowDottedWithIntro key={index} {...row.props} />;
+              case "rowDottedHighlited":
+                return <RowDotted key={index} {...row.props} />;
               default:
                 return null;
             }
@@ -89,6 +109,7 @@ export default async function PostPage({ params }: { params: Params}) {
           <Testmonial qoute={testmonial.qoute} person={testmonial.person} lang={lang} />
         )}
       </div>
+      <PromoSection content={promoContentToUse} />
     </section>
   );
 }

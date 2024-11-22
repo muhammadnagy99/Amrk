@@ -16,6 +16,7 @@ export default function PackagesCards({ packages }: PackagesCardsProps) {
                     buttonText={pkg.buttonText}
                     buttonVariant={pkg.buttonVariant}
                     highlight={pkg.highlight}
+                    highlightText={pkg.highlightText}
                 />
             ))}
         </div>

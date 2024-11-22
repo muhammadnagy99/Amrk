@@ -51,8 +51,6 @@ export default async function CertificationsPage(props: {
                     <PrimaryLine />
                     <SectionV content={cerData.section5} />
                     <PrimaryLine />
-                    <SectionVI content={cerData.section6} />
-                    <PrimaryLine />
                     <SectionVII content={cerData.section7} />
                 </div>
             </div>

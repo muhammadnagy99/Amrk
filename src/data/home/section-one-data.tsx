@@ -41,7 +41,7 @@ export const sectionData: Section[] = [
         },
         article: {
             title: "نظام نقاط البيع",
-            description: "أسهل نظام نقاط بيع! يمكّن موظفيك من معالجة الطلبات بسرعة، من أي مكان، وعبر أي جهاز، سواء كان متصلًا أو غير متصل، مما يسرّع سير العمل.",
+            description: "أسهل نظام نقاط بيع ! يمكّن موظفيك من معالجة الطلبات بسرعة، من أي مكان، وعبر أي جهاز، سواء كان متصلًا أو غير متصل، مما يسرّع سير العمل.",
             imgSrc: Art1,
             imgAlt: "Amrk Restaurant Systems",
             width: 355,
@@ -75,7 +75,7 @@ export const sectionData: Section[] = [
     {
         id: 3,
         button: {
-            label: "نظام الاتصال الداخلي",
+            label: "نظام الاتصال الداخلي (Walkie-Talkie)" ,
             iconLight: <IntercomIconLight />,
             iconDark: <IntercomIconDark />, 
         },
@@ -115,7 +115,7 @@ export const sectionData: Section[] = [
     {
         id: 5,
         button: {
-            label: "نظام المطابخ السحابية",
+            label: "العلامات الافتراضية",
             iconLight: <CloudKitchenIconLight />,
             iconDark: <CloudKitchenIconDark />, 
         },

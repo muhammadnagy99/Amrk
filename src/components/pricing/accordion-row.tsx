@@ -10,7 +10,7 @@ interface AccordionRowProps {
 const AccordionRow: React.FC<AccordionRowProps> = ({ rowTitle, iconStates, type = 'accordion' }) => {
   return (
     <div
-      className={`flex flex-col xl:flex-row justify-between xl:h-[50px] ${
+      className={`flex flex-col xl:flex-row justify-between xl:h-auto items-center ${
         type === 'simpleRow' ? 'bg-primeHeader rounded-lg border border-solid border-border1 font-medium text-[14px]' : ''
       }`}
     >

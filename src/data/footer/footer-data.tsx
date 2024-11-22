@@ -63,7 +63,7 @@ export const footerNavLinks = [
     ],
   },
   {
-    title: "تشغيل المطابخ السحابية",
+    title: "نظام عمليات العلامات الافتراضية",
     items: [
       { label: "علامات متعددة في مطبخك", url: "/kitchen-multi-brand" },
       { label: "شاشة واحدة لمطبخك", url: "/kitchen-display" },
@@ -212,7 +212,7 @@ export const footerNavLinks_en = [
       ],
     },
     {
-      title: "Cloud Kitchen System",
+      title: "Virtual Brand Operations System",
       items: [
         { label: "Kitchen Multi-Brand", url: "/kitchen-multi-brand" },
         { label: "Kitchen Display (KDS)", url: "/kitchen-display" },

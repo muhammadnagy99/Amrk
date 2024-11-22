@@ -21,10 +21,10 @@ export default function Testmonial({ qoute, person, lang }: props) {
         />
       </div>
 
-      <div className="flex flex-col justify-start p-5 md:p-14 gap-4">
-        <p className="text-primText text-xs md:text-xl">{qoute}</p>
+      <div className="flex flex-col justify-center p-5 md:pr-14 md:pl-14 gap-4 h-full ">
+        <p className="text-primText text-xs md:text-xl font-light">{qoute}</p>
 
-        <p className="text-primText text-[10px] md:text-sm">{person}</p>
+        <p className="text-primText text-[10px] md:text-sm font-light">{person}</p>
       </div>
     </div>
   );

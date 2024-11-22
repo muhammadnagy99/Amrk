@@ -107,7 +107,7 @@ export const megaMenuData = {
       ],
     },
     {
-      heading: "نظام المطابخ السحابية",
+      heading: "نظام عمليات العلامات الافتراضية",
       icon: <Icon4 />,
       links: [
         { text: "علامات متعددة في مطبخك", url: "/kitchen-multi-brand" },
@@ -138,7 +138,7 @@ export const dropListData = {
 
 export const navLinks = [
   { text: "قطاعات نخدمها", url: "/business-types" },
-  { text: "الباقات", url: "/pricing" },
+  { text: "الباقات", url: "/licenses" },
 ];
 
 export const btnGroupData = {
@@ -162,8 +162,8 @@ export const btnGroupData = {
 
 export const sidebarData = {
   switcher: {
-    icon: <EnLangSwitcher />,
     url: "/en",
+    source: <EnLangSwitcher />,
   },
   solutionsMenu: {
     title: "حلول أمرك",
@@ -244,7 +244,7 @@ export const sidebarData = {
   },
   navLinks: [
     { text: "قطاعات نخدمها", url: "/business-types" },
-    { text: "الباقات", url: "/pricing" },
+    { text: "الباقات", url: "/licenses" },
     { text: "احجز موعد للتجربة", url: "/demo-schedule" },
     { text: "أمـركـ أون لاين", url: "/online" },
   ],
@@ -354,7 +354,7 @@ export const megaMenuData_en = {
       ],
     },
     {
-      heading: "Cloud Kitchen System",
+      heading: "Virtual Brand Operations System",
       icon: <Icon4 />,
       links: [
         { text: "Kitchen Multi-Brand", url: "/kitchen-multi-brand" },
@@ -385,7 +385,7 @@ export const dropListData_en = {
 
 export const navLinks_en = [
   { text: "Industries We Serve", url: "/business-types" },
-  { text: "Pricing", url: "/pricing" },
+  { text: "Licenses", url: "/licenses" },
 ];
 
 export const btnGroupData_en = {
@@ -409,8 +409,8 @@ export const btnGroupData_en = {
 
 export const sidebarData_en = {
   switcher: {
-    icon: <ArLangSwitcher />,
     url: "/ar",
+    source: <ArLangSwitcher />,
   },
   solutionsMenu: {
     title: "Amrk Solutions",
@@ -462,7 +462,7 @@ export const sidebarData_en = {
         ],
       },
       {
-        title: "Cloud Kitchen System",
+        title: "Virtual Brand Operations System",
         items: [
           { label: "Kitchen Multi-Brand", url: "/kitchen-multi-brand" },
           { label: "Kitchen Display (KDS)", url: "/kitchen-display" },
@@ -491,7 +491,7 @@ export const sidebarData_en = {
   },
   navLinks: [
     { text: "Sectors We Serve", url: "/business-types" },
-    { text: "Pricing", url: "/pricing" },
+    { text: "Licenses", url: "/licenses" },
     { text: "Book a Demo", url: "/demo-schedule" },
     { text: "Amrk Online", url: "/online" },
   ],

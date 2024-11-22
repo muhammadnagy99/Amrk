@@ -16,7 +16,7 @@ export default function SectionIII({ content }: SectionIIIProps) {
             </div>
 
             <div className="flex flex-col justify-between gap-8 items-start w-full md:w-[40%]">
-                <p className="text-primText text-xl md:text-base font-normal" dangerouslySetInnerHTML={{ __html: content.paragraph1 as string }}>
+                <p className="text-primText text-base md:text-xl font-normal" dangerouslySetInnerHTML={{ __html: content.paragraph1 as string }}>
                 
                 </p>
                 <p className="text-primText text-sm md:text-xs font-normal">

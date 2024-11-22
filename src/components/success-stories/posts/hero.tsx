@@ -9,7 +9,7 @@ export default function ServiceHero({
 }: ServiceHeroProps) {
   return (
     <div
-      className="flex flex-col md:flex-row gap-10"
+      className="flex flex-col md:flex-row gap-10 justify-between"
       aria-labelledby="Service-Hero-Section"
     >
       <HeroDetails heading={heading} description={description} />

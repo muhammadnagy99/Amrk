@@ -9,7 +9,7 @@ import R8Image from '@/public/business-types/image-8.png';
 
 export const metedate = {
     title_ar: "قطاعات نخدمها",
-    title_en: "Sectors We Serve"
+    title_en: "Industries We Serve"
 }
 
 export const pageHeading = {
@@ -74,7 +74,7 @@ export const imagesGridContent = {
         {
             imgSrc: R7Image,
             title: "مانحي الامتياز",
-            description: "التوحيد والتوسع عبر المواقع المتعددة لضمان اتساق العمليات وجودة الخدمة",
+            description: "توحيد العمليات لضمان كفاءة أعلى لأعمال ممنوحي الامتياز",
             more: "معرفة المزيد",
             url: '/franchise',
             key: 0
@@ -152,7 +152,7 @@ export const imagesGridContent_en = {
         {
             imgSrc: R7Image,
             title: "Franchisors",
-            description: "Standardizing and expanding across locations for consistent operations and quality",
+            description: "Standardize and Scale Across Franchisee Locations",
             more: "Learn More",
             url: '/franchise',
             key: 1

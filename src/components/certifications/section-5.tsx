@@ -34,7 +34,7 @@ export default function SectionV({ content }: SectionVProps) {
                 </h2>
                 <ul className="md:h-[85%] flex flex-col gap-4 md:gap-8 list-disc mr-4 md:mr-10">
                     {content.items.map((item, index) => (
-                        <li key={index} className="custom-list-item text-base font-light text-primText">
+                        <li key={index} className="custom-list-item text-base text-primText">
                             <span className="text-PrimBtn">{item.name}</span> {item.content}
                         </li>
                     ))}

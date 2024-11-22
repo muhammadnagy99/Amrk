@@ -25,8 +25,8 @@ interface MainHeaderProps {
         };
         sidebarData: {
             switcher: {
-                icon: ReactNode
                 url: string
+                source: React.ReactNode
             }
             solutionsMenu: {
                 title: string;

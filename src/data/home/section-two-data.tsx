@@ -39,10 +39,10 @@ export const sectionData: ScreensSection[] = [
     {
         id: 2,
         button: {
-            label: "مطابخ سحابية",
+            label: "العلامات الافتراضية",
         },
         article: {
-            title: "مطابخ سحابية",
+            title: "العلامات الافتراضية",
             description: "تسهيل إدارة العمليات التجارية المتعددة وتخصيص القوائم وتتبع المخزون، وإدارة طلبات التوصيل، المصممة خصيصًا لتلبية متطلبات المطابخ السحابية المتسارعة.",
             imgSrc: Screen2,
             imgAlt: "Amrk Cloud Kitchen Systems",
@@ -145,10 +145,10 @@ export const sectionData_en: ScreensSection[] = [
     {
         id: 2,
         button: {
-            label: "Cloud Kitchens",
+            label: "Virtual Brands",
         },
         article: {
-            title: "Cloud Kitchens",
+            title: "Virtual Brands",
             description: "Simplify the management of multiple brands, menu customization, inventory tracking, and delivery orders with solutions designed for Cloud Kitchens.",
             imgSrc: Screen2_en,
             imgAlt: "Amrk Cloud Kitchen Systems",

@@ -6,7 +6,7 @@ export const contentData: BusinessContentType[] = [
         type: "ServiceHero",
         props: {
             heading: "مانحي الامتياز",
-            description: "التوسع الموحد لضمان اتساق العمليات وجودة الخدمة",
+            description: "توحيد العمليات لضمان كفاءة أعلى لأعمال ممنوحي الامتياز",
             btnText: "احجز موعد للتجربة",
             image: {
                 src: Hero,
@@ -81,7 +81,7 @@ export const contentData_en: BusinessContentType[]  = [
         type: "ServiceHero",
         props: {
             heading: "Franchisors",
-            description: "Standardize and Scale Across Multiple Locations",
+            description: "Standardize and Scale Across Franchisee Locations",
             btnText: "Book a Demo",
             image: {
                 src: Hero,

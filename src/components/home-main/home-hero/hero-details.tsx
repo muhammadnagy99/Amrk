@@ -23,7 +23,11 @@ export default function HeroDetails({
         <HeroHeading headingText={headingText} />
         <p>
           {heroText[0]}
-          <strong className="font-bold">&nbsp;{heroText[1]}&nbsp;</strong>
+          {heroText[1] === "أمـركـ" ? (
+            <strong className="font-bold">&nbsp;{heroText[1]}</strong>
+          ) : (
+            heroText[1]
+          )}
           {heroText[2]}
         </p>
       </div>

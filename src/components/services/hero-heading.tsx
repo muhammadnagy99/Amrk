@@ -29,7 +29,7 @@ export default function HeroDescription({ text }: props) {
       {words.map((word, index) => (
         <motion.span
           key={index}
-          className={` inline-block mr-1 ${word === "\n" ? "w-full" : ""}`}
+          className={` inline-block ${index == 0 ? 'mr-0' : 'mr-1'}${word === "\n" ? "w-full" : ""}`}
           custom={index}
           initial="hidden"
           animate="visible"

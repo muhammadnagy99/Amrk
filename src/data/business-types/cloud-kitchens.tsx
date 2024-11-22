@@ -6,7 +6,7 @@ export const contentData_en: BusinessContentType[] = [
         type: "ServiceHero",
         props: {
             heading: "Cloud Kitchens",
-            description: "Streamline Multi-Brand Operations with Integrated Delivery Solutions",
+            description: "Streamline Your Virtual Brand Management, From Kitchen to Customer",
             btnText: "Book a Demo",
             image: {
                 src: Hero,
@@ -18,7 +18,7 @@ export const contentData_en: BusinessContentType[] = [
         type: "BulletPoints",
         props: {
             heading: {
-                text: "Enhance your cloud kitchen's performance with Amrk’s seamless brand management, inventory tracking, and delivery integration tools.",
+                text: "Enhance your cloud kitchen's performance with Amrk’s seamless kitchen management, inventory tracking, and delivery integration tools.",
                 highlited: "cloud kitchen's"
             },
             listItems: [
@@ -41,6 +41,14 @@ export const contentData_en: BusinessContentType[] = [
                 {
                     heading: "Cloud Kitchen",
                     paragraph: "Includes multi-brand management, kitchen display, inventory management, menu customization, POS system, navigation tools, performance monitoring, and delivery platform integration."
+                },
+                {
+                    heading: "Multi-Brand Management",
+                    paragraph: "Seamlessly handle multiple virtual brands from one platform."
+                },
+                {
+                    heading: "Efficient Operations",
+                    paragraph: "Centralize everything from online orders to inventory and kitchen workflows."
                 },
                 {
                     heading: "SMS Notification",
@@ -107,6 +115,14 @@ export const contentData: BusinessContentType[] = [
                 {
                     heading: "المطبخ السحابي",
                     paragraph: "يشمل إدارة العلامات التجارية المتعددة، عرض المطبخ، إدارة المخزون، تخصيص القوائم، نظام نقاط البيع، أدوات التنقل، مراقبة الأداء، وتكامل منصات التوصيل."
+                },
+                {
+                    heading: "إدارة العلامات التجارية المتعددة",
+                    paragraph: "إدارة عدة علامات افتراضية بسهولة عبر منصة واحدة."
+                },
+                {
+                    heading: "عمليات مرنة",
+                    paragraph:"مركزية جميع العمليات من طلبات التوصيل إلى المخزون وتدفقات العمل في المطبخ."
                 },
                 {
                     heading: "تنبيهات SMS",

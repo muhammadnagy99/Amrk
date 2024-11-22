@@ -1,12 +1,14 @@
 import SideBarToggle from "./mobile/side-bar-toggle";
 import Sidebar  from "./mobile/side-bar";
 import { ReactNode } from "react";
+import Link from "next/link";
+import LanguageSwithcher from "./language-switcher";
 
 interface MobileHeaderGroupProps {
     sidebarData: {
         switcher: {
-            icon: ReactNode
             url: string
+            source: React.ReactNode
         }
         solutionsMenu: {
             title: string;
@@ -27,10 +29,8 @@ interface MobileHeaderGroupProps {
 export default function MobileHeaderGroup({ sidebarData }: MobileHeaderGroupProps) {
     const {switcher} = sidebarData;
     return(
-        <div className="flex flex-row items-center gap-4 xl:hidden">
-            <a href={switcher.url}>
-                {switcher.icon}
-            </a>
+        <div className="flex flex-row items-center justify-between gap-4 xl:hidden">
+            <LanguageSwithcher icon={switcher} />
             <SideBarToggle />
             <Sidebar data={sidebarData} />
         </div>

@@ -18,7 +18,7 @@ export default function HeroDetails({
   links,
 }: HeroDetailsProps) {
   return (
-    <div className="flex flex-col justify-center align-baseline text-primText gap-[64px] h-full md:h-full mt-[72px] md:mt-0">
+    <div className="flex flex-col justify-center align-baseline text-primText w-full md:w-1/2 gap-[64px] h-full md:h-full mt-[72px] md:mt-0">
       <div className="flex flex-col gap-4">
         <HeroHeading headingText={headingText} />
         <p>

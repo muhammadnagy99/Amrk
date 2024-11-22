@@ -120,7 +120,7 @@ export const sectionData: Section[] = [
             iconDark: <CloudKitchenIconDark />, 
         },
         article: {
-            title: "نظام المطابخ السحابية",
+            title: "نظام عمليات العلامات الافتراضية",
             description: "بسّط اعمال مطبخك السحابي من أمرك. إدارة علامات تجارية متعددة. قوائم طعام متعددة من موقع واحد، مع تحكم مخصص بالمخزون صمم خصيصاً للمطابخ السحابية.",
             imgSrc: Art5,
             imgAlt: "Internal Communication System",
@@ -266,12 +266,12 @@ export const sectionData_en: Section[] = [
     {
         id: 5,
         button: {
-            label: "Cloud Kitchen System",
+            label: "Virtual Brand Operations System",
             iconLight: <CloudKitchenIconLight />,
             iconDark: <CloudKitchenIconDark />, 
         },
         article: {
-            title: "Cloud Kitchen Operation",
+            title: "Virtual Brand Operations System",
             description: "Amrk’s Cloud Kitchen Operation simplifies multiple brands and menus from a single location, with specialized inventory control tailored for Cloud Kitchens.",
             imgSrc: Art5,
             imgAlt: "Cloud Kitchen Operation",

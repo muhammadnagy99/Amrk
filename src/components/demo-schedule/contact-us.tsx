@@ -21,7 +21,7 @@ export default function ContactUs({ lang }: props) {
             fill="#B0438A"
           />
         </svg>
-        <span dir="ltr">+966 11 xxx xxxx</span>
+        <span dir="ltr">+966535785698</span>
       </p>
       <p className="flex flex-row items-center text-base gap-4">
         <svg

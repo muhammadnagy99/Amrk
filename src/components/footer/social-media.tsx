@@ -28,7 +28,7 @@ export default function SocialMedia({ data }: SocialMediaProps) {
             >
                 {data.socialLinks.map((link, index) => (
                     <li key={index} aria-label={link.ariaLabel}>
-                        <a href={link.url} className="text-[0px]">
+                        <a href={link.url} className="text-[0px]" target="_blank">
                             {link.ariaLabel}
                             {link.icon}
                         </a>

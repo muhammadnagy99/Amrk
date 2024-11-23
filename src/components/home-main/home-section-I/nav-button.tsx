@@ -19,8 +19,8 @@ const NavButton: React.FC<NavButtonProps> = ({ id, label, iconLight, iconDark, i
             onClick={() => onClick(id)}
             style={{ cursor: 'pointer' }}
         >
-            <p className='w-[10%]'>{isActive ? iconLight : iconDark}</p>
-            <p className="xl:text-base text-sm w-[88%] flex justify-start">{label}</p>
+            <p className='w-[13%] flex items-center justify-center'>{isActive ? iconLight : iconDark}</p>
+            <p className="xl:text-base text-sm w-[85%] flex justify-start">{label}</p>
         </button>
     );
 };

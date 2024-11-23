@@ -26,6 +26,34 @@ export default function DropList({ data }: DropListProps) {
     }, 200);
   };
 
+  const [positions, setPositions] = useState<{
+    top: number;
+    left: number | string;
+    right: number | string;
+  }>({
+    top: 0,
+    left: 0,
+    right: "unset",
+  });
+
+  useEffect(() => {
+    if (menuRef.current && typeof window !== "undefined") {
+      const { offsetTop, offsetLeft, offsetHeight, offsetWidth } =
+        menuRef.current;
+      const clientWidth = document.documentElement.clientWidth;
+
+      const calculatedPositions = {
+        top: offsetTop + offsetHeight,
+        left: document.documentElement.dir === "ltr" ? offsetLeft : "unset",
+        right:
+          document.documentElement.dir === "rtl"
+            ? `${clientWidth - (offsetLeft + offsetWidth)}px`
+            : "unset",
+      };
+      setPositions(calculatedPositions);
+    }
+  }, [isOpen]);
+
   return (
     <div
       ref={menuRef}
@@ -69,11 +97,10 @@ export default function DropList({ data }: DropListProps) {
       <div
         className="z-[1000] fixed inset-0 pointer-events-none"
         style={{
-          top: `calc(${menuRef.current?.offsetTop || 0}px + ${
-            menuRef.current?.offsetHeight || 0
-          }px)`,
-          left: `${menuRef.current?.offsetLeft || 0}px`,
-        }}
+            top: `${positions.top}px`,
+            left: positions.left !== "unset" ? `${positions.left}px` : "unset",
+            right: positions.right,
+          }}
       >
         <div
           className={`absolute mt-10 w-[188px] h-[168px] p-1 bg-white shadow-lg rounded-lg transition-all duration-300 

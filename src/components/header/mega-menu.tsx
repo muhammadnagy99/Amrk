@@ -75,7 +75,11 @@ export default function MegaMenu({ data }: MegaMenuProps) {
         }`}
       ></span>
 
-      <div className="z-[1000] fixed inset-0 pointer-events-none mt-[104px]">
+      <div
+        className={`z-[1000] fixed inset-0 mt-[104px] ${
+          isOpen ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+      >
         <div
           className={`absolute left-1/2 transform -translate-x-1/2 w-[95%] h-[370px] xl:w-[1200px]  p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
                 ${

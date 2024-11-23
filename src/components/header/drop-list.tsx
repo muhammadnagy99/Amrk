@@ -95,7 +95,9 @@ export default function DropList({ data }: DropListProps) {
         }`}
       ></span>
       <div
-        className="z-[1000] fixed inset-0 pointer-events-none"
+         className={`z-[1000] fixed inset-0 ${
+          isOpen ? "pointer-events-auto" : "pointer-events-none"
+        }`}
         style={{
             top: `${positions.top}px`,
             left: positions.left !== "unset" ? `${positions.left}px` : "unset",

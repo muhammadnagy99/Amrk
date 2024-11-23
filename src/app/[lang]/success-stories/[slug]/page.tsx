@@ -33,11 +33,32 @@ export async function generateMetadata({ params }: { params: Params}) {
 
   const StoriessData = isEnglish ? stories_en : stories_ar;
   const currentStory = StoriessData.find((story) => story.searchKey === slug);
+  const storyId = currentStory?.id;
+  const storyCover = (
+    await import(`@/public/blog/stories/posts/p${storyId}.png`)
+  ).default;
 
 
   return {
     title: currentStory?.name,
     description: currentStory?.heading,
+    openGraph: {
+      title: currentStory?.name,
+      description: currentStory?.heading,
+      images: [
+          {
+              url: storyCover.src,
+              alt: currentStory?.heading,
+          },
+      ],
+      type: 'website',
+  },
+  twitter: {
+      card: 'summary_large_image',
+      title: currentStory?.name,
+      description: currentStory?.heading,
+      image: storyCover.src,
+  },
   };
 }
 

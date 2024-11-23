@@ -2,11 +2,10 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 import { i18n } from "./i18n-config";
-
 import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 
-type Locale = typeof i18n.locales[number]; 
+type Locale = typeof i18n.locales[number];
 
 function getLocaleFromCookie(request: NextRequest): Locale | undefined {
   const cookieLocale = request.cookies.get('locale')?.value;
@@ -14,7 +13,7 @@ function getLocaleFromCookie(request: NextRequest): Locale | undefined {
   return i18n.locales.includes(cookieLocale as Locale) ? (cookieLocale as Locale) : undefined;
 }
 
-function getLocale(request: NextRequest): Locale {
+function getLocaleFromHeaders(request: NextRequest): Locale {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
@@ -28,35 +27,31 @@ function getLocale(request: NextRequest): Locale {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  const pathnameIsMissingLocale = i18n.locales.every(
-    (locale) =>
-      !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
-  );
+  // Check if the URL already includes a locale
+  const matchedLocale = i18n.locales.find((locale) => pathname.startsWith(`/${locale}`)) as Locale | undefined;
 
+  // Try to get the locale from cookies
   const cookieLocale = getLocaleFromCookie(request);
 
-  const matchedLocale = i18n.locales.find((locale) => pathname.startsWith(`/${locale}`)) as Locale | undefined;
-  if (matchedLocale && cookieLocale !== matchedLocale) {
-    const response = NextResponse.next();
-    response.cookies.set('locale', matchedLocale);
-    return response;
-  }
-
-  if (pathnameIsMissingLocale) {
-    const locale = cookieLocale || getLocale(request);
-
-    if (!cookieLocale) {
-      const response = NextResponse.redirect(
-        new URL(`/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`, request.url),
-      );
-      response.cookies.set('locale', locale);
+  // If a locale is in the URL, ensure it's set in the cookie and use it
+  if (matchedLocale) {
+    if (cookieLocale !== matchedLocale) {
+      const response = NextResponse.next();
+      response.cookies.set('locale', matchedLocale);
       return response;
     }
-
-    return NextResponse.redirect(
-      new URL(`/${cookieLocale}${pathname.startsWith("/") ? "" : "/"}${pathname}`, request.url),
-    );
+    return NextResponse.next();
   }
+
+  // If no locale in the URL, determine the locale to use
+  const resolvedLocale = cookieLocale || getLocaleFromHeaders(request) || i18n.defaultLocale;
+
+  // Redirect to the URL with the determined locale
+  const response = NextResponse.redirect(
+    new URL(`/${resolvedLocale}${pathname.startsWith("/") ? "" : "/"}${pathname}`, request.url)
+  );
+  response.cookies.set('locale', resolvedLocale);
+  return response;
 }
 
 export const config = {

@@ -13,12 +13,37 @@ export async function generateMetadata(props: {
   const params = await props.params;
   const isEnglish = params.lang === 'en';
 
-  const metaData = isEnglish ? contentData_en.find(item => item.type === "ServiceHero") : contentData.find(item => item.type === "ServiceHero");
+  const metaData = isEnglish
+      ? contentData_en.find(item => item.type === "ServiceHero")
+      : contentData.find(item => item.type === "ServiceHero");
+
+  if (!metaData) {
+      throw new Error("Metadata not found");
+  }
+
+  const { heading: title, description, image } = metaData.props;
 
   return {
-      title: metaData?.props.heading,
-      description: metaData?.props.description
-  }
+      title,
+      description,
+      openGraph: {
+          title,
+          description,
+          images: [
+              {
+                  url: image.src.src,
+                  alt: image.alt,
+              },
+          ],
+          type: 'website',
+      },
+      twitter: {
+          card: 'summary_large_image',
+          title,
+          description,
+          image: image.src,
+      },
+  };
 }
 
 export default async function KitchenDisplay(props: {

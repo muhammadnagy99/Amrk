@@ -115,7 +115,7 @@ export const footerNavLinks = [
     ],
     additionalSection: {
       title: "الباقات",
-      items: [{ label: "باقات أمرك", url: "/pricing" }],
+      items: [{ label: "باقات أمرك", url: "/licenses" }],
     },
   },
 ];
@@ -272,8 +272,8 @@ export const footerNavLinks_en = [
         { label: "Amrk Updates", url: "/updates" },
       ],
       additionalSection: {
-        title: "Pricing",
-        items: [{ label: "Amrk Packages", url: "/pricing" }],
+        title: "licenses",
+        items: [{ label: "Amrk Packages", url: "/licenses" }],
       },
     },
   ];

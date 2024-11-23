@@ -80,7 +80,7 @@ export const contentData: BusinessContentType[] = [
         type: "ServiceHero",
         props: {
             heading: "مطابخ سحابية",
-            description: "تبسيط عمليات العلامات التجارية مع تكامل تطبيقات التوصيل",
+            description: "تبسيط عمليات العلامات الافتراضية، من المطبخ الى العميل",
             btnText: "احجز موعداً للتجربة",
             image: {
                 src: Hero,

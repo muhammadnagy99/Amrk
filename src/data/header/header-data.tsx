@@ -215,7 +215,7 @@ export const sidebarData = {
         ],
       },
       {
-        title: "تشغيل المطابخ السحابية",
+        title: "نظام عمليات العلامات الافتراضية",
         items: [
           { label: "علامات متعددة في مطبخك", url: "/kitchen-multi-brand" },
           { label: "شاشة واحدة لمطبخك", url: "/kitchen-display" },
@@ -490,7 +490,7 @@ export const sidebarData_en = {
     ],
   },
   navLinks: [
-    { text: "Sectors We Serve", url: "/business-types" },
+    { text: "Industries We Serve", url: "/business-types" },
     { text: "Licenses", url: "/licenses" },
     { text: "Book a Demo", url: "/demo-schedule" },
     { text: "Amrk Online", url: "/online" },

@@ -310,7 +310,7 @@ export const accordionData: AccordionData[] = [
   },
   {
     type: "accordion",
-    title: "نظام المطابخ السحابية",
+    title: "نظام عمليات العلامات الافتراضية",
     rows: [
       {
         rowTitle: "علامات متعددة في مطبخك",

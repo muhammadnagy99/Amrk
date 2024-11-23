@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useEffect, useState } from "react";
 import Select, { SingleValue, StylesConfig } from "react-select";
@@ -90,6 +90,29 @@ export default function DemoForm({ content }: DemoFormProps) {
     value: code,
     label: name,
   }));
+
+  const detectUserCountry = async () => {
+    try {
+      const response = await fetch("https://ipapi.co/json/");
+      const data = await response.json();
+      const userCountryCode = data.country;
+      const userCountry = countryOptions.find(
+        (option) => option.value === userCountryCode
+      );
+      setSelectedCountry(userCountry || null);
+  
+      const countryCallingCode = callingCodes.find(
+        (entry) => entry.isoCode2 === userCountryCode
+      )?.countryCodes[0];
+      if (countryCallingCode) {
+        setPhoneNumber(`+${countryCallingCode}`);
+      }
+    } catch (error) {
+      console.error("Error detecting user country:", error);
+    }
+  }
+
+  detectUserCountry();
 
   const handleCountryChange = (selectedOption: SingleValue<CountryOption>) => {
     if (selectedOption) {

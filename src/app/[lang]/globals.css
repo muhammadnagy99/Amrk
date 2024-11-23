@@ -279,3 +279,9 @@ p{
 .customList li::marker {
   color:#b0438a /* Replace with your actual color code or CSS variable */
 }
+
+@-moz-document url-prefix() {
+  .mega-menu {
+      position: fixed;
+  }
+}

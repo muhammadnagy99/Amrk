@@ -50,14 +50,14 @@ export const contentData_en: BusinessContentType[] = [
                     heading: "Efficient Operations",
                     paragraph: "Centralize everything from online orders to inventory and kitchen workflows."
                 },
-                {
-                    heading: "SMS Notification",
-                    paragraph: "Notifications include order updates, readiness alerts, and digital receipts via SMS."
-                },
-                {
-                    heading: "CRM & Campaigns",
-                    paragraph: "Analyzes customer preferences and behaviors, plus targeted marketing campaigns to boost engagement and loyalty."
-                },
+                // {
+                //     heading: "SMS Notification",
+                //     paragraph: "Notifications include order updates, readiness alerts, and digital receipts via SMS."
+                // },
+                // {
+                //     heading: "CRM & Campaigns",
+                //     paragraph: "Analyzes customer preferences and behaviors, plus targeted marketing campaigns to boost engagement and loyalty."
+                // },
                 {
                     heading: "Dashboard",
                     paragraph: "Dashboards and reports for effective data analysis and informed decision-making."
@@ -124,14 +124,14 @@ export const contentData: BusinessContentType[] = [
                     heading: "عمليات مرنة",
                     paragraph:"مركزية جميع العمليات من طلبات التوصيل إلى المخزون وتدفقات العمل في المطبخ."
                 },
-                {
-                    heading: "تنبيهات SMS",
-                    paragraph: "تشمل الإشعارات عبر الرسائل النصية الطلبات، إشعارات الجاهزية، وإيصالات رقمية عبر الرسائل النصية."
-                },
-                {
-                    heading: "إدارة علاقات العملاء",
-                    paragraph: "تحليل تفضيلات وسلوكيات العملاء، بالإضافة إلى حملات تسويقية مستهدفة لتعزيز المشاركة والولاء."
-                },
+                // {
+                //     heading: "تنبيهات SMS",
+                //     paragraph: "تشمل الإشعارات عبر الرسائل النصية الطلبات، إشعارات الجاهزية، وإيصالات رقمية عبر الرسائل النصية."
+                // },
+                // {
+                //     heading: "إدارة علاقات العملاء",
+                //     paragraph: "تحليل تفضيلات وسلوكيات العملاء، بالإضافة إلى حملات تسويقية مستهدفة لتعزيز المشاركة والولاء."
+                // },
                 {
                     heading: "لوحة البيانات",
                     paragraph: "تشمل لوحات المعلومات وتقارير الأداء لتحليل البيانات واتخاذ قرارات مدروسة."

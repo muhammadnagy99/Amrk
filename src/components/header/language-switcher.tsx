@@ -12,19 +12,29 @@ interface IconProps {
     ariaLabel?: string;
 }
 
-const LanguageSwithcher: React.FC<IconProps> = ({ icon, ariaLabel = 'Lanuage Swithcer' }) => {
+const LanguageSwitcher: React.FC<IconProps> = ({ icon, ariaLabel = 'Language Switcher' }) => {
     const pathname = usePathname();
     const adjustedPathname = pathname.substring(3);
 
+    const handleSwitchLanguage = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        e.preventDefault();
+
+        const newLocale = icon.url.substring(1);
+        document.cookie = `locale=${newLocale}; path=/;`;
+
+        window.location.href = `${icon.url}${adjustedPathname}`;
+    };
+
     return (
-        <Link 
+        <a 
             href={`${icon.url}${adjustedPathname}`} 
             className="w-[5%]" 
-            aria-label={ariaLabel}
+            aria-label={ariaLabel} 
+            onClick={handleSwitchLanguage}
         >
             {icon.source}
-        </Link>
+        </a>
     );
 };
 
-export default LanguageSwithcher;
+export default LanguageSwitcher;

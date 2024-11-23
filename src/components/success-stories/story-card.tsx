@@ -17,7 +17,7 @@ export default function StroryCard({ imageSrc, heading, paragraph, searchKey, mo
             />
             <div className="flex flex-col justify-between h-[65%] pr-8 pl-8 pb-8">
                 <div className="flex flex-col gap-[16px] h-">
-                    <h2 className="text-primText text-[20px] leading-normal font-medium">
+                    <h2 className="text-primText text-base md:text-[20px] leading-normal font-medium">
                         {heading}
                     </h2>
                     <p className="text-primText text-base font-light text-ellipsis">

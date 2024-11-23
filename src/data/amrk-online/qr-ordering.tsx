@@ -9,7 +9,7 @@ export const contentData: ServicesContentType[] = [
         type: "ServiceHero",
         props: {
             heading: "الطلب والدفع عبر (QR)",
-            description: "الطلب والدفع مباشرة من الطاولة باستخدام خدمة أمريك أون لاين",
+            description: "الطلب والدفع مباشرة من الطاولة باستخدام خدمة أمرك أون لاين",
             btnText: "احجز موعداً للتجربة",
             image: {
                 src: Hero,

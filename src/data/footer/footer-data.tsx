@@ -251,7 +251,7 @@ export const footerNavLinks_en = [
       ],
     },
     {
-      title: "Sectors We Serve",
+      title: "Industries We Serve",
       items: [
         { label: "Restaurants and Cafes", url: "/restaurants-cafes" },
         { label: "Cloud Kitchens", url: "/cloud-kitchens" },

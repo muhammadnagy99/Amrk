@@ -224,7 +224,6 @@ export const sidebarData = {
           { label: "نظام نقاط بيع مطبخك", url: "/kitchen-pos" },
           { label: "دليل تعليمي لمطبخك", url: "/kitchen-navigator" },
           { label: "مراقبة مطبخك", url: "/kitchen-monitor" },
-          { label: "لوحة تقييم مطبخك", url: "/kitchen-rating" },
           {
             label: "ربط تطبيقات التوصيل بمطبخك",
             url: "/kitchen-aggregators",
@@ -471,7 +470,6 @@ export const sidebarData_en = {
           { label: "Kitchen POS", url: "/kitchen-pos" },
           { label: "Kitchen Navigator", url: "/kitchen-navigator" },
           { label: "Kitchen Monitor", url: "/kitchen-monitor" },
-          { label: "Kitchen Rating Board", url: "/kitchen-rating" },
           {
             label: "Kitchen Aggregators",
             url: "/kitchen-aggregators",

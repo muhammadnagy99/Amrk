@@ -284,7 +284,7 @@ export const footerNavLinks_en = [
     socialLinks: [
       {
         ariaLabel: "Amrk Whatsapp",
-        url: "https://wa.me/123456789",
+        url: "https://wa.me/+966535785698",
         icon: <WA />,
       },
       {
@@ -294,8 +294,18 @@ export const footerNavLinks_en = [
       },
       {
         ariaLabel: "Amrk Facebook",
-        url: "https://facebook.com/amrk",
+        url: "https://www.facebook.com/AmrkCo",
         icon: <FB />,
+      },
+      {
+        ariaLabel: "Amrk Instgram",
+        url: "https://www.instagram.com/amrkco/",
+        icon: <Insta />,
+      },
+      {
+        ariaLabel: "Amrk X",
+        url: "https://x.com/AmrkCo",
+        icon: <Twit />,
       },
     ],
   };

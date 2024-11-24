@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation';
 import { Locale } from "@/src/i18n-config";
 import BlogGrid from "@/src/components/blog/blog-grid";
 import BlogHero from "@/src/components/blog/blog-hero";
@@ -32,6 +33,8 @@ export async function generateMetadata(props: {
 }
 
 export default async function BlogPage({ params }: { params: { lang: Locale } }) {
+    redirect('/');
+
     const { lang } = params;
     const isEnglish = lang === 'en';
 

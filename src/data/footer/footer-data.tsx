@@ -72,7 +72,6 @@ export const footerNavLinks = [
       { label: "نظام نقاط بيع مطبخك", url: "/kitchen-pos" },
       { label: "دليل تعليمي لمطبخك", url: "/kitchen-navigator" },
       { label: "مراقبة مطبخك", url: "/kitchen-monitor" },
-      { label: "لوحة تقييم مطبخك", url: "/kitchen-rating" },
       {
         label: "ربط تطبيقات التوصيل بمطبخك",
         url: "/kitchen-aggregators",

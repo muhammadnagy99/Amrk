@@ -82,7 +82,7 @@ export const footerNavLinks = [
   {
     title: "إدارة متطورة للمخزون",
     items: [
-      { label: "إدارة المشتريات", url: "/procurement-management" },
+      { label: "إدارة المشتريات والموردين", url: "/procurement-management" },
       { label: "إدارة المنيو والوصفات", url: "/menu-recipes-management" },
       { label: "التحكم الشامل في المخزون", url: "/stock-control" },
       {

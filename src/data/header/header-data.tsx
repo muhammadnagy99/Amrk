@@ -96,7 +96,7 @@ export const megaMenuData = {
       heading: "إدارة متطورة للمخزون",
       icon: <Icon3 />,
       links: [
-        { text: "إدارة المشتريات والموارد", url: "/procurement-management" },
+        { text: "إدارة المشتريات والموردين", url: "/procurement-management" },
         { text: "إدارة المينو والوصفات", url: "/menu-recipes-management" },
         { text: "التحكم الشامل في المخزون", url: "/stock-control" },
         {
@@ -201,7 +201,7 @@ export const sidebarData = {
       {
         title: "إدارة متطورة للمخزون",
         items: [
-          { label: "إدارة المشتريات", url: "/procurement-management" },
+          { label: "إدارة المشتريات والموردين", url: "/procurement-management" },
           { label: "إدارة المنيو والوصفات", url: "/menu-recipes-management" },
           { label: "التحكم الشامل في المخزون", url: "/stock-control" },
           {

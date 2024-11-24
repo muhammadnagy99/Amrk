@@ -93,7 +93,7 @@ export const footerNavLinks = [
     ],
   },
   {
-    title: "قطاعات نخدمتها",
+    title: "قطاعات نخدمها",
     items: [
       { label: "مطاعم ومقاهي", url: "/restaurants-cafes" },
       { label: "مطابخ سحابية", url: "/cloud-kitchens" },

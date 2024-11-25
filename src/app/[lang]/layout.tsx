@@ -4,42 +4,17 @@ import MainHeader from "@/src/components/header/main-header";
 import MainFooter from "@/src/components/footer/Main-footer";
 import { siteMetadata_ar, siteMetadata_en } from "@/src/data/metadata";
 import { i18n, type Locale } from "@/src/i18n-config";
+import { Rubik } from 'next/font/google';
 import "./globals.css";
 
 import { mainHeaderData_ar, mainHeaderData_en } from "@/src/data/header/header-data";
 import { footerData_ar, footerData_en } from "@/src/data/footer/footer-data";
-import Head from "next/head";
 
-const rubik = localFont({
-  src: [
-    {
-      path: "./fonts/Rubik/Rubik-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-Regular.ttf",
-      weight: "400",
-      style: "normal",
-      
-    },
-    {
-      path: "./fonts/Rubik/Rubik-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-SemiBold.ttf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Rubik/Rubik-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-rubik",
+const rubik = Rubik({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-rubik',
+  display: 'swap',
 });
 
 export async function generateMetadata({ params }: { params: { lang: Locale } }) {

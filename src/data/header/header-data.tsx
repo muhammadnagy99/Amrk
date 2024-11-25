@@ -111,8 +111,8 @@ export const megaMenuData = {
       icon: <Icon4 />,
       links: [
         { text: "علامات متعددة في مطبخك", url: "/kitchen-multi-brand" },
-        { text: "شاشة واحدة لمطبخك", url: "/kitchen-display" },
-        { text: "مخزون مطبخك", url: "/kitchen-inventory" },
+        { text: "شاشة موحدة لمطبخك", url: "/kitchen-display-(kds)" },
+        { text: "مخزون مطعمك", url: "/kitchen-inventory" },
         { text: "قوائم طعام مطبخك", url: "/kitchen-menu" },
         { text: "نظام نقاط بيع مطبخك", url: "/kitchen-pos" },
         { text: "دليل تعليمي لمطبخك", url: "/kitchen-navigator" },
@@ -218,8 +218,8 @@ export const sidebarData = {
         title: "نظام عمليات العلامات الافتراضية",
         items: [
           { label: "علامات متعددة في مطبخك", url: "/kitchen-multi-brand" },
-          { label: "شاشة واحدة لمطبخك", url: "/kitchen-display" },
-          { label: "مخزون مطبخك", url: "/kitchen-inventory" },
+          { label: "شاشة موحدة لمطبخك", url: "/kitchen-display-(kds)" },
+          { label: "مخزون مطعمك", url: "/kitchen-inventory" },
           { label: "قوائم طعام مطبخك", url: "/kitchen-menu" },
           { label: "نظام نقاط بيع مطبخك", url: "/kitchen-pos" },
           { label: "دليل تعليمي لمطبخك", url: "/kitchen-navigator" },
@@ -357,7 +357,7 @@ export const megaMenuData_en = {
       icon: <Icon4 />,
       links: [
         { text: "Kitchen Multi-Brand", url: "/kitchen-multi-brand" },
-        { text: "Kitchen Display (KDS)", url: "/kitchen-display" },
+        { text: "Kitchen Display (KDS)", url: "/kitchen-display-(kds)" },
         { text: "Kitchen Inventory", url: "/kitchen-inventory" },
         { text: "Kitchen Menu", url: "/kitchen-menu" },
         { text: "Kitchen POS", url: "/kitchen-pos" },
@@ -464,7 +464,7 @@ export const sidebarData_en = {
         title: "Virtual Brand Operations System",
         items: [
           { label: "Kitchen Multi-Brand", url: "/kitchen-multi-brand" },
-          { label: "Kitchen Display (KDS)", url: "/kitchen-display" },
+          { label: "Kitchen Display (KDS)", url: "/kitchen-display-(kds)" },
           { label: "Kitchen Inventory", url: "/kitchen-inventory" },
           { label: "Kitchen Menu", url: "/kitchen-menu" },
           { label: "Kitchen POS", url: "/kitchen-pos" },

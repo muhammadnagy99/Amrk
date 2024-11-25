@@ -10,6 +10,7 @@ import {
 import stories_ar from "@/src/data/success-stories/success-stories_ar.json";
 import stories_en from "@/src/data/success-stories/success-stories_en.json";
 import { Locale } from "@/src/i18n-config";
+import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
 
 import thumbnail1 from "@/public/blog/thumbnails/sp1.png";
 import thumbnail2 from "@/public/blog/thumbnails/sp2.png";
@@ -21,6 +22,7 @@ import thumbnail7 from "@/public/blog/thumbnails/sp7.png";
 import thumbnail8 from "@/public/blog/thumbnails/sp8.png";
 import thumbnail9 from "@/public/blog/thumbnails/sp9.png";
 import thumbnail10 from "@/public/blog/thumbnails/sp10.png";
+import PromoSection from "@/src/components/promotion-section/promotion-section";
 
 const thumbnails = [
   thumbnail1,
@@ -65,6 +67,9 @@ export default function SuccessesPage({
     imageSrc: thumbnails[index],
   }));
 
+  const promo = isEnglish ? promoContent_en : promoContent;
+
+
   return (
     <section
       className="flex flex-col justify-center items-center w-full"
@@ -73,6 +78,7 @@ export default function SuccessesPage({
       <div className="flex flex-col w-[88%] md:max-w-[1200px] justify-between gap-10 md:gap-[120px] mt-12 md:mt-[120px] mb-[80px]">
         <SuccessHeading {...heading} />
         <StoryGrid StoryGridProps={StoryGridProps} />
+        <PromoSection content={promo} />
       </div>
     </section>
   );

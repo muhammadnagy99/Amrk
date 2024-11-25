@@ -66,8 +66,8 @@ export const footerNavLinks = [
     title: "نظام عمليات العلامات الافتراضية",
     items: [
       { label: "علامات متعددة في مطبخك", url: "/kitchen-multi-brand" },
-      { label: "شاشة واحدة لمطبخك", url: "/kitchen-display" },
-      { label: "مخزون مطبخك", url: "/kitchen-inventory" },
+      { label: "شاشة موحدة لمطبخك", url: "/kitchen-display-(kds)" },
+      { label: "مخزون مطعمك", url: "/kitchen-inventory" },
       { label: "قوائم طعام مطبخك", url: "/kitchen-menu" },
       { label: "نظام نقاط بيع مطبخك", url: "/kitchen-pos" },
       { label: "دليل تعليمي لمطبخك", url: "/kitchen-navigator" },
@@ -224,7 +224,7 @@ export const footerNavLinks_en = [
       title: "Virtual Brand Operations System",
       items: [
         { label: "Kitchen Multi-Brand", url: "/kitchen-multi-brand" },
-        { label: "Kitchen Display (KDS)", url: "/kitchen-display" },
+        { label: "Kitchen Display (KDS)", url: "/kitchen-display-(kds)" },
         { label: "Kitchen Inventory", url: "/kitchen-inventory" },
         { label: "Kitchen Menu", url: "/kitchen-menu" },
         { label: "Kitchen POS", url: "/kitchen-pos" },

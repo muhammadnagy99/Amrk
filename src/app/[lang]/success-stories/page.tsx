@@ -78,8 +78,8 @@ export default function SuccessesPage({
       <div className="flex flex-col w-[88%] md:max-w-[1200px] justify-between gap-10 md:gap-[120px] mt-12 md:mt-[120px] mb-[80px]">
         <SuccessHeading {...heading} />
         <StoryGrid StoryGridProps={StoryGridProps} />
-        <PromoSection content={promo} />
       </div>
+        <PromoSection content={promo} />
     </section>
   );
 }

@@ -491,7 +491,7 @@ export const sidebarData_en = {
       { label: "Success Stories", url: "/success-stories" },
       { label: "Blog", url: "/blog" },
       { label: "Accreditation", url: "/certifications" },
-      { label: "Amrk Updates", url: "/" },
+      { label: "Amrk Updates", url: "/updates" },
       { label: "Privacy Policy", url: "/privacy-policy" },
     ],
   },

@@ -1,12 +1,12 @@
 export const updatesHeading = {
-  pageTitle: "خصوصية وأمن البيانات",
-  title: "سياسة الخصوصية",
+  title: "خصوصية وأمن البيانات",
+  pageTitle: "سياسة الخصوصية",
   subtitle: `نلتزم بأعلى معايير الأمان لضمان سرية بياناتك وسلامتها`,
 };
 
 export const updatesHeading_en = {
-  pageTitle: "Data Privacy & Security",
-  title: "Privacy Policy",
+  title: "Data Privacy & Security",
+  pageTitle: "Privacy Policy",
   subtitle: `We protect your data with top security standards`,
 };
 
@@ -28,7 +28,6 @@ export const data = ` <p>نحن نجمع بياناتك عندما تستخدم 
 
     <p>قد نشارك معلومات عنك إذا طلبت ذلك الهيئات أو الجهات الحكومية أو التنظيمية إذا اعتقدنا بشكل معقول أن الكشف عن المعلومات يكون ضروري.</p>
 `;
-
 
 export const data_en = `
     <p>We collect data from you when you use our Services. This includes all services offered by the Company via our website, software applications, and all associated services (collectively, "Services").</p>  

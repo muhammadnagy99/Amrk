@@ -3,8 +3,7 @@ import UpdatesNotes from "@/src/components/updates/updates-card";
 import PromoSection from "@/src/components/promotion-section/promotion-section";
 import CertificationHeading from "@/src/components/certifications/heading";
 
-import { updatesHeading, updatesHeading_en } from "@/src/data/updates/data";
-import { updateData, updateData_en } from "@/src/data/updates/data";
+import { updatesHeading, updatesHeading_en, data, data_en } from "@/src/data/privacy-policy/data";
 import { promoContent, promoContent_en } from "@/src/data/global/promo-text";
 
 export async function generateMetadata(props: {
@@ -28,7 +27,7 @@ export default async function Pricing(props: {
   const params = await props.params;
   const isEnglish = params.lang === "en";
   const heading = isEnglish ? updatesHeading_en : updatesHeading;
-  const data = isEnglish ? updateData_en : updateData;
+  const Data = isEnglish ? data_en : data ;
   const promoData = isEnglish ? promoContent_en : promoContent;
 
   return (
@@ -36,13 +35,12 @@ export default async function Pricing(props: {
       className="flex flex-col justify-center items-center w-full"
       aria-labelledby="Amrk-Business-Types"
     >
-      <div className="flex flex-col w-[88%] xl:max-w-[1200px] justify-between gap-10 md:gap-[120px] mt-12 md:mt-[120px] mb-[80px]">
+      <div className="flex flex-col w-[88%] xl:max-w-[1200px] justify-between gap-6 md:gap-16 mt-12 md:mt-[120px] mb-[80px]">
         <CertificationHeading title={heading.title} description={heading.subtitle} />
-        <div className="flex flex-col gap-8">
-            {data.map(update => (
-                    <UpdatesNotes version={update.version} title={update.title} description={update.description} key={update.title} />
-            ))}
-        </div>
+        <div
+        className="text-primText flex flex-col gap-4 privacy"
+      dangerouslySetInnerHTML={{ __html: Data }}
+    />
       </div>
       <PromoSection content={promoData} />
     </section>

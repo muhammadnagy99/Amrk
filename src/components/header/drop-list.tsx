@@ -105,7 +105,7 @@ export default function DropList({ data }: DropListProps) {
           }}
       >
         <div
-          className={`absolute mt-10 w-[188px] h-[168px] p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
+          className={`absolute mt-10 w-[188px] p-1 bg-white shadow-lg rounded-lg transition-all duration-300 
                 ${
                   isOpen
                     ? "opacity-100 scale-100 visible translate-y-0"

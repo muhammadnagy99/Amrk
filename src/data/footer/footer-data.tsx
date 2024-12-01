@@ -111,6 +111,7 @@ export const footerNavLinks = [
       { label: "المدونة", url: "/blog" },
       { label: "الاعتمادات", url: "/certifications" },
       { label: "تحديثات أمرك", url: "/updates" },
+      { label: "سياسة الخصوصية", url: "/privacy-policy" },
     ],
     additionalSection: {
       title: "الباقات",
@@ -190,127 +191,128 @@ export const FEnLogo = () => (
 );
 
 export const footerNavLinks_en = [
-    {
-      title: "RMS",
-      items: [
-        { label: "Point of Sale System (POS)", url: "/pos-system" },
-        { label: "Kitchen Display (KDS)", url: "/kitchen-display" },
-        { label: "Service Station Screen", url: "/service-display" },
-        { label: "Tables Management", url: "/table-management" },
-        { label: "E-Walkie Talkie", url: "/integrated-walkie-talkie" },
-        { label: "Offline Mode", url: "/offline-mode" },
-        {
-          label: "CRM & Targeted Marketing",
-          url: "/crm-marketing",
-        },
-        { label: "Food Aggregators", url: "/delivery-integration" },
-      ],
-    },
-    {
-      title: "Online Service",
-      items: [
-        { label: "QR Order & Pay", url: "/qr-ordering" },
-        { label: "Pickup Orders", url: "/pickup-orders" },
-        {
-          label: "Social Media Ordering",
-          url: "/social-media-ordering",
-        },
-        { label: "Delivery", url: "/home-delivery" },
-        { label: "Loyalty Programs", url: "/loyalty-programs" },
-        { label: "Table Reservations", url: "/table-reservations" },
-      ],
-    },
-    {
-      title: "Virtual Brand Operations System",
-      items: [
-        { label: "Kitchen Multi-Brand", url: "/kitchen-multi-brand" },
-        { label: "Kitchen Display (KDS)", url: "/kitchen-display-(kds)" },
-        { label: "Kitchen Inventory", url: "/kitchen-inventory" },
-        { label: "Kitchen Menu", url: "/kitchen-menu" },
-        { label: "Kitchen POS", url: "/kitchen-pos" },
-        { label: "Kitchen Navigator", url: "/kitchen-navigator" },
-        { label: "Kitchen Monitor", url: "/kitchen-monitor" },
-        {
-          label: "Kitchen Aggregators",
-          url: "/kitchen-aggregators",
-        },
-      ],
-    },
-    {
-      title: "Inventory Management",
-      items: [
-        { label: "Procurement Management", url: "/procurement-management" },
-        { label: "Menu and Recipes", url: "/menu-recipes-management" },
-        { label: "Stock Control", url: "/stock-control" },
-        {
-          label: "Warehouse, Central Kitchen, and Cloud Kitchen",
-          url: "/warehouse-management",
-        },
-        { label: "Approval Process", url: "/approval-process" },
-      ],
-    },
-    {
-      title: "Industries We Serve",
-      items: [
-        { label: "Restaurants and Cafes", url: "/restaurants-cafes" },
-        { label: "Cloud Kitchens", url: "/cloud-kitchens" },
-        { label: "Food Trucks", url: "/food-trucks" },
-        { label: "Table Service", url: "/table-service" },
-        { label: "Quick Service", url: "/quick-service" },
-        { label: "Catering", url: "/catering" },
-        { label: "Franchise", url: "/franchise" },
-        { label: "Retail Sectors", url: "/retail-sectors" },
-      ],
-    },
-    {
-      title: "Resources",
-      items: [
-        { label: "Success Stories", url: "/success-stories" },
-        { label: "Blog", url: "/blog" },
-        { label: "Accreditation", url: "/certifications" },
-        { label: "Amrk Updates", url: "/updates" },
-      ],
-      additionalSection: {
-        title: "licenses",
-        items: [{ label: "Amrk Packages", url: "/licenses" }],
-      },
-    },
-  ];
-  
-  export const socialMediaData_en = {
-    logo: <FEnLogo />,
-    description: "All-in-one restaurant management solution designed to simplify your operations.",
-    socialLinks: [
+  {
+    title: "RMS",
+    items: [
+      { label: "Point of Sale System (POS)", url: "/pos-system" },
+      { label: "Kitchen Display (KDS)", url: "/kitchen-display" },
+      { label: "Service Station Screen", url: "/service-display" },
+      { label: "Tables Management", url: "/table-management" },
+      { label: "E-Walkie Talkie", url: "/integrated-walkie-talkie" },
+      { label: "Offline Mode", url: "/offline-mode" },
       {
-        ariaLabel: "Amrk Whatsapp",
-        url: "https://wa.me/+966535785698",
-        icon: <WA />,
+        label: "CRM & Targeted Marketing",
+        url: "/crm-marketing",
       },
+      { label: "Food Aggregators", url: "/delivery-integration" },
+    ],
+  },
+  {
+    title: "Online Service",
+    items: [
+      { label: "QR Order & Pay", url: "/qr-ordering" },
+      { label: "Pickup Orders", url: "/pickup-orders" },
       {
-        ariaLabel: "Amrk LinkedIn",
-        url: "https://linkedin.com/company/amrk",
-        icon: <IN />,
+        label: "Social Media Ordering",
+        url: "/social-media-ordering",
       },
+      { label: "Delivery", url: "/home-delivery" },
+      { label: "Loyalty Programs", url: "/loyalty-programs" },
+      { label: "Table Reservations", url: "/table-reservations" },
+    ],
+  },
+  {
+    title: "Virtual Brand Operations System",
+    items: [
+      { label: "Kitchen Multi-Brand", url: "/kitchen-multi-brand" },
+      { label: "Kitchen Display (KDS)", url: "/kitchen-display-(kds)" },
+      { label: "Kitchen Inventory", url: "/kitchen-inventory" },
+      { label: "Kitchen Menu", url: "/kitchen-menu" },
+      { label: "Kitchen POS", url: "/kitchen-pos" },
+      { label: "Kitchen Navigator", url: "/kitchen-navigator" },
+      { label: "Kitchen Monitor", url: "/kitchen-monitor" },
       {
-        ariaLabel: "Amrk Facebook",
-        url: "https://www.facebook.com/AmrkCo",
-        icon: <FB />,
-      },
-      {
-        ariaLabel: "Amrk Instgram",
-        url: "https://www.instagram.com/amrkco/",
-        icon: <Insta />,
-      },
-      {
-        ariaLabel: "Amrk X",
-        url: "https://x.com/AmrkCo",
-        icon: <Twit />,
+        label: "Kitchen Aggregators",
+        url: "/kitchen-aggregators",
       },
     ],
-  };
-  
-  export const footerData_en = {
-    footerNavLinks: footerNavLinks_en,
-    socialMediaData: socialMediaData_en,
-  };
-  
+  },
+  {
+    title: "Inventory Management",
+    items: [
+      { label: "Procurement Management", url: "/procurement-management" },
+      { label: "Menu and Recipes", url: "/menu-recipes-management" },
+      { label: "Stock Control", url: "/stock-control" },
+      {
+        label: "Warehouse, Central Kitchen, and Cloud Kitchen",
+        url: "/warehouse-management",
+      },
+      { label: "Approval Process", url: "/approval-process" },
+    ],
+  },
+  {
+    title: "Industries We Serve",
+    items: [
+      { label: "Restaurants and Cafes", url: "/restaurants-cafes" },
+      { label: "Cloud Kitchens", url: "/cloud-kitchens" },
+      { label: "Food Trucks", url: "/food-trucks" },
+      { label: "Table Service", url: "/table-service" },
+      { label: "Quick Service", url: "/quick-service" },
+      { label: "Catering", url: "/catering" },
+      { label: "Franchise", url: "/franchise" },
+      { label: "Retail Sectors", url: "/retail-sectors" },
+    ],
+  },
+  {
+    title: "Resources",
+    items: [
+      { label: "Success Stories", url: "/success-stories" },
+      { label: "Blog", url: "/blog" },
+      { label: "Accreditation", url: "/certifications" },
+      { label: "Amrk Updates", url: "/updates" },
+      { label: "Privacy Policy", url: "/privacy-policy" },
+    ],
+    additionalSection: {
+      title: "licenses",
+      items: [{ label: "Amrk Packages", url: "/licenses" }],
+    },
+  },
+];
+
+export const socialMediaData_en = {
+  logo: <FEnLogo />,
+  description:
+    "All-in-one restaurant management solution designed to simplify your operations.",
+  socialLinks: [
+    {
+      ariaLabel: "Amrk Whatsapp",
+      url: "https://wa.me/+966535785698",
+      icon: <WA />,
+    },
+    {
+      ariaLabel: "Amrk LinkedIn",
+      url: "https://linkedin.com/company/amrk",
+      icon: <IN />,
+    },
+    {
+      ariaLabel: "Amrk Facebook",
+      url: "https://www.facebook.com/AmrkCo",
+      icon: <FB />,
+    },
+    {
+      ariaLabel: "Amrk Instgram",
+      url: "https://www.instagram.com/amrkco/",
+      icon: <Insta />,
+    },
+    {
+      ariaLabel: "Amrk X",
+      url: "https://x.com/AmrkCo",
+      icon: <Twit />,
+    },
+  ],
+};
+
+export const footerData_en = {
+  footerNavLinks: footerNavLinks_en,
+  socialMediaData: socialMediaData_en,
+};

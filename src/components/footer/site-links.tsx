@@ -26,7 +26,7 @@ export default function SiteLinks({ links }: SiteLinksProps) {
                     </ul>
 
                     {nav.additionalSection && (
-                        <nav className="flex flex-col gap-[12px] pt-[64px]">
+                        <nav className="flex flex-col gap-[12px] pt-[32px]">
                             <h2 className="text-SecTextV1 text-base">{nav.additionalSection.title}</h2>
                             <ul className="flex flex-col gap-[12px]">
                                 {nav.additionalSection.items.map((item, i) => (

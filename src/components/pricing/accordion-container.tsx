@@ -5,13 +5,13 @@ import AccordionRow from "./accordion-row";
 import { AccordionContainerProps } from "@/src/types/interfaces";
 
 
-export default function AccordionContainer({ content }: AccordionContainerProps) {
+export default function AccordionContainer({ content, isOpen }: AccordionContainerProps) {
   return (
     <div className="flex flex-col gap-4">
       {content.map((item, index) => {
         if (item.type === "accordion") {
           return (
-            <AccordionElement key={index} title={item.title!} rows={item.rows} />
+            <AccordionElement key={index} title={item.title!} rows={item.rows} isOpened={isOpen} />
           );
         } else if (item.type === "simpleRow") {
           return (

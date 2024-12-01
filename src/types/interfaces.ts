@@ -169,6 +169,7 @@ export interface AccordionData {
 
 export interface AccordionContainerProps {
   content: AccordionData[];
+  isOpen: boolean
 }
 
 

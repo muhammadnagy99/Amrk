@@ -7,7 +7,6 @@ interface BlogGridProps {
         imageSrc: StaticImageData;
         heading: string;
         paragraph: string;
-        content: string;
         searchKey: string;
     }[];
     lang: string

@@ -25,10 +25,10 @@ interface MainProps {
 }
 
 export default function Main({ heading, packagesData, accordionData, promoContent, lang }: MainProps) {
-    const [isCollapsed, setIsCollapsed] = useState(true);
+    const [isAccordionOpen, setIsAccordionOpen] = useState(false);
 
-    const toggleCollapse = () => {
-        setIsCollapsed(!isCollapsed);
+    const toggleAccordion = () => {
+        setIsAccordionOpen(!isAccordionOpen);
     };
 
     return (
@@ -43,17 +43,19 @@ export default function Main({ heading, packagesData, accordionData, promoConten
 
                 <div className="flex flex-row justify-end w-full">
                     <button 
-                        onClick={toggleCollapse} 
+                        onClick={toggleAccordion} 
                         className="flex flex-row items-center pl-[24px] text-PrimBtn gap-4"
                     >
                         <span className="text-sm md:text-base font-medium">
-                            {isCollapsed ? heading.show.more : heading.show.less}
+                            {isAccordionOpen ? heading.show.less : heading.show.more}
                         </span>
-                        {isCollapsed ? <PrimPlusIcon /> : <MinusIcon />}
+                        {isAccordionOpen ? <MinusIcon /> : <PrimPlusIcon />}
                     </button>
                 </div>
-                <div className={`transition-all duration-300 ${isCollapsed ? 'max-h-0 overflow-hidden' : 'max-h-[8000px]'} w-full`}>
-                    <AccordionContainer content={accordionData} />
+
+
+                <div className={`transition-all duration-300 w-full`}>
+                    <AccordionContainer content={accordionData} isOpen={isAccordionOpen} />
                 </div>
 
                 <div className="flex justify-start w-full">

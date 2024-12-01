@@ -6,12 +6,12 @@ interface PostCoverProps {
 
 export default function PostCover({ src }: PostCoverProps) {
     return (
-        <div className="w-full">
+        <div className="w-full md:w-1/2">
             <Image
-                className="object-cover h-[240px] md:h-auto rounded-lg"
+                className="w-full object-cover h-auto rounded-lg"
                 src={src}
-                width={1200}
-                height={400}
+                width={550}
+                height={550}
                 alt="Post Cover"
                 placeholder="blur"
                 priority={false}

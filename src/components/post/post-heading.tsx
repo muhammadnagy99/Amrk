@@ -6,8 +6,8 @@ interface PostHeadingProps {
 
 export default function PostHeading({ heading, lang }: PostHeadingProps) {
     return (
-        <div className="w-[90%] lg:w-[85%] flex flex-col items-start justify-center gap-8">
-            <h1 className="flex text-2xl xl:text-[40px] md:text-4xl font-bold text-primText leading-[1.5]">
+        <div className="w-full md:w-1/2 flex flex-col items-start justify-center gap-2 md:gap-8">
+            <h1 className="flex text-xl xl:text-[36px] md:text-3xl font-bold text-primText leading-[1.5]">
                 {heading}
             </h1>
             <PostPageProps lang={lang} />

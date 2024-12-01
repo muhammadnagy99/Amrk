@@ -133,6 +133,7 @@ export const dropListData = {
     { text: "المدونة", url: "/blog" },
     { text: "الاعتمادات", url: "/certifications" },
     { text: "تحديثات أمرك", url: "/updates" },
+    { text: "سياسة الخصوصية", url: "/privacy-policy" },
   ],
 };
 
@@ -201,7 +202,10 @@ export const sidebarData = {
       {
         title: "إدارة متطورة للمخزون",
         items: [
-          { label: "إدارة المشتريات والموردين", url: "/procurement-management" },
+          {
+            label: "إدارة المشتريات والموردين",
+            url: "/procurement-management",
+          },
           { label: "إدارة المنيو والوصفات", url: "/menu-recipes-management" },
           { label: "التحكم الشامل في المخزون", url: "/stock-control" },
           {
@@ -239,6 +243,7 @@ export const sidebarData = {
       { label: "المدونة", url: "/blog" },
       { label: "الاعتمادات", url: "/certifications" },
       { label: "تحديثات أمرك", url: "/updates" },
+      { label: "سياسة الخصوصية", url: "/privacy-policy" },
     ],
   },
   navLinks: [
@@ -379,6 +384,7 @@ export const dropListData_en = {
     { text: "Blog", url: "/blog" },
     { text: "Accreditation", url: "/certifications" },
     { text: "Amrk Updates", url: "/updates" },
+    { text: "Privacy Policy", url: "/privacy-policy" },
   ],
 };
 
@@ -442,6 +448,7 @@ export const sidebarData_en = {
           { label: "Delivery", url: "/home-delivery" },
           { label: "Loyalty Programs", url: "/loyalty-programs" },
           { label: "Table Reservations", url: "/table-reservations" },
+          
         ],
       },
       {
@@ -485,6 +492,7 @@ export const sidebarData_en = {
       { label: "Blog", url: "/blog" },
       { label: "Accreditation", url: "/certifications" },
       { label: "Amrk Updates", url: "/" },
+      { label: "Privacy Policy", url: "/privacy-policy" },
     ],
   },
   navLinks: [

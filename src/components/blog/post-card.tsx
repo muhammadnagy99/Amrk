@@ -21,7 +21,7 @@ export default function PostCard({ imageSrc, heading, paragraph, searchKey, inde
                 alt={heading}
                 placeholder="blur"
                 priority={false}
-                className="w-full md:h-[240px]"
+                className="w-full md:h-[240px] object-cover rounded-lg"
             />
             <div className="flex flex-col w-full gap-3 md:justify-between md:h-[180px] pr-4 pl-4 pb-4">
                 <div className="flex w-full flex-col gap-2 md:gap-[16px]">

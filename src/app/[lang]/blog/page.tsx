@@ -3,14 +3,15 @@ import { Locale } from "@/src/i18n-config";
 import BlogGrid from "@/src/components/blog/blog-grid";
 import BlogHero from "@/src/components/blog/blog-hero";
 import BlogHeading from "@/src/components/blog/heading";
-import heroImage from "@/public/blog/thumbnails/hero.png";
-import herothumb from '@/public/blog/thumbnails/hero-thumb.png';
-import thumbnail1 from '@/public/blog/thumbnails/bp1.png';
-import thumbnail2 from '@/public/blog/thumbnails/bp2.png';
-import thumbnail3 from '@/public/blog/thumbnails/bp3.png';
-import thumbnail4 from '@/public/blog/thumbnails/bp4.png';
-import thumbnail5 from '@/public/blog/thumbnails/bp5.png';
-import thumbnail6 from '@/public/blog/thumbnails/bp6.png';
+import thumbnail1 from '@/public/blog/thumbnails/bp1.png'
+import thumbnail2 from '@/public/blog/thumbnails/bp2.png'
+import thumbnail3 from '@/public/blog/thumbnails/bp3.png'
+import thumbnail4 from '@/public/blog/thumbnails/bp4.png'
+import thumbnail5 from '@/public/blog/thumbnails/bp5.png'
+import thumbnail6 from '@/public/blog/thumbnails/bp6.png'
+import thumbnail7 from '@/public/blog/thumbnails/bp7.png'
+
+
 
 
 import { blogHeadingContent, blogHeadingContent_en } from "@/src/data/blog/blog-data";
@@ -33,7 +34,6 @@ export async function generateMetadata(props: {
 }
 
 export default async function BlogPage({ params }: { params: { lang: Locale } }) {
-    redirect('/');
 
     const { lang } = params;
     const isEnglish = lang === 'en';
@@ -43,23 +43,23 @@ export default async function BlogPage({ params }: { params: { lang: Locale } })
 
     const heroPost = {
         ...blogsData[0],
-        imageSrc: heroImage
+        imageSrc: thumbnail1
     };
 
     const thumbnails = [
-        herothumb,
         thumbnail1, 
         thumbnail2,
         thumbnail3, 
         thumbnail4, 
         thumbnail5, 
-        thumbnail6  
+        thumbnail6,
+        thumbnail7
     ];
     
     const postCardsData = blogsData.map((post, index) => {
         return {
             ...post,
-            imageSrc: thumbnails[index] || herothumb
+            imageSrc: thumbnails[index]
         };
     });
 

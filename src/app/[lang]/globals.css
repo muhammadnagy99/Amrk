@@ -25,6 +25,125 @@ p{
   font-weight: 300;
 }
 
+.post-body-content p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.post-body-content h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.post-body-content h3 strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.post-body-content p strong{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.post-body-content strong {
+  font-size: 20px;
+}
+
+.post-body-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.post-body-content li {
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.post-body-content li strong{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.privacy p{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.privacy ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.privacy li {
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .post-body-content p {
+    font-size: 14px;
+  }
+
+  .post-body-content p strong {
+    font-size: 14px;
+  }
+
+  .post-body-content li strong {
+    font-size: 14px;
+  }
+
+  .post-body-content strong {
+    font-size: 16px;
+  }
+  .post-body-content ul {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .post-body-content li {
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .post-body-content h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .post-body-content h3 strong {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .privacy p{
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .privacy ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .privacy li {
+    font-weight: 400;
+  }
+
+} 
+
 @media only screen and (max-width: 768px) {
   h1{
     font-size: 24px;
@@ -251,7 +370,7 @@ p{
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Number of lines before truncating */
+  -webkit-line-clamp: 2; /* Number of lines before truncating */
   -webkit-box-orient: vertical;
 }
 

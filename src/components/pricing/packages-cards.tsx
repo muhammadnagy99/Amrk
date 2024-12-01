@@ -7,7 +7,7 @@ interface PackagesCardsProps {
 
 export default function PackagesCards({ packages }: PackagesCardsProps) {
     return (
-        <div className="flex flex-row xl:justify-end p-2 md:p-0 gap-2 xl:gap-4 sticky pt-4 md:pt-7 top-[64px] md:top-[104px] z-10 bg-white">
+        <div className="flex flex-row xl:justify-end md:p-0 gap-2 xl:gap-4 sticky pt-4 md:pt-7 top-[64px] md:top-[104px] z-10 bg-white">
             {packages.map((pkg, index) => (
                 <PackageCard
                     key={index}

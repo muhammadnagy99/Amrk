@@ -1,12 +1,16 @@
-// next.config.js
-module.exports = {
-    webpack(config, { isServer }) {
-      // Handle Markdown files
-      config.module.rules.push({
-        test: /\.md$/,
-        use: 'raw-loader',
-      });
-      return config;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    turbo: {
+      rules: {
+        // This replaces the old webpack 'raw-loader' usage
+        '*.md': {
+          loaders: ['raw-loader'],
+          as: 'asset/source',
+        },
+      },
     },
-  };
-  
+  },
+};
+
+module.exports = nextConfig;

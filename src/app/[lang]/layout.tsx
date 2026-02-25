@@ -33,7 +33,7 @@ export default async function RootLayout(props: {
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
-  const { lang } = props.params;
+  const { lang } = await props.params;
   let dir = 'rtl';
 
   let HeaderData = mainHeaderData_ar;

@@ -24,7 +24,7 @@ function getLocaleFromHeaders(request: NextRequest): Locale {
   return locale as Locale;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   // Check if the URL already includes a locale

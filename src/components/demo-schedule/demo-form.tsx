@@ -148,7 +148,7 @@ export default function DemoForm({ content }: DemoFormProps) {
 
     try {
       const response = await fetch(
-        "https://api.amrk.app/amrk-landing/reserve-appointment",
+        "https://api.amrk.ai/amrk-landing/reserve-appointment",
         {
           method: "POST",
           headers: {

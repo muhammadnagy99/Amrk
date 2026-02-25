@@ -17,9 +17,12 @@ const rubik = Rubik({
   display: 'swap',
 });
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }) {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }) {
+  const params = (await props.params) as { lang: Locale };
   return getMetadata(params.lang);
 }
+
+
 
 function getMetadata(lang: Locale): Metadata {
   return lang === 'en' ? siteMetadata_en : siteMetadata_ar;
@@ -31,10 +34,12 @@ export async function generateStaticParams() {
 
 export default async function RootLayout(props: {
   children: React.ReactNode;
-  params: { lang: Locale };
+  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await props.params;
+  const { lang } = (await props.params) as { lang: Locale };
   let dir = 'rtl';
+
+
 
   let HeaderData = mainHeaderData_ar;
   let FooterData = footerData_ar;
@@ -49,7 +54,7 @@ export default async function RootLayout(props: {
 
   return (
     <html lang={lang} dir={dir}>
-      
+
       <body
         className={`flex flex-col justify-center ${rubik.variable} antialiased bg-white`}
       >

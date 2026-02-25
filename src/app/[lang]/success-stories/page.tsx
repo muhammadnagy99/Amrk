@@ -51,12 +51,14 @@ export async function generateMetadata(props: {
   };
 }
 
-export default function SuccessesPage({
+export default async function SuccessesPage({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = params;
+
+  const { lang } = await params;
+
   const isEnglish = lang === "en";
 
   const StoriessData = isEnglish ? stories_en : stories_ar;
@@ -79,7 +81,7 @@ export default function SuccessesPage({
         <SuccessHeading {...heading} />
         <StoryGrid StoryGridProps={StoryGridProps} />
       </div>
-        <PromoSection content={promo} />
+      <PromoSection content={promo} />
     </section>
   );
 }

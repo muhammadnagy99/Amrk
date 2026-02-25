@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 interface props {
   text: string
@@ -11,7 +11,7 @@ export default function HeroDescription({ text }: props) {
 
   const words = headingText.split(/(\s|\n)/);
 
-  const wordAnimation = {
+  const wordAnimation: Variants = {
     hidden: { opacity: 0, y: 2 },
     visible: (i: number) => ({
       opacity: 1,
@@ -23,6 +23,7 @@ export default function HeroDescription({ text }: props) {
       },
     }),
   };
+
 
   return (
     <p className="flex flex-wrap text-2xl md:text-[40px] leading-8 md:leading-[3rem] font-bold text-primText">

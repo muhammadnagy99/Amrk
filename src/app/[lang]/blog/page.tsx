@@ -33,9 +33,11 @@ export async function generateMetadata(props: {
     }
 }
 
-export default async function BlogPage({ params }: { params: { lang: Locale } }) {
+export default async function BlogPage({ params }: { params: Promise<{ lang: string }> }) {
 
-    const { lang } = params;
+
+    const { lang } = await params;
+
     const isEnglish = lang === 'en';
 
     const blogsData = isEnglish ? blogs_en : blogs_ar;
@@ -47,15 +49,15 @@ export default async function BlogPage({ params }: { params: { lang: Locale } })
     };
 
     const thumbnails = [
-        thumbnail1, 
+        thumbnail1,
         thumbnail2,
-        thumbnail3, 
-        thumbnail4, 
-        thumbnail5, 
+        thumbnail3,
+        thumbnail4,
+        thumbnail5,
         thumbnail6,
         thumbnail7
     ];
-    
+
     const postCardsData = blogsData.map((post, index) => {
         return {
             ...post,
@@ -66,13 +68,13 @@ export default async function BlogPage({ params }: { params: { lang: Locale } })
     return (
         <section className="flex flex-col justify-center items-center w-full" aria-labelledby="Amrk-Business-Types">
             <div className="flex flex-col w-[88%] md:max-w-[1200px] justify-between gap-14 mt-12 mb-12 md:gap-[120px] md:mt-[120px] md:mb-[80px]">
-                <BlogHeading headingContent={heading}/>
-                <BlogHero 
-                    imageSrc={heroPost.imageSrc} 
-                    heading={heroPost.heading} 
+                <BlogHeading headingContent={heading} />
+                <BlogHero
+                    imageSrc={heroPost.imageSrc}
+                    heading={heroPost.heading}
                     paragraph={heroPost.paragraph}
-                    searchKey={heroPost.searchKey} 
-                    lang={lang} 
+                    searchKey={heroPost.searchKey}
+                    lang={lang}
                 />
                 <BlogGrid postCardsData={postCardsData} lang={lang} />
             </div>

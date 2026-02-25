@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, Variants } from 'framer-motion';
 
 import MinusIcon from '../../assets/minus-icon';
 import PrimPlusIcon from '../../assets/primary-plus';
 import Heading from './heading';
 
 type HomeSectionIIIProps = {
-    sectionContent: {
+  sectionContent: {
     headingContent: {
       title: string;
       description: string;
@@ -52,7 +52,7 @@ export default function HomeSectionIII({ sectionContent }: HomeSectionIIIProps) 
     }
   }, [isCollapsed]);
 
-  const sectionAnimation = {
+  const sectionAnimation: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -63,6 +63,7 @@ export default function HomeSectionIII({ sectionContent }: HomeSectionIIIProps) 
       },
     },
   };
+
 
   return (
     <div

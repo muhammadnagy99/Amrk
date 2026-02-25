@@ -1,12 +1,12 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
 interface SectionHeaderProps {
   heading: string;
   paragraph: string;
-  color?: string; 
+  color?: string;
 }
 
 export default function SectionHeader({ heading, paragraph, color = "inherit" }: SectionHeaderProps) {
@@ -15,7 +15,7 @@ export default function SectionHeader({ heading, paragraph, color = "inherit" }:
 
   const words = heading.split(" ");
 
-  const variants = {
+  const variants: Variants = {
     hidden: { opacity: 0, y: 0 },
     visible: (i: number) => ({
       opacity: 1,
@@ -27,6 +27,7 @@ export default function SectionHeader({ heading, paragraph, color = "inherit" }:
       },
     }),
   };
+
 
   return (
     <div ref={ref} className="flex flex-col justify-center items-center gap-[24px]">

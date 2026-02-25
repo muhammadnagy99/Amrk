@@ -1,16 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    turbo: {
-      rules: {
-        // This replaces the old webpack 'raw-loader' usage
-        '*.md': {
-          loaders: ['raw-loader'],
-          as: 'asset/source',
-        },
-      },
-    },
+    // Keep other experimental flags here
   },
 };
+
 
 module.exports = nextConfig;

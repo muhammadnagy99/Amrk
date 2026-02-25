@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
+
 import { useRef } from "react";
 
 type HeadingProps = {
@@ -18,7 +19,7 @@ export default function Heading({ headingContent }: HeadingProps) {
 
   const words = title.split(/(\s|\n)/);
 
-  const wordAnimation = {
+  const wordAnimation: Variants = {
     hidden: { opacity: 0, y: 25 },
     visible: (i: number) => ({
       opacity: 1,
@@ -31,7 +32,8 @@ export default function Heading({ headingContent }: HeadingProps) {
     }),
   };
 
-  const paragraphAnimation = {
+
+  const paragraphAnimation: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -42,6 +44,7 @@ export default function Heading({ headingContent }: HeadingProps) {
       },
     },
   };
+
 
   return (
     <>

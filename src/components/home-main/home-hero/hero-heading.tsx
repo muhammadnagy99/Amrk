@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 type HeroHeadingProps = {
   headingText: string;
@@ -9,7 +9,7 @@ type HeroHeadingProps = {
 export default function HeroHeading({ headingText }: HeroHeadingProps) {
   const words = headingText.split(/(\s|\n)/);
 
-  const wordAnimation = {
+  const wordAnimation: Variants = {
     hidden: { opacity: 0, y: 0 },
     visible: (i: number) => ({
       opacity: 1,
@@ -21,6 +21,7 @@ export default function HeroHeading({ headingText }: HeroHeadingProps) {
       },
     }),
   };
+
 
   return (
     <h1 className="flex flex-wrap">

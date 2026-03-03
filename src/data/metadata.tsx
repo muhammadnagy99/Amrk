@@ -1,4 +1,4 @@
-import { Metadata } from 'next'; 
+import { Metadata } from 'next';
 
 export const siteMetadata_en: Metadata = {
   title: "Amrk Restaurant Management System (RMS)",
@@ -20,7 +20,7 @@ export const siteMetadata_en: Metadata = {
     siteName: "Amrk Restaurant Management System (RMS)",
     title: "Amrk Restaurant Management System",
     description: "Transform your restaurant's operations with Amrk RMS, an innovative management solution built to enhance productivity and customer satisfaction.",
-    url: "https://amrk.co/",
+    url: "https://amrk.ai/",
     type: "website",
     images: [
       {
@@ -39,7 +39,7 @@ export const siteMetadata_en: Metadata = {
     description: "Elevate your restaurant's performance with Amrk RMS — the essential tool for modern restaurant management.",
     images: ["/hero-full-art-1(1).webp"]
   },
-  verification:{
+  verification: {
     google: "OONqWMFGehGJ76WmWuEFGczsr_oL1H2bluSoFy6wugw"
   }
 };
@@ -64,7 +64,7 @@ export const siteMetadata_ar: Metadata = {
     siteName: "Amrk Restaurant Management System (RMS)",
     title: "نظام إدارة المطاعم Amrk",
     description: "حوّل عمليات مطعمك مع Amrk RMS، الحل الإداري المبتكر لتعزيز الإنتاجية ورضا العملاء.",
-    url: "https://amrk.co/",
+    url: "https://amrk.ai/",
     type: "website",
     images: [
       {
@@ -82,9 +82,9 @@ export const siteMetadata_ar: Metadata = {
     title: "نظام إدارة المطاعم Amrk",
     description: "ارتقِ بأداء مطعمك مع Amrk RMS — الأداة الأساسية لإدارة المطاعم الحديثة.",
     images: ["/hero.jpg"]
-  }, 
-  verification:{
+  },
+  verification: {
     google: "OONqWMFGehGJ76WmWuEFGczsr_oL1H2bluSoFy6wugw"
   }
-  
+
 };

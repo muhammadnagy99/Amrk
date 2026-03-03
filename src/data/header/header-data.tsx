@@ -134,6 +134,7 @@ export const dropListData = {
     { text: "الاعتمادات", url: "/certifications" },
     { text: "تحديثات أمرك", url: "/updates" },
     { text: "سياسة الخصوصية", url: "/privacy-policy" },
+    { text: "تواصل معنا", url: "/contact-us" },
   ],
 };
 
@@ -385,6 +386,7 @@ export const dropListData_en = {
     { text: "Accreditation", url: "/certifications" },
     { text: "Amrk Updates", url: "/updates" },
     { text: "Privacy Policy", url: "/privacy-policy" },
+    { text: "Contact Us", url: "/contact-us" },
   ],
 };
 
@@ -448,7 +450,7 @@ export const sidebarData_en = {
           { label: "Delivery", url: "/home-delivery" },
           { label: "Loyalty Programs", url: "/loyalty-programs" },
           { label: "Table Reservations", url: "/table-reservations" },
-          
+
         ],
       },
       {

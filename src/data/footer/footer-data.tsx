@@ -112,6 +112,7 @@ export const footerNavLinks = [
       { label: "الاعتمادات", url: "/certifications" },
       { label: "تحديثات أمرك", url: "/updates" },
       { label: "سياسة الخصوصية", url: "/privacy-policy" },
+      { label: "تواصل معنا", url: "/contact-us" },
     ],
     additionalSection: {
       title: "الباقات",
@@ -271,6 +272,7 @@ export const footerNavLinks_en = [
       { label: "Accreditation", url: "/certifications" },
       { label: "Amrk Updates", url: "/updates" },
       { label: "Privacy Policy", url: "/privacy-policy" },
+      { label: "Contact Us", url: "/contact-us" },
     ],
     additionalSection: {
       title: "licenses",

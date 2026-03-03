@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
- 
-const DOMAIN = 'https://amrk.co/';
+
+const DOMAIN = 'https://amrk.ai/';
 
 export default function robots(): MetadataRoute.Robots {
   return {

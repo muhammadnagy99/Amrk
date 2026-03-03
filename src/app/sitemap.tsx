@@ -1,11 +1,11 @@
 import type { MetadataRoute } from 'next';
 
-const DOMAIN = 'https://amrk.co'; 
+const DOMAIN = 'https://amrk.ai;
 
 import { weblinks } from '../data/sitemap';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const urls = weblinks.flatMap(section => 
+  const urls = weblinks.flatMap(section =>
     section.items.map(item => ({
       url: `${DOMAIN}${item.url}`,
       lastModified: new Date(),

@@ -3,8 +3,8 @@ interface props {
 }
 
 export default function ContactUs({ lang }: props) {
-  
-  const text = `${lang == "en"? 'Contact us' : 'تواصل معنا'}`; 
+
+  const text = `${lang == "en" ? 'Contact us' : 'تواصل معنا'}`;
   return (
     <article className="flex flex-col gap-4">
       <h3 className="text-primText font-semibold text-xl"> {text} </h3>
@@ -36,7 +36,7 @@ export default function ContactUs({ lang }: props) {
             fill="#B0438A"
           />
         </svg>
-        contactus@amrk.co
+        contactus@amrk.ai
       </p>
     </article>
   );

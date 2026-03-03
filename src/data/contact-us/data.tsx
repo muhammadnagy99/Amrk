@@ -20,8 +20,8 @@ export const contactData = {
     },
     email: {
         label: "البريد الإلكتروني",
-        value: "info@amrk.ai",
-        link: "mailto:info@amrk.ai",
+        value: "contact@amrk.ai",
+        link: "mailto:contact@amrk.ai",
     },
     social: {
         label: "وسائل التواصل الاجتماعي",
@@ -43,8 +43,8 @@ export const contactData_en = {
     },
     email: {
         label: "Email Address",
-        value: "info@amrk.ai",
-        link: "mailto:info@amrk.ai",
+        value: "contact@amrk.ai",
+        link: "mailto:contact@amrk.ai",
     },
     social: {
         label: "Social Media",

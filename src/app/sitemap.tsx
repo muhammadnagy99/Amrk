@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const DOMAIN = 'https://amrk.ai;
+const DOMAIN = 'https://amrk.ai/'
 
 import { weblinks } from '../data/sitemap';
 

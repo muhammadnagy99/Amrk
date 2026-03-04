@@ -36,7 +36,7 @@ export default function ContactUs({ lang }: props) {
             fill="#B0438A"
           />
         </svg>
-        contactus@amrk.ai
+        contact@amrk.ai
       </p>
     </article>
   );
